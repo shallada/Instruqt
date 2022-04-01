@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#apt-get update
+#apt-get install wget -y
+#apt-get install -y libfindbin-libs-perl
+#apt-get install jq -y
+#apt install python2 -y
+#apt install openjdk-8-jre-headless -y
+#apt install curl -y
+#apt install gzip
+#echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> /root/.bashrc
+
+#wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+#tar -xzf apache-druid-0.21.1-bin.tar.gz
+set-workdir /root/apache-druid-0.21.1
+nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/log.out 2> /root/log.err < /dev/null & disown
+sleep 3
+set-workdir /root
+
+#gunzip /root/apache-druid-0.21.1/quickstart/tutorial/wikiticker-2015-09-12-sampled.json.gz
+
+
+touch /root/ingestion-spec.json

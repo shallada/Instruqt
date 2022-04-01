@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cat > /root/query-number-of-rows.json << EOF
+{
+  "query":"SELECT COUNT(*) AS numRows FROM wikipedia "
+}
+EOF
+
+cat > /root/query-diannaa.json << EOF
+{
+  "query":"SELECT * FROM wikipedia WHERE user LIKE '%Diannaa%' AND __time BETWEEN TIMESTAMP '2015-09-12 20:00:00' AND TIMESTAMP '2015-09-13 20:00:00'"
+}
+EOF
+
+cat > /root/query-rollup.json << EOF
+{
+  "query":"SELECT user, recordSum FROM wikipedia WHERE recordSum > 1 AND __time BETWEEN TIMESTAMP '2015-09-12 20:00:00' AND TIMESTAMP '2015-09-13 20:00:00' LIMIT 10"
+}
+EOF

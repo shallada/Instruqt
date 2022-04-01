@@ -1,0 +1,23 @@
+#!/bin/bash
+
+echo "Checking if the folder instruqt exists."
+
+server_count=$(ps -ef | grep "Main server [A-Za-z]*$" | awk 'NF{print $NF}' | wc -w)
+if [ $server_count -eq 5 ]
+then
+    echo "Druid is running"
+elif [ -d "/root/apache-druid-0.21.1"  ]
+then
+    MSG="Although the folder named /root/apache-druid-0.21.1 exists, Druid is not running - try using the nohup command to start Druid"
+elif [ -f "/root/apache-druid-0.21.1-bin.tar.gz"  ]
+then
+    MSG="Although the install file exists, it has not been unzipped and Druid is not running - try using the tar command to unzip the install file"
+else
+    MSG="It looks like the install file was never downloaded, unzipped, and Druid is not running - try using the wget command to download the install file"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

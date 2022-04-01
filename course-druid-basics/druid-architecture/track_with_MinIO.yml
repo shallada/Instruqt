@@ -1,0 +1,672 @@
+slug: druid-architecture
+id: udfhmyejqzoh
+type: track
+title: Druid Architecture
+teaser: Learn about the Druid process architecture and how to deploy it
+description: |-
+  # Sandbox container
+
+  This track helps you understand the components of the Druid architecture, which helps you deploy and manage a Druid cluster.
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: imply
+developers:
+- steve.halladay@imply.io
+private: false
+published: true
+challenges:
+- slug: 01-setup-master
+  id: rz0nyjakolm7
+  type: challenge
+  title: Set Up the Master Server
+  teaser: Learn how to deploy the Druid master server
+  notes:
+  - type: video
+    url: https://www.youtube.com/embed/OY9bu4h7T4w
+  assignment: |-
+    <details>
+      <summary style="color:cyan"><b>Are you new to these exercises? Click here for instructions.</b></summary>
+    <hr style="background-color:cyan">
+    <br>These exercises allow you to actually <i>do</i> the tasks involved in learning Druid within the comfort of your browser!<br><br>
+    Click on the command boxes to copy the commands to your clipboard.
+    Then, paste the commands in the terminal to execute them.<br><br>
+    Some of the steps of the exercise will require using browser tabs external to the exercise tab.
+    When necessary, the exercise will explain how to open these external tabs.
+    When working in other browser tabs, you will want to switch back and forth between the tabs.<br><br>
+    That's all there is to it! Enjoy!
+    <hr style="background-color:cyan">
+    </details>
+
+    Our Druid deployment will use four servers.
+    ![Druid Server Architecture](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/servers.png)
+
+    We need to install the Druid software and configure it on each of the servers.
+    In this challenge, we'll deploy the master server and lay the foundation for the other servers.
+
+    <details>
+      <summary style="color:cyan">What are the tabs we'll use in this track? Click here to find out.</b></summary>
+    <hr style="background-color:cyan">
+    We will deploy Druid using four servers.
+    In each challenge, as we set up another server, we will add another tab which will give you Bash shell access to the server.
+    <br>
+    <br>
+    Besides the Bash shell tabs, there is one additional tab, which is an editor tab on the master server.
+    We will use this editor to edit files on the master server and then copy them as needed to the other servers.
+    <hr style="background-color:cyan">
+    </details>
+
+
+    Start by downloading the Druid distribution.
+
+    ```
+    wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+    ```
+
+    Unzip the downloaded file and move into the resulting directory.
+
+    ```
+    tar -xzf apache-druid-0.21.1-bin.tar.gz
+    cd apache-druid-0.21.1
+    ```
+
+    Druid uses deep storage - normally something like S3.
+    For this example, we'll use MinIO to simulate S3 storage.
+
+
+    Download and start the MinIO server.
+
+    ```
+    wget https://dl.min.io/server/minio/release/linux-amd64/minio
+    export MINIO_ROOT_USER=admin
+    export MINIO_ROOT_PASSWORD=password
+    export MINIO_BROWSER_REDIRECT_URL="https://master-server-9001-$INSTRUQT_PARTICIPANT_ID.env.play.instruqt.com"
+
+    chmod +x minio
+    nohup /root/apache-druid-0.21.1/minio server --console-address :9001 /root/data > /root/minio-log.out 2> /root/minio-log.err < /dev/null & disown
+    ```
+
+    We'll use the MinIO Client (mc) to interact with MinIO.
+
+    Download the MinIO client and use it to create a bucket named _druid_.
+
+    ```
+    wget https://dl.min.io/client/mc/release/linux-amd64/mc
+    chmod +x mc
+    ./mc mb druid
+
+    ```
+
+    The S3 extension uses Jets3t, so we need to create a properties file for this utility.
+
+    ```
+    cat > /root/apache-druid-0.21.1/conf/druid/cluster/_common/jets3t.properties << EOF
+    s3service.s3-endpoint=master-server
+    s3service.s3-endpoint-http-port=9000
+    s3service.disable-dns-buckets=true
+    s3service.https-only=false
+    EOF
+    ```
+
+    In this challenge, we will be working with servers that are smaller than you would normally use in production.
+    For educational purposes, these smaller servers will suffice.
+
+
+    But to deploy on these smaller servers, we need to restrict the amount of memory the various processes use.
+    To do this, we will use the same configuration files we used in the single server quickstart example.
+
+
+    Let's review the changes that we will cause by using the quickstart configuration.
+
+    ```
+    diff /root/apache-druid-0.21.1/conf/druid/single-server/nano-quickstart/coordinator-overlord/jvm.config conf/druid/cluster/master/coordinator-overlord/jvm.config
+    ```
+
+    These changes show Java command options that will decrease the memory consumption.
+
+
+    Now, let's copy this configuration file into our cluster configuration.
+
+    ```
+    cp conf/druid/single-server/nano-quickstart/coordinator-overlord/jvm.config conf/druid/cluster/master/coordinator-overlord
+    ```
+
+    We need to configure the servers so that they can discover each other.
+
+    <details>
+      <summary style="color:cyan">Want to know how the discovery process works? Click here.</b></summary>
+    <hr style="background-color:cyan">
+    <ol>
+    <li>On each server, in the common configuration file, we set <i>druid.zk.service.host</i> to tell the server how to contact ZooKeeper</li>
+    <li>In this same common configuration file we comment out <i>druid.host</i>, which forces the server to automatically determine its host name</li>
+    <li>Each server contacts ZooKeeper and registers who and where they are</li>
+    <li>Finally, ZooKeeper tells each of the servers how to contact other processes within the cluster</li>
+    </ol>
+    <hr style="background-color:cyan">
+    </details>
+
+    Click on the _Master-editor_ tab in the top-left corner of this screen.
+
+    ![Click Master-editor tab](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickMasterEditor.png)
+
+    Open the file: <i>/root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties</i>.
+
+    ![Common Proper File Path](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/CommonFilePath.png)
+
+    Search for line _druid.host=localhost_ and comment the line out.
+
+    Next, search for _druid.zk.service.host_ and change its value (which is currently _localhost_) to
+    ```
+    master-server:2181
+    ```
+
+    ![Change Values](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ChangeValuesMaster.png)
+
+
+    ## BEGIN the S3 section
+
+
+    We also need to configure Druid to use MinIO.
+    Search for the line that starts with _druid.extensions.loadList_ and replace it with the following (which adds _druid-s3-extensions_).
+
+    ```
+    druid.extensions.loadList=["druid-hdfs-storage", "druid-kafka-indexing-service", "druid-datasketches", "druid-s3-extensions"]
+    ```
+
+    In the _Deep storage_ section of the properties file, comment out the section related to local disk.
+
+    Also in the _Deep storage_ section, replace the S3 sub-section with the following.
+
+    ```
+    # For S3:
+    druid.storage.type=s3
+    druid.storage.bucket=druid
+    druid.storage.baseKey=segments
+    druid.s3.accessKey=admin
+    druid.s3.secretKey=password
+    druid.s3.protocol=http
+    druid.s3.enablePathStyleAccess=true
+    druid.s3.endpoint.signingRegion=us-east-1
+    druid.s3.endpoint.url=master-server:9000/
+    ```
+
+    We want to store the service logs on S3 as well.
+    So, in the _Indexing service logs_ section, comment out the _local disk_ configuration.
+
+    Also within the _Indexing service logs_ section, replace the S3 sub-section with the following.
+
+    ```
+    # For S3:
+    druid.indexer.logs.type=s3
+    druid.indexer.logs.s3Bucket=druid
+    druid.indexer.logs.s3Prefix=druid/indexing-logs
+    ```
+
+    ## END the S3 section
+
+    Save the file by clicking on the save icon in the tab.
+
+    ![Save File Changes](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/SaveFileChanges.png)
+
+    <hr style="background-color:cyan">
+    <p><span style="color:cyan"><strong><em>NOTE:</em></strong></span> <i>Be sure to save the file.
+    Modified files show a blue dot in the editor tab, so if you see the blue dot, you still need to save the file.</i>
+    <hr style="background-color:cyan">
+
+
+    Return the the Master-shell tab.
+
+    ![Click Master-shell tab](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickMasterShell.png)
+
+
+    Now, we can launch the master server.
+    We will use _nohup_ here so that the process doesn't die when we move to the next challenge.
+
+    ```
+    nohup /root/apache-druid-0.21.1/bin/start-cluster-master-with-zk-server > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
+    ```
+
+    Check that ZooKeeper and the coordinator processes are running (you should see two Java processes near the bottom of the list of processes).
+
+    ```
+    ps -ef
+    ```
+
+    You can find the log files for these processes here:
+
+    ```
+    tail var/sv/coordinator-overlord.log
+    ```
+
+    and here:
+
+    ```
+    tail var/sv/zk.log
+    ```
+
+    ## Great! You have deployed the master server.
+  tabs:
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  - title: Minio
+    type: service
+    hostname: master-server
+    path: /
+    port: 9001
+    new_window: true
+  difficulty: basic
+  timelimit: 6000
+- slug: 02-data-server-1
+  id: qniu2kdu7eeu
+  type: challenge
+  title: Set Up the First Data Server
+  teaser: Learn how to deploy the first of two data servers
+  assignment: |-
+    In this challenge we will deploy the first of two data servers named _data-server-1_.
+
+
+    Download the Druid distibution.
+
+    ```
+    wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+
+    ```
+
+    Unzip the downloaded file and move into the resulting directory.
+
+    ```
+    tar -xzf apache-druid-0.21.1-bin.tar.gz
+    cd apache-druid-0.21.1
+
+    ```
+
+    Again, we will be working with servers that are smaller than you would use in production.
+    We need to restrict the amount of memory the various processes use.
+    So, to cut back on memory usage, we will use the same configuration files we used in the single server quickstart example.
+
+
+    Here are the commands you can use to see what changes we will be making to four different files.
+
+    ```
+    diff /root/apache-druid-0.21.1/conf/druid/single-server/nano-quickstart/historical/runtime.properties conf/druid/cluster/data/historical/runtime.properties
+    ```
+
+
+    ```
+    diff /root/apache-druid-0.21.1/conf/druid/single-server/nano-quickstart/historical/jvm.config conf/druid/cluster/data/historical/jvm.config
+    ```
+
+
+    ```
+    diff /root/apache-druid-0.21.1/conf/druid/single-server/nano-quickstart/middleManager/runtime.properties conf/druid/cluster/data/middleManager/runtime.properties
+    ```
+
+
+    ```
+    diff /root/apache-druid-0.21.1/conf/druid/single-server/nano-quickstart/middleManager/jvm.config conf/druid/cluster/data/middleManager/jvm.config
+    ```
+
+
+    Let's copy these files into our cluster configuration.
+
+    ```
+    cp conf/druid/single-server/nano-quickstart/historical/* conf/druid/cluster/data/historical
+    cp conf/druid/single-server/nano-quickstart/middleManager/* conf/druid/cluster/data/middleManager
+    ```
+
+    Now, let's copy the _common.runtime.properties_ file we edited in the first challenge to this server.
+    Remember, this file tells the server how to contact ZooKeeper.
+
+    ```
+    scp -o StrictHostKeyChecking=no master-server:/root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties /root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties
+    ```
+
+    We are set to launch the first data server.
+    Again, we'll use _nohup_ so that the processes continue to run when we move to the next challenge.
+
+    ```
+    nohup /root/apache-druid-0.21.1/bin/start-cluster-data-server > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
+    ```
+
+
+    Check that the historical and middleManager processes are running.
+
+    ```
+    ps -ef | grep "java\-[8-8]" | awk 'NF{print $NF}'
+    ```
+
+    You can find the log files for these processes here:
+
+    ```
+    tail var/sv/historical.log
+    ```
+
+    and here:
+
+    ```
+    tail var/sv/middleManager.log
+    ```
+
+    ## Cool! You have deployed the first data server.
+  tabs:
+  - title: Data-1-shell
+    type: terminal
+    hostname: data-server-1
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  difficulty: basic
+  timelimit: 6000
+- slug: 03-data-server-2
+  id: o5qyksvmb8is
+  type: challenge
+  title: Set Up the Second Data Server
+  teaser: Learn how to deploy the second of two data servers
+  assignment: |-
+    In this challenge we will deploy the second of two data servers named _data-server-2_.
+    This server works just like data-server-1.
+
+
+    Download the Druid distibution.
+
+    ```
+    wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+    ```
+
+    Unzip the downloaded file and move into the resulting directory.
+
+    ```
+    tar -xzf apache-druid-0.21.1-bin.tar.gz
+    cd apache-druid-0.21.1
+    ```
+
+    Let's copy the files to change the configuration like we did with data-server-1.
+
+    ```
+    cp conf/druid/single-server/nano-quickstart/historical/* conf/druid/cluster/data/historical
+    cp conf/druid/single-server/nano-quickstart/middleManager/* conf/druid/cluster/data/middleManager
+    ```
+
+    Again, let's copy the _common.runtime.properties_ file we edited in the first challenge so that the server knows how to contact ZooKeeper.
+
+    ```
+    scp -o StrictHostKeyChecking=no master-server:/root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties /root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties
+    ```
+
+    Now, we can launch the second data server.
+    Again, we'll use _nohup_ so that the processes continue to run when we move to the next challenge.
+
+    ```
+    nohup /root/apache-druid-0.21.1/bin/start-cluster-data-server > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
+    ```
+
+
+    Check that the historical and middleManager processes are running.
+
+    ```
+    ps -ef | grep "java\-[8-8]" | awk 'NF{print $NF}'
+    ```
+
+    ## Outstanding! You have deployed the second data server.
+  tabs:
+  - title: Data-2-shell
+    type: terminal
+    hostname: data-server-2
+  - title: Data-1-shell
+    type: terminal
+    hostname: data-server-1
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  difficulty: basic
+  timelimit: 6000
+- slug: 04-query-server
+  id: 6qdcbszfasb6
+  type: challenge
+  title: Set Up the Query Server
+  teaser: Learn how to deploy the query server
+  assignment: |-
+    In this challenge we will deploy the query server named _query-server_.
+
+
+    Download the Druid distibution.
+
+    ```
+    wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+    ```
+
+    Unzip the downloaded file and move into the resulting directory.
+
+    ```
+    tar -xzf apache-druid-0.21.1-bin.tar.gz
+    cd apache-druid-0.21.1
+    ```
+
+
+    Here are the commands you can use to see what changes we will be making to four different files.
+
+    ```
+    diff conf/druid/single-server/nano-quickstart/broker/runtime.properties conf/druid/cluster/query/broker/runtime.properties
+    ```
+
+
+    ```
+    diff conf/druid/single-server/nano-quickstart/broker/jvm.config conf/druid/cluster/query/broker/jvm.config
+    ```
+
+
+    ```
+    diff conf/druid/single-server/nano-quickstart/router/runtime.properties conf/druid/cluster/query/router/runtime.properties
+    ```
+
+
+    ```
+    diff conf/druid/single-server/nano-quickstart/router/jvm.config conf/druid/cluster/query/router/jvm.config
+    ```
+
+
+    Let's copy these files into our cluster configuration.
+
+    ```
+    cp conf/druid/single-server/nano-quickstart/broker/* conf/druid/cluster/query/broker
+    cp conf/druid/single-server/nano-quickstart/router/* conf/druid/cluster/query/router
+    ```
+
+    One last time, let's copy the _common.runtime.properties_ file we edited in the first challenge so that the server knows how to contact ZooKeeper.
+
+    ```
+    scp -o StrictHostKeyChecking=no master-server:/root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties /root/apache-druid-0.21.1/conf/druid/cluster/_common/common.runtime.properties
+    ```
+
+    Now, we can launch the query server.
+    Again, we'll use _nohup_ so that the processes continue to run when we move to the next challenge.
+
+    ```
+    nohup /root/apache-druid-0.21.1/bin/start-cluster-query-server > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
+    ```
+
+
+    Check that the broker and router processes are running.
+
+    ```
+    ps -ef | grep "java\-[8-8]" | awk 'NF{print $NF}'
+    ```
+
+    You can find the log files for these processes here:
+
+    ```
+    tail var/sv/broker.log
+    ```
+
+    and here:
+
+    ```
+    tail var/sv/router.log
+    ```
+
+    ## Wonderful! You have deployed the query server.
+  tabs:
+  - title: Query-shell
+    type: terminal
+    hostname: query-server
+  - title: Data-2-shell
+    type: terminal
+    hostname: data-server-2
+  - title: Data-1-shell
+    type: terminal
+    hostname: data-server-1
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  difficulty: basic
+  timelimit: 6000
+- slug: 05-druid-ingest
+  id: nckfsnpatf9h
+  type: challenge
+  title: Let's Ingest Data into Druid
+  teaser: Learn how to ingest Druid data
+  assignment: |2-
+
+    With Druid running, let's look at the Druid console.
+    Click on the green _Open external window_ button in the middle of the adjacent window as shown.
+
+    <hr style="background-color:cyan">
+    <p><span style="color:cyan"><strong><em>NOTE:</em></strong></span> <i>During this challenge, you will need to switch back and forth between the Console tab and this challenge tab.</i></p>
+    <hr style="background-color:cyan">
+
+    ![Click console](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickConsole.png)
+
+    Load data by clicking as shown.
+
+    ![Load data](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/LoadData.png)
+
+    The console walks you through the ingestion steps.
+    Since we are using example data, we can just accept the defaults by clickng the _Next:-_ buttons.
+
+    ![Click next](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickWildly.png)
+
+    <hr style="background-color:cyan">
+    <p><span style="color:cyan"><strong><em>NOTE:</em></strong></span> <i>The focuses of this track is Druid deployment.
+    So, we will not cover the details of ingestion.
+    But, the purpose of the previous screens through which we wildly clicked was to build an ingestion specification.
+    You can review the JSON ingestion specification on left side of this final screen.</i>
+    <hr style="background-color:cyan">
+
+    Finally, click _Submit_ to ingest the data.
+
+    ![Click submit](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickSubmit.png)
+
+    The ingestion takes a minute or so.
+    You will know it is complete when you see the _SUCCESS_ status.
+
+    ![Wait for SUCCESS](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/WaitForSuccess.png)
+
+    ## Wow! You have ingested the data!
+  tabs:
+  - title: Console
+    type: service
+    hostname: query-server
+    path: /
+    port: 8888
+    new_window: true
+  - title: Query-shell
+    type: terminal
+    hostname: query-server
+  - title: Data-2-shell
+    type: terminal
+    hostname: data-server-2
+  - title: Data-1-shell
+    type: terminal
+    hostname: data-server-1
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  difficulty: basic
+  timelimit: 6000
+- slug: 06-druid-query
+  id: q3w7m4f35qwv
+  type: challenge
+  title: Let's Query Druid
+  teaser: Learn how to query Druid data
+  notes:
+  - type: video
+    url: https://www.youtube.com/embed/25jszmbNMms
+  assignment: |-
+    With Druid running and data ingested, let's return to the Druid console.
+    Click on the browser tab containing the Druid Unified Console, or on the green _Open external window_ button in the middle of the adjacent window as shown.
+
+    <hr style="background-color:cyan">
+    <p><span style="color:cyan"><strong><em>NOTE:</em></strong></span> <i>During this challenge, you will need to switch back and forth between the Console tab and this challenge tab.</i></p>
+    <hr style="background-color:cyan">
+
+    ![Click console](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/ClickConsole.png)
+
+    This data is about updates to Wikipedia during a one day period.
+    Both people and robots contributed to the updates.
+
+
+    Suppose you want to know how updates vary for humans and robots over time.
+    Here's a query that can help you answer that question.
+
+    ```
+    SELECT
+      DATE_TRUNC('hour',"__time"),
+      (AVG(commentLength) FILTER(WHERE isRobot=true)) as robots,
+      (AVG(commentLength) FILTER(WHERE isRobot=false)) as humans
+    FROM wikipedia
+    GROUP BY 1
+    ```
+
+    Click on the _Query_ tab, paste the query in the console and run it as shown.
+    Then, check out the results.
+
+    ![Query Druid](https://raw.githubusercontent.com/shallada/InstruqtImages/main/druid-architecture/DruidQuery.png)
+
+
+    ## Amazing! Druid queries are easy!
+  tabs:
+  - title: Console
+    type: service
+    hostname: query-server
+    path: /
+    port: 8888
+    new_window: true
+  - title: Query-shell
+    type: terminal
+    hostname: query-server
+  - title: Data-2-shell
+    type: terminal
+    hostname: data-server-2
+  - title: Data-1-shell
+    type: terminal
+    hostname: data-server-1
+  - title: Master-shell
+    type: terminal
+    hostname: master-server
+  - title: Master-editor
+    type: code
+    hostname: master-server
+    path: /root
+  difficulty: basic
+  timelimit: 6000
+checksum: "1217027327311552058"

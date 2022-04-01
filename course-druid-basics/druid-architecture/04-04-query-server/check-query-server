@@ -1,0 +1,21 @@
+echo "Checking if the query-server processes are running."
+
+server_count=$(ps -ef | grep "openjdk\-[8-8]" | wc -l)
+if [ $server_count -eq 2 ]
+then
+    echo "Query server processes are running"
+elif [ -d "/root/apache-druid-0.21.1"  ]
+then
+    MSG="Although the folder named /root/apache-druid-0.21.1 exists, the query server processes are not running - try using the nohup command to start Druid"
+elif [ -f "/root/apache-druid-0.21.1-bin.tar.gz"  ]
+then
+    MSG="Although the install file exists, it has not been unzipped and the query server processes are not running - try using the tar command to unzip the install file"
+else
+    MSG="It looks like the install file was never downloaded, unzipped, and the query server processes are not running - try using the wget command to download the install file"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

@@ -1,0 +1,64 @@
+#!/bin/bash
+
+# Create the ingestion spec
+cat > /root/ingestion-spec.json << \EOF
+{
+    "type": "index_parallel",
+    "spec": {
+        "dataSchema": {
+            "dataSource": "process-data",
+            "timestampSpec": {
+                "column": "time",
+                "format": "iso"
+            },
+            "dimensionsSpec": {
+                "dimensions": [
+                    "pid",
+                    "process-name"
+                ]
+            },
+            "metricsSpec": [
+                { "type" : "floatSum", "name" : "cpu", "fieldName" : "cpu" },
+                { "type" : "floatSum", "name" : "memory", "fieldName" : "memory" },
+                { "type" : "count", "name" : "agg-count" }
+            ],
+            "granularitySpec": {
+                "segmentGranularity": "day",
+                "queryGranularity": "second",
+                "rollup": true
+            }
+        },
+        "ioConfig": {
+            "type": "index_parallel",
+            "inputSource": {
+                "type": "local",
+                "baseDir": "/root/",
+                "filter": "raw_data.csv"
+            },
+            "inputFormat": {
+                "type": "csv",
+                "findColumnsFromHeader": "true"
+            },
+            "appendToExisting": false
+
+        },
+        "tuningConfig": {
+            "type" : "index_parallel",
+            "maxRowsInMemory" : 25000,
+            "maxBytesInMemory" : 250000,
+            "partitionSpec" : {
+              "type" : "dynamic",
+              "maxRowsPerSegment" : 5000000
+            }
+        }
+    }
+}
+EOF
+
+# Create the data
+/root/process-monitor-producer.sh ISO 100 > /root/raw_data.csv
+
+# Ingest the data
+/root/apache-druid-0.21.1/bin/post-index-task \
+  --file /root/ingestion-spec.json \
+  --url http://localhost:8081

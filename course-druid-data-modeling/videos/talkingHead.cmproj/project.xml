@@ -1,0 +1,1801 @@
+<GoProject id="1" version="1.0" client="Camtasia 2:mac 2.10.8 (91893)" >
+ <Project id="2" editRate="30/1" version="3.0" >
+  <Author></Author>
+  <Comment></Comment>
+  <System></System>
+  <SourceBin id="3"  >
+    <Source id="4" src="./media/1643047290.597296/00 - Ingestion and Data Modeling Intro Script (1).mp4" lastMod="20220124T172202" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,14523600)" type="0" editRate="44100/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="0" numChannels="0" filename="" metaData="" />
+      <SourceTrack range="(0,14523600)" type="2" editRate="44100/1" trackRect="(0,0,0,0)" sampleRate="44100/1" bitDepth="0" numChannels="2" filename="" metaData="" />
+    </Source>
+    <Source id="5" src="./media/NjNBQswA/PastedImage.pdf" lastMod="20220210T174855" rect="(0,0,225,294)" >
+      <SourceTrack range="(0,1)" type="1" editRate="600/1" trackRect="(0,0,225,294)" sampleRate="0/1" bitDepth="0" numChannels="0" filename="" metaData="" />
+    </Source>
+  </SourceBin>
+  <Timeline id="6"  >
+   <Attributes>
+    <Attribute id="7" value="475" name="width"/>
+    <Attribute id="8" value="400" name="height"/>
+    <Attribute id="9" value="(0,0,0,255)" name="backgroundColor"/>
+   </Attributes>
+    <GenericMixer id="10"  name="UnifiedMixer">
+     <Tracks>
+      <GenericTrack id="11"  >
+       <Attributes>
+        <Attribute id="12" value="" name="ident"/>
+        <Attribute id="13" value="0" name="audioMuted"/>
+        <Attribute id="14" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="trackHeight" val="54"/>
+       </MetaData>
+       <Medias>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="15"  >
+       <Attributes>
+        <Attribute id="16" value="" name="ident"/>
+        <Attribute id="17" value="0" name="audioMuted"/>
+        <Attribute id="18" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="trackHeight" val="54"/>
+       </MetaData>
+       <Medias>
+        <VMFile id="19" start="0" duration="9622" scalar="1/1" mediaStart="140/1" mediaDuration="9622/1" trackNumber="0" src="4" >
+         <Transformer>
+          <VectorParam id="20"  name="translation">
+           <InterpolatingParam id="21" interp="linr"  time="0/1" value="-10.092585998509833" leadInLength="0/1"  />
+           <InterpolatingParam id="22" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="23" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="24"  name="rotation">
+           <InterpolatingParam id="25" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="26" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="27" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="28"  name="shear">
+           <InterpolatingParam id="29" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="30" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="31" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="32"  name="scale">
+           <InterpolatingParam id="33" interp="linr"  time="0/1" value="0.72798033437732845" leadInLength="0/1"  />
+           <InterpolatingParam id="34" interp="linr"  time="0/1" value="0.72798033437732845" leadInLength="0/1"  />
+           <InterpolatingParam id="35" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="36"  name="anchor">
+           <InterpolatingParam id="37" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="38" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="39" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="40"  name="sourceCrop">
+           <InterpolatingParam id="41" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="42" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="43" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="44" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="45"  name="geometryCrop">
+           <InterpolatingParam id="46" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="47" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="48" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="49" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="50" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="51" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </VMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="52"  >
+       <Attributes>
+        <Attribute id="53" value="" name="ident"/>
+        <Attribute id="54" value="0" name="audioMuted"/>
+        <Attribute id="55" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="trackHeight" val="54"/>
+       </MetaData>
+       <Medias>
+        <AMFile id="56" start="0" duration="245" scalar="1/1" mediaStart="140/1" mediaDuration="245/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="57" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="58"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="59" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="60" value="44100" name="sampleRate"/>
+          <Attribute id="61" value="0" name="bitDepth"/>
+          <Attribute id="62" value="1" name="gain"/>
+          <Attribute id="63" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="64" start="274" duration="82" scalar="1/1" mediaStart="414/1" mediaDuration="82/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="65" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="66"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="67" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="68" value="44100" name="sampleRate"/>
+          <Attribute id="69" value="0" name="bitDepth"/>
+          <Attribute id="70" value="1" name="gain"/>
+          <Attribute id="71" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="72" start="366" duration="158" scalar="1/1" mediaStart="506/1" mediaDuration="158/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="73" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="74"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="75" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="76" value="44100" name="sampleRate"/>
+          <Attribute id="77" value="0" name="bitDepth"/>
+          <Attribute id="78" value="1" name="gain"/>
+          <Attribute id="79" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="80" start="542" duration="17" scalar="1/1" mediaStart="682/1" mediaDuration="17/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="81" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="82"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="83" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="84" value="44100" name="sampleRate"/>
+          <Attribute id="85" value="0" name="bitDepth"/>
+          <Attribute id="86" value="1" name="gain"/>
+          <Attribute id="87" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="88" start="567" duration="97" scalar="1/1" mediaStart="707/1" mediaDuration="97/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="89" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="90"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="91" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="92" value="44100" name="sampleRate"/>
+          <Attribute id="93" value="0" name="bitDepth"/>
+          <Attribute id="94" value="1" name="gain"/>
+          <Attribute id="95" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="96" start="671" duration="109" scalar="1/1" mediaStart="811/1" mediaDuration="109/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="97" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="98"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="99" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="100" value="44100" name="sampleRate"/>
+          <Attribute id="101" value="0" name="bitDepth"/>
+          <Attribute id="102" value="1" name="gain"/>
+          <Attribute id="103" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="104" start="790" duration="156" scalar="1/1" mediaStart="930/1" mediaDuration="156/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="105" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="106"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="107" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="108" value="44100" name="sampleRate"/>
+          <Attribute id="109" value="0" name="bitDepth"/>
+          <Attribute id="110" value="1" name="gain"/>
+          <Attribute id="111" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="112" start="966" duration="173" scalar="1/1" mediaStart="1106/1" mediaDuration="173/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="113" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="114"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="115" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="116" value="44100" name="sampleRate"/>
+          <Attribute id="117" value="0" name="bitDepth"/>
+          <Attribute id="118" value="1" name="gain"/>
+          <Attribute id="119" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="120" start="1147" duration="40" scalar="1/1" mediaStart="1287/1" mediaDuration="40/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="121" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="122"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="123" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="124" value="44100" name="sampleRate"/>
+          <Attribute id="125" value="0" name="bitDepth"/>
+          <Attribute id="126" value="1" name="gain"/>
+          <Attribute id="127" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="128" start="1192" duration="45" scalar="1/1" mediaStart="1332/1" mediaDuration="45/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="129" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="130"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="131" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="132" value="44100" name="sampleRate"/>
+          <Attribute id="133" value="0" name="bitDepth"/>
+          <Attribute id="134" value="1" name="gain"/>
+          <Attribute id="135" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="136" start="1260" duration="79" scalar="1/1" mediaStart="1400/1" mediaDuration="79/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="137" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="138"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="139" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="140" value="44100" name="sampleRate"/>
+          <Attribute id="141" value="0" name="bitDepth"/>
+          <Attribute id="142" value="1" name="gain"/>
+          <Attribute id="143" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="144" start="1346" duration="90" scalar="1/1" mediaStart="1486/1" mediaDuration="90/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="145" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="146"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="147" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="148" value="44100" name="sampleRate"/>
+          <Attribute id="149" value="0" name="bitDepth"/>
+          <Attribute id="150" value="1" name="gain"/>
+          <Attribute id="151" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="152" start="1442" duration="91" scalar="1/1" mediaStart="1582/1" mediaDuration="91/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="153" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="154"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="155" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="156" value="44100" name="sampleRate"/>
+          <Attribute id="157" value="0" name="bitDepth"/>
+          <Attribute id="158" value="1" name="gain"/>
+          <Attribute id="159" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="160" start="1541" duration="126" scalar="1/1" mediaStart="1681/1" mediaDuration="126/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="161" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="162"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="163" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="164" value="44100" name="sampleRate"/>
+          <Attribute id="165" value="0" name="bitDepth"/>
+          <Attribute id="166" value="1" name="gain"/>
+          <Attribute id="167" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="168" start="1687" duration="150" scalar="1/1" mediaStart="1827/1" mediaDuration="150/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="169" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="170"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="171" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="172" value="44100" name="sampleRate"/>
+          <Attribute id="173" value="0" name="bitDepth"/>
+          <Attribute id="174" value="1" name="gain"/>
+          <Attribute id="175" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="176" start="1865" duration="130" scalar="1/1" mediaStart="2005/1" mediaDuration="130/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="177" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="178"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="179" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="180" value="44100" name="sampleRate"/>
+          <Attribute id="181" value="0" name="bitDepth"/>
+          <Attribute id="182" value="1" name="gain"/>
+          <Attribute id="183" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="184" start="2004" duration="101" scalar="1/1" mediaStart="2144/1" mediaDuration="101/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="185" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="186"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="187" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="188" value="44100" name="sampleRate"/>
+          <Attribute id="189" value="0" name="bitDepth"/>
+          <Attribute id="190" value="1" name="gain"/>
+          <Attribute id="191" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="192" start="2113" duration="109" scalar="1/1" mediaStart="2253/1" mediaDuration="109/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="193" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="194"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="195" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="196" value="44100" name="sampleRate"/>
+          <Attribute id="197" value="0" name="bitDepth"/>
+          <Attribute id="198" value="1" name="gain"/>
+          <Attribute id="199" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="200" start="2232" duration="100" scalar="1/1" mediaStart="2372/1" mediaDuration="100/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="201" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="202"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="203" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="204" value="44100" name="sampleRate"/>
+          <Attribute id="205" value="0" name="bitDepth"/>
+          <Attribute id="206" value="1" name="gain"/>
+          <Attribute id="207" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="208" start="2347" duration="15" scalar="1/1" mediaStart="2487/1" mediaDuration="15/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="209" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="210"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="211" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="212" value="44100" name="sampleRate"/>
+          <Attribute id="213" value="0" name="bitDepth"/>
+          <Attribute id="214" value="1" name="gain"/>
+          <Attribute id="215" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="216" start="2368" duration="178" scalar="1/1" mediaStart="2508/1" mediaDuration="178/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="217" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="218"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="219" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="220" value="44100" name="sampleRate"/>
+          <Attribute id="221" value="0" name="bitDepth"/>
+          <Attribute id="222" value="1" name="gain"/>
+          <Attribute id="223" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="224" start="2587" duration="41" scalar="1/1" mediaStart="2727/1" mediaDuration="41/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="225" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="226"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="227" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="228" value="44100" name="sampleRate"/>
+          <Attribute id="229" value="0" name="bitDepth"/>
+          <Attribute id="230" value="1" name="gain"/>
+          <Attribute id="231" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="232" start="2636" duration="142" scalar="1/1" mediaStart="2776/1" mediaDuration="142/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="233" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="234"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="235" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="236" value="44100" name="sampleRate"/>
+          <Attribute id="237" value="0" name="bitDepth"/>
+          <Attribute id="238" value="1" name="gain"/>
+          <Attribute id="239" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="240" start="2787" duration="69" scalar="1/1" mediaStart="2927/1" mediaDuration="69/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="241" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="242"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="243" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="244" value="44100" name="sampleRate"/>
+          <Attribute id="245" value="0" name="bitDepth"/>
+          <Attribute id="246" value="1" name="gain"/>
+          <Attribute id="247" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="248" start="2861" duration="105" scalar="1/1" mediaStart="3001/1" mediaDuration="105/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="249" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="250"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="251" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="252" value="44100" name="sampleRate"/>
+          <Attribute id="253" value="0" name="bitDepth"/>
+          <Attribute id="254" value="1" name="gain"/>
+          <Attribute id="255" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="256" start="2972" duration="63" scalar="1/1" mediaStart="3112/1" mediaDuration="63/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="257" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="258"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="259" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="260" value="44100" name="sampleRate"/>
+          <Attribute id="261" value="0" name="bitDepth"/>
+          <Attribute id="262" value="1" name="gain"/>
+          <Attribute id="263" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="264" start="3044" duration="88" scalar="1/1" mediaStart="3184/1" mediaDuration="88/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="265" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="266"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="267" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="268" value="44100" name="sampleRate"/>
+          <Attribute id="269" value="0" name="bitDepth"/>
+          <Attribute id="270" value="1" name="gain"/>
+          <Attribute id="271" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="272" start="3140" duration="46" scalar="1/1" mediaStart="3280/1" mediaDuration="46/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="273" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="274"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="275" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="276" value="44100" name="sampleRate"/>
+          <Attribute id="277" value="0" name="bitDepth"/>
+          <Attribute id="278" value="1" name="gain"/>
+          <Attribute id="279" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="280" start="3190" duration="56" scalar="1/1" mediaStart="3330/1" mediaDuration="56/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="281" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="282"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="283" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="284" value="44100" name="sampleRate"/>
+          <Attribute id="285" value="0" name="bitDepth"/>
+          <Attribute id="286" value="1" name="gain"/>
+          <Attribute id="287" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="288" start="3256" duration="115" scalar="1/1" mediaStart="3396/1" mediaDuration="115/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="289" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="290"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="291" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="292" value="44100" name="sampleRate"/>
+          <Attribute id="293" value="0" name="bitDepth"/>
+          <Attribute id="294" value="1" name="gain"/>
+          <Attribute id="295" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="296" start="3376" duration="63" scalar="1/1" mediaStart="3516/1" mediaDuration="63/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="297" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="298"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="299" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="300" value="44100" name="sampleRate"/>
+          <Attribute id="301" value="0" name="bitDepth"/>
+          <Attribute id="302" value="1" name="gain"/>
+          <Attribute id="303" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="304" start="3469" duration="158" scalar="1/1" mediaStart="3609/1" mediaDuration="158/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="305" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="306"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="307" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="308" value="44100" name="sampleRate"/>
+          <Attribute id="309" value="0" name="bitDepth"/>
+          <Attribute id="310" value="1" name="gain"/>
+          <Attribute id="311" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="312" start="3666" duration="146" scalar="1/1" mediaStart="3806/1" mediaDuration="146/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="313" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="314"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="315" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="316" value="44100" name="sampleRate"/>
+          <Attribute id="317" value="0" name="bitDepth"/>
+          <Attribute id="318" value="1" name="gain"/>
+          <Attribute id="319" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="320" start="3835" duration="44" scalar="1/1" mediaStart="3975/1" mediaDuration="44/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="321" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="322"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="323" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="324" value="44100" name="sampleRate"/>
+          <Attribute id="325" value="0" name="bitDepth"/>
+          <Attribute id="326" value="1" name="gain"/>
+          <Attribute id="327" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="328" start="3890" duration="138" scalar="1/1" mediaStart="4030/1" mediaDuration="138/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="329" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="330"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="331" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="332" value="44100" name="sampleRate"/>
+          <Attribute id="333" value="0" name="bitDepth"/>
+          <Attribute id="334" value="1" name="gain"/>
+          <Attribute id="335" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="336" start="4036" duration="40" scalar="1/1" mediaStart="4176/1" mediaDuration="40/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="337" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="338"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="339" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="340" value="44100" name="sampleRate"/>
+          <Attribute id="341" value="0" name="bitDepth"/>
+          <Attribute id="342" value="1" name="gain"/>
+          <Attribute id="343" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="344" start="4086" duration="94" scalar="1/1" mediaStart="4226/1" mediaDuration="94/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="345" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="346"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="347" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="348" value="44100" name="sampleRate"/>
+          <Attribute id="349" value="0" name="bitDepth"/>
+          <Attribute id="350" value="1" name="gain"/>
+          <Attribute id="351" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="352" start="4187" duration="129" scalar="1/1" mediaStart="4327/1" mediaDuration="129/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="353" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="354"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="355" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="356" value="44100" name="sampleRate"/>
+          <Attribute id="357" value="0" name="bitDepth"/>
+          <Attribute id="358" value="1" name="gain"/>
+          <Attribute id="359" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="360" start="4322" duration="79" scalar="1/1" mediaStart="4462/1" mediaDuration="79/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="361" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="362"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="363" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="364" value="44100" name="sampleRate"/>
+          <Attribute id="365" value="0" name="bitDepth"/>
+          <Attribute id="366" value="1" name="gain"/>
+          <Attribute id="367" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="368" start="4406" duration="48" scalar="1/1" mediaStart="4546/1" mediaDuration="48/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="369" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="370"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="371" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="372" value="44100" name="sampleRate"/>
+          <Attribute id="373" value="0" name="bitDepth"/>
+          <Attribute id="374" value="1" name="gain"/>
+          <Attribute id="375" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="376" start="4492" duration="43" scalar="1/1" mediaStart="4632/1" mediaDuration="43/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="377" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="378"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="379" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="380" value="44100" name="sampleRate"/>
+          <Attribute id="381" value="0" name="bitDepth"/>
+          <Attribute id="382" value="1" name="gain"/>
+          <Attribute id="383" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="384" start="4556" duration="120" scalar="1/1" mediaStart="4696/1" mediaDuration="120/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="385" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="386"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="387" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="388" value="44100" name="sampleRate"/>
+          <Attribute id="389" value="0" name="bitDepth"/>
+          <Attribute id="390" value="1" name="gain"/>
+          <Attribute id="391" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="392" start="4685" duration="167" scalar="1/1" mediaStart="4825/1" mediaDuration="167/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="393" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="394"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="395" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="396" value="44100" name="sampleRate"/>
+          <Attribute id="397" value="0" name="bitDepth"/>
+          <Attribute id="398" value="1" name="gain"/>
+          <Attribute id="399" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="400" start="4859" duration="32" scalar="1/1" mediaStart="4999/1" mediaDuration="32/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="401" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="402"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="403" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="404" value="44100" name="sampleRate"/>
+          <Attribute id="405" value="0" name="bitDepth"/>
+          <Attribute id="406" value="1" name="gain"/>
+          <Attribute id="407" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="408" start="4911" duration="93" scalar="1/1" mediaStart="5051/1" mediaDuration="93/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="409" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="410"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="411" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="412" value="44100" name="sampleRate"/>
+          <Attribute id="413" value="0" name="bitDepth"/>
+          <Attribute id="414" value="1" name="gain"/>
+          <Attribute id="415" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="416" start="5010" duration="40" scalar="1/1" mediaStart="5150/1" mediaDuration="40/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="417" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="418"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="419" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="420" value="44100" name="sampleRate"/>
+          <Attribute id="421" value="0" name="bitDepth"/>
+          <Attribute id="422" value="1" name="gain"/>
+          <Attribute id="423" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="424" start="5057" duration="113" scalar="1/1" mediaStart="5197/1" mediaDuration="113/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="425" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="426"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="427" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="428" value="44100" name="sampleRate"/>
+          <Attribute id="429" value="0" name="bitDepth"/>
+          <Attribute id="430" value="1" name="gain"/>
+          <Attribute id="431" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="432" start="5204" duration="48" scalar="1/1" mediaStart="5344/1" mediaDuration="48/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="433" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="434"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="435" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="436" value="44100" name="sampleRate"/>
+          <Attribute id="437" value="0" name="bitDepth"/>
+          <Attribute id="438" value="1" name="gain"/>
+          <Attribute id="439" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="440" start="5260" duration="67" scalar="1/1" mediaStart="5400/1" mediaDuration="67/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="441" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="442"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="443" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="444" value="44100" name="sampleRate"/>
+          <Attribute id="445" value="0" name="bitDepth"/>
+          <Attribute id="446" value="1" name="gain"/>
+          <Attribute id="447" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="448" start="5338" duration="151" scalar="1/1" mediaStart="5478/1" mediaDuration="151/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="449" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="450"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="451" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="452" value="44100" name="sampleRate"/>
+          <Attribute id="453" value="0" name="bitDepth"/>
+          <Attribute id="454" value="1" name="gain"/>
+          <Attribute id="455" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="456" start="5502" duration="149" scalar="1/1" mediaStart="5642/1" mediaDuration="149/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="457" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="458"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="459" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="460" value="44100" name="sampleRate"/>
+          <Attribute id="461" value="0" name="bitDepth"/>
+          <Attribute id="462" value="1" name="gain"/>
+          <Attribute id="463" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="464" start="5657" duration="88" scalar="1/1" mediaStart="5797/1" mediaDuration="88/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="465" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="466"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="467" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="468" value="44100" name="sampleRate"/>
+          <Attribute id="469" value="0" name="bitDepth"/>
+          <Attribute id="470" value="1" name="gain"/>
+          <Attribute id="471" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="472" start="5793" duration="136" scalar="1/1" mediaStart="5933/1" mediaDuration="136/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="473" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="474"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="475" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="476" value="44100" name="sampleRate"/>
+          <Attribute id="477" value="0" name="bitDepth"/>
+          <Attribute id="478" value="1" name="gain"/>
+          <Attribute id="479" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="480" start="5948" duration="183" scalar="1/1" mediaStart="6088/1" mediaDuration="183/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="481" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="482"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="483" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="484" value="44100" name="sampleRate"/>
+          <Attribute id="485" value="0" name="bitDepth"/>
+          <Attribute id="486" value="1" name="gain"/>
+          <Attribute id="487" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="488" start="6142" duration="79" scalar="1/1" mediaStart="6282/1" mediaDuration="79/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="489" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="490"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="491" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="492" value="44100" name="sampleRate"/>
+          <Attribute id="493" value="0" name="bitDepth"/>
+          <Attribute id="494" value="1" name="gain"/>
+          <Attribute id="495" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="496" start="6232" duration="102" scalar="1/1" mediaStart="6372/1" mediaDuration="102/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="497" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="498"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="499" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="500" value="44100" name="sampleRate"/>
+          <Attribute id="501" value="0" name="bitDepth"/>
+          <Attribute id="502" value="1" name="gain"/>
+          <Attribute id="503" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="504" start="6341" duration="69" scalar="1/1" mediaStart="6481/1" mediaDuration="69/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="505" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="506"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="507" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="508" value="44100" name="sampleRate"/>
+          <Attribute id="509" value="0" name="bitDepth"/>
+          <Attribute id="510" value="1" name="gain"/>
+          <Attribute id="511" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="512" start="6418" duration="57" scalar="1/1" mediaStart="6558/1" mediaDuration="57/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="513" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="514"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="515" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="516" value="44100" name="sampleRate"/>
+          <Attribute id="517" value="0" name="bitDepth"/>
+          <Attribute id="518" value="1" name="gain"/>
+          <Attribute id="519" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="520" start="6481" duration="96" scalar="1/1" mediaStart="6621/1" mediaDuration="96/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="521" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="522"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="523" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="524" value="44100" name="sampleRate"/>
+          <Attribute id="525" value="0" name="bitDepth"/>
+          <Attribute id="526" value="1" name="gain"/>
+          <Attribute id="527" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="528" start="6612" duration="45" scalar="1/1" mediaStart="6752/1" mediaDuration="45/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="529" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="530"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="531" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="532" value="44100" name="sampleRate"/>
+          <Attribute id="533" value="0" name="bitDepth"/>
+          <Attribute id="534" value="1" name="gain"/>
+          <Attribute id="535" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="536" start="6669" duration="111" scalar="1/1" mediaStart="6809/1" mediaDuration="111/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="537" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="538"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="539" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="540" value="44100" name="sampleRate"/>
+          <Attribute id="541" value="0" name="bitDepth"/>
+          <Attribute id="542" value="1" name="gain"/>
+          <Attribute id="543" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="544" start="6791" duration="37" scalar="1/1" mediaStart="6931/1" mediaDuration="37/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="545" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="546"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="547" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="548" value="44100" name="sampleRate"/>
+          <Attribute id="549" value="0" name="bitDepth"/>
+          <Attribute id="550" value="1" name="gain"/>
+          <Attribute id="551" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="552" start="6838" duration="29" scalar="1/1" mediaStart="6978/1" mediaDuration="29/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="553" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="554"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="555" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="556" value="44100" name="sampleRate"/>
+          <Attribute id="557" value="0" name="bitDepth"/>
+          <Attribute id="558" value="1" name="gain"/>
+          <Attribute id="559" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="560" start="6877" duration="74" scalar="1/1" mediaStart="7017/1" mediaDuration="74/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="561" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="562"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="563" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="564" value="44100" name="sampleRate"/>
+          <Attribute id="565" value="0" name="bitDepth"/>
+          <Attribute id="566" value="1" name="gain"/>
+          <Attribute id="567" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="568" start="6957" duration="62" scalar="1/1" mediaStart="7097/1" mediaDuration="62/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="569" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="570"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="571" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="572" value="44100" name="sampleRate"/>
+          <Attribute id="573" value="0" name="bitDepth"/>
+          <Attribute id="574" value="1" name="gain"/>
+          <Attribute id="575" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="576" start="7029" duration="60" scalar="1/1" mediaStart="7169/1" mediaDuration="60/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="577" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="578"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="579" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="580" value="44100" name="sampleRate"/>
+          <Attribute id="581" value="0" name="bitDepth"/>
+          <Attribute id="582" value="1" name="gain"/>
+          <Attribute id="583" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="584" start="7095" duration="38" scalar="1/1" mediaStart="7235/1" mediaDuration="38/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="585" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="586"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="587" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="588" value="44100" name="sampleRate"/>
+          <Attribute id="589" value="0" name="bitDepth"/>
+          <Attribute id="590" value="1" name="gain"/>
+          <Attribute id="591" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="592" start="7138" duration="63" scalar="1/1" mediaStart="7278/1" mediaDuration="63/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="593" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="594"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="595" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="596" value="44100" name="sampleRate"/>
+          <Attribute id="597" value="0" name="bitDepth"/>
+          <Attribute id="598" value="1" name="gain"/>
+          <Attribute id="599" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="600" start="7236" duration="35" scalar="1/1" mediaStart="7376/1" mediaDuration="35/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="601" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="602"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="603" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="604" value="44100" name="sampleRate"/>
+          <Attribute id="605" value="0" name="bitDepth"/>
+          <Attribute id="606" value="1" name="gain"/>
+          <Attribute id="607" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="608" start="7285" duration="84" scalar="1/1" mediaStart="7425/1" mediaDuration="84/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="609" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="610"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="611" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="612" value="44100" name="sampleRate"/>
+          <Attribute id="613" value="0" name="bitDepth"/>
+          <Attribute id="614" value="1" name="gain"/>
+          <Attribute id="615" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="616" start="7383" duration="251" scalar="1/1" mediaStart="7523/1" mediaDuration="251/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="617" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="618"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="619" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="620" value="44100" name="sampleRate"/>
+          <Attribute id="621" value="0" name="bitDepth"/>
+          <Attribute id="622" value="1" name="gain"/>
+          <Attribute id="623" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="624" start="7647" duration="100" scalar="1/1" mediaStart="7787/1" mediaDuration="100/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="625" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="626"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="627" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="628" value="44100" name="sampleRate"/>
+          <Attribute id="629" value="0" name="bitDepth"/>
+          <Attribute id="630" value="1" name="gain"/>
+          <Attribute id="631" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="632" start="7754" duration="82" scalar="1/1" mediaStart="7894/1" mediaDuration="82/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="633" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="634"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="635" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="636" value="44100" name="sampleRate"/>
+          <Attribute id="637" value="0" name="bitDepth"/>
+          <Attribute id="638" value="1" name="gain"/>
+          <Attribute id="639" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="640" start="7873" duration="132" scalar="1/1" mediaStart="8013/1" mediaDuration="132/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="641" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="642"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="643" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="644" value="44100" name="sampleRate"/>
+          <Attribute id="645" value="0" name="bitDepth"/>
+          <Attribute id="646" value="1" name="gain"/>
+          <Attribute id="647" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="648" start="8013" duration="60" scalar="1/1" mediaStart="8153/1" mediaDuration="60/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="649" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="650"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="651" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="652" value="44100" name="sampleRate"/>
+          <Attribute id="653" value="0" name="bitDepth"/>
+          <Attribute id="654" value="1" name="gain"/>
+          <Attribute id="655" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="656" start="8080" duration="83" scalar="1/1" mediaStart="8220/1" mediaDuration="83/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="657" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="658"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="659" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="660" value="44100" name="sampleRate"/>
+          <Attribute id="661" value="0" name="bitDepth"/>
+          <Attribute id="662" value="1" name="gain"/>
+          <Attribute id="663" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="664" start="8169" duration="95" scalar="1/1" mediaStart="8309/1" mediaDuration="95/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="665" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="666"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="667" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="668" value="44100" name="sampleRate"/>
+          <Attribute id="669" value="0" name="bitDepth"/>
+          <Attribute id="670" value="1" name="gain"/>
+          <Attribute id="671" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="672" start="8287" duration="172" scalar="1/1" mediaStart="8427/1" mediaDuration="172/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="673" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="674"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="675" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="676" value="44100" name="sampleRate"/>
+          <Attribute id="677" value="0" name="bitDepth"/>
+          <Attribute id="678" value="1" name="gain"/>
+          <Attribute id="679" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="680" start="8469" duration="116" scalar="1/1" mediaStart="8609/1" mediaDuration="116/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="681" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="682"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="683" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="684" value="44100" name="sampleRate"/>
+          <Attribute id="685" value="0" name="bitDepth"/>
+          <Attribute id="686" value="1" name="gain"/>
+          <Attribute id="687" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="688" start="8600" duration="38" scalar="1/1" mediaStart="8740/1" mediaDuration="38/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="689" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="690"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="691" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="692" value="44100" name="sampleRate"/>
+          <Attribute id="693" value="0" name="bitDepth"/>
+          <Attribute id="694" value="1" name="gain"/>
+          <Attribute id="695" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="696" start="8645" duration="13" scalar="1/1" mediaStart="8785/1" mediaDuration="13/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="697" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="698"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="699" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="700" value="44100" name="sampleRate"/>
+          <Attribute id="701" value="0" name="bitDepth"/>
+          <Attribute id="702" value="1" name="gain"/>
+          <Attribute id="703" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="704" start="8665" duration="62" scalar="1/1" mediaStart="8805/1" mediaDuration="62/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="705" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="706"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="707" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="708" value="44100" name="sampleRate"/>
+          <Attribute id="709" value="0" name="bitDepth"/>
+          <Attribute id="710" value="1" name="gain"/>
+          <Attribute id="711" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="712" start="8733" duration="78" scalar="1/1" mediaStart="8873/1" mediaDuration="78/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="713" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="714"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="715" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="716" value="44100" name="sampleRate"/>
+          <Attribute id="717" value="0" name="bitDepth"/>
+          <Attribute id="718" value="1" name="gain"/>
+          <Attribute id="719" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="720" start="8820" duration="102" scalar="1/1" mediaStart="8960/1" mediaDuration="102/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="721" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="722"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="723" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="724" value="44100" name="sampleRate"/>
+          <Attribute id="725" value="0" name="bitDepth"/>
+          <Attribute id="726" value="1" name="gain"/>
+          <Attribute id="727" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="728" start="8929" duration="77" scalar="1/1" mediaStart="9069/1" mediaDuration="77/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="729" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="730"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="731" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="732" value="44100" name="sampleRate"/>
+          <Attribute id="733" value="0" name="bitDepth"/>
+          <Attribute id="734" value="1" name="gain"/>
+          <Attribute id="735" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="736" start="9012" duration="81" scalar="1/1" mediaStart="9152/1" mediaDuration="81/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="737" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="738"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="739" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="740" value="44100" name="sampleRate"/>
+          <Attribute id="741" value="0" name="bitDepth"/>
+          <Attribute id="742" value="1" name="gain"/>
+          <Attribute id="743" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="744" start="9101" duration="110" scalar="1/1" mediaStart="9241/1" mediaDuration="110/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="745" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="746"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="747" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="748" value="44100" name="sampleRate"/>
+          <Attribute id="749" value="0" name="bitDepth"/>
+          <Attribute id="750" value="1" name="gain"/>
+          <Attribute id="751" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="752" start="9217" duration="50" scalar="1/1" mediaStart="9357/1" mediaDuration="50/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="753" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="754"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="755" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="756" value="44100" name="sampleRate"/>
+          <Attribute id="757" value="0" name="bitDepth"/>
+          <Attribute id="758" value="1" name="gain"/>
+          <Attribute id="759" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="760" start="9287" duration="27" scalar="1/1" mediaStart="9427/1" mediaDuration="27/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="761" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="762"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="763" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="764" value="44100" name="sampleRate"/>
+          <Attribute id="765" value="0" name="bitDepth"/>
+          <Attribute id="766" value="1" name="gain"/>
+          <Attribute id="767" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="768" start="9323" duration="103" scalar="1/1" mediaStart="9463/1" mediaDuration="103/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="769" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="770"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="771" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="772" value="44100" name="sampleRate"/>
+          <Attribute id="773" value="0" name="bitDepth"/>
+          <Attribute id="774" value="1" name="gain"/>
+          <Attribute id="775" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="776" start="9436" duration="46" scalar="1/1" mediaStart="9576/1" mediaDuration="46/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="777" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="778"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="779" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="780" value="44100" name="sampleRate"/>
+          <Attribute id="781" value="0" name="bitDepth"/>
+          <Attribute id="782" value="1" name="gain"/>
+          <Attribute id="783" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="784" start="9487" duration="62" scalar="1/1" mediaStart="9627/1" mediaDuration="62/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="785" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="786"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="787" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="788" value="44100" name="sampleRate"/>
+          <Attribute id="789" value="0" name="bitDepth"/>
+          <Attribute id="790" value="1" name="gain"/>
+          <Attribute id="791" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="792" start="9556" duration="66" scalar="1/1" mediaStart="9696/1" mediaDuration="66/1" trackNumber="1" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="793" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="volume"/>
+          <Parameter id="794"  name="captions"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="795" value="00 - Ingestion and Data Modeling Intro Script (1)" name="ident"/>
+          <Attribute id="796" value="44100" name="sampleRate"/>
+          <Attribute id="797" value="0" name="bitDepth"/>
+          <Attribute id="798" value="1" name="gain"/>
+          <Attribute id="799" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </AMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="800"  >
+       <Attributes>
+        <Attribute id="801" value="" name="ident"/>
+        <Attribute id="802" value="0" name="audioMuted"/>
+        <Attribute id="803" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="trackHeight" val="54"/>
+       </MetaData>
+       <Medias>
+        <IMFile id="804" start="0" duration="9622" scalar="1/1" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="5" trimStartSum="0/1" >
+         <Transformer>
+          <VectorParam id="805"  name="translation">
+           <InterpolatingParam id="806" interp="linr"  time="0/1" value="203" leadInLength="0/1"  />
+           <InterpolatingParam id="807" interp="linr"  time="0/1" value="89" leadInLength="0/1"  />
+           <InterpolatingParam id="808" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="809"  name="rotation">
+           <InterpolatingParam id="810" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="811" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="812" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="813"  name="shear">
+           <InterpolatingParam id="814" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="815" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="816" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="817"  name="scale">
+           <InterpolatingParam id="818" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="819" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="820" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="821"  name="anchor">
+           <InterpolatingParam id="822" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="823" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="824" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="825"  name="sourceCrop">
+           <InterpolatingParam id="826" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="827" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="828" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="829" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="830"  name="geometryCrop">
+           <InterpolatingParam id="831" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="832" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="833" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="834" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="835" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="836" value="PastedImage" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="clipSpeedAttribute" val="0" type="bool"/>
+          <entry key="default-scale" val="1"/>
+          <entry key="effectApplied" val="none"/>
+         </MetaData>
+        </IMFile>
+       </Medias>
+      </GenericTrack>
+     </Tracks>
+    </GenericMixer>
+   <CaptionAttributes id="837"  >
+    <Attribute id="838" value="1" name="captionsEnabled"/>
+    <Attribute id="839" value="Arial" name="captionsFontName"/>
+    <Attribute id="840" value="32" name="captionsFontSize"/>
+    <Attribute id="841" value="(0,0,0,204)" name="captionsBackgroundColor"/>
+    <Attribute id="842" value="(255,255,255,255)" name="captionsForegroundColor"/>
+    <Attribute id="843" value="en" name="lang"/>
+    <Attribute id="844" value="0" name="captionsAlignment"/>
+    <Attribute id="845" value="1" name="captionsDefaultFontSize"/>
+    <Attribute id="846" value="0.5" name="captionsOpacity"/>
+    <Attribute id="847" value="1" name="captionsBackgroundEnabled"/>
+    <Attribute id="848" value="1" name="captionsBackgroundOnlyAroundText"/>
+   </CaptionAttributes>
+   <Parameters>
+    <VectorParam id="849"  name="eyePosition">
+     <InterpolatingParam id="850" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="851" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="852" interp="linr"  time="0/1" value="3000" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="853"  name="eyeLookAtPosition">
+     <InterpolatingParam id="854" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="855" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="856" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="857"  name="eyeUpVector">
+     <InterpolatingParam id="858" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="859" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+     <InterpolatingParam id="860" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <InterpolatingParam id="861" interp="linr"  time="0/1" value="0" leadInLength="0/1"  name="fov"/>
+    <InterpolatingParam id="862" interp="linr"  time="0/1" value="1.5" leadInLength="0/1"  name="nearClipDistance"/>
+    <InterpolatingParam id="863" interp="linr"  time="0/1" value="6000" leadInLength="0/1"  name="farClipDistance"/>
+   </Parameters>
+   <MetaData>
+   </MetaData>
+  </Timeline>
+ </Project>
+ <ActionBin id="864"   name="actionBin"/>
+ <ActionBin id="865"   name="sfActionBin"/>
+ <ActionBin id="866"   name="audioActionBin"/>
+</GoProject>

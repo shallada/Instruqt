@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Wait for router to be initialized
+while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -gt 0 ]; do sleep 1; done

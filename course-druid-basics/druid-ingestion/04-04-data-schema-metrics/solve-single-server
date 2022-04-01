@@ -1,0 +1,46 @@
+cat > /root/ingestion-spec.json << EOF
+{
+    "type": "index_parallel",
+    "spec": {
+        "dataSchema": {
+            "dataSource": "wikipedia",
+            "timestampSpec": {
+                "column": "time",
+                "format": "auto"
+            },
+            "dimensionsSpec": {
+                "dimensions": [
+                    "user"
+                ]
+            },
+          "metricsSpec": [
+              { "type": "count", "name": "recordSum"},
+              { "fieldName": "added", "name": "addedSum",  "type": "longSum" },
+              { "fieldName": "deleted", "name": "deletedSum", "type": "longSum" },
+              { "fieldName": "delta", "name": "deltaSum", "type": "longSum" }
+          ],
+            "granularitySpec": {
+                "segmentGranularity": "day",
+                "queryGranularity": "hour",
+                "intervals": [
+                    "2015-09-12/2015-09-13"
+                ],
+                "rollup": true
+            }
+        },
+        "ioConfig": {
+            "type": "index_parallel",
+            "inputSource": {
+                "type": "local",
+                "baseDir": "/root/apache-druid-0.21.1/quickstart/tutorial/",
+                "filter": "wikiticker-2015-09-12-sampled.json"
+            },
+            "inputFormat": {
+                "type": "json"
+            },
+            "appendToExisting": false
+        },
+        "tuningConfig": {}
+    }
+}
+EOF

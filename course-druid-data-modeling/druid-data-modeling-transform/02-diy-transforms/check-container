@@ -1,0 +1,36 @@
+#!/bin/bash
+
+echo "Checking ingestion spec skeleton."
+
+
+cat > /root/check_results.json << \EOF
+{
+  "query":"SELECT upperProcessName FROM \"process-data\" LIMIT 10",
+  "resultFormat" : "csv"
+}
+EOF
+
+
+type=$(jq '.spec.dataSchema.transformSpec.transforms[0].type' /root/ingestion-spec.json)
+name=$(jq '.spec.dataSchema.transformSpec.transforms[0].name' /root/ingestion-spec.json)
+results=$(curl -s -X 'POST'   -H 'Content-Type:application/json' -d @/root/check_results.json http://localhost:8888/druid/v2/sql | column -t -d -s, | grep -E '[A-Z][a-z]+(M[a-z]*)*' | wc -l)
+expression=$(jq '.spec.dataSchema.transformSpec.transforms[0].expression' /root/ingestion-spec.json | sed -r 's/\s+//g')
+
+
+if [ $type != '"expression"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.transformSpec.transforms[0].type set correctly"
+elif [ $name != '"upperProcessName"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.transformSpec.transforms[0].name set correctly"
+#elif [ $expression != '"concat(upper(substring(processName,0,1)),substring(processName,1,strlen(processName)-1))"' ]
+elif [ $results != '10' ]
+then
+  MSG="The process names format appears to be inccorect. Make sure spec.dataSchema.transformSpec.transforms[0].expression is correct"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+echo "Checking ingestion spec skeleton."
+
+type_prop=$(jq '.type' /root/ingestion-spec.json)
+data_schema=$(jq '.spec.dataSchema' /root/ingestion-spec.json)
+io_config=$(jq '.spec.ioConfig' /root/ingestion-spec.json)
+tuning_config=$(jq '.spec.tuningConfig' /root/ingestion-spec.json)
+if [ $type_prop != '"index_parallel"' ]
+then
+    MSG="The type property at the root level is not correctly configured for batch ingestion - Did you save the file?"
+elif [ $data_schema != '{}' ]
+then
+    MSG="The data schema is missing or improperly configured"
+elif [ $io_config != '{}' ]
+then
+  MSG="The io config is missing or improperly configured"
+elif [ $tuningConfig != '{}' ]
+then
+  MSG="The tuning config is missing or improperly configured"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

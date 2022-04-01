@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Checking ingestion spec skeleton."
+
+column=$(jq '.spec.dataSchema.timestampSpec.column' /root/ingestion-spec.json)
+format=$(jq '.spec.dataSchema.timestampSpec.format' /root/ingestion-spec.json)
+granularity=$(jq '.spec.dataSchema.granularitySpec.queryGranularity' /root/ingestion-spec.json)
+
+
+if [ $column != '"time"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.timestampSpec.column set correctly"
+elif [ ${format,,} != '"iso"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.timestampSpec.format set correctly"
+elif [ ${granularity,,} != '"second"' ]
+then
+  MSG="The ingestion spec does not have spec.dataSchema.granularitySpec.queryGranularity set correctly"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cat > /root/unix-query.json << \EOF
+{
+  "query":"SELECT __time,\"process-name\",cpu/\"agg-count\" as cpu, memory/\"agg-count\" as memory FROM \"unix-process-data\" LIMIT 10",
+  "resultFormat" : "csv"
+}
+EOF

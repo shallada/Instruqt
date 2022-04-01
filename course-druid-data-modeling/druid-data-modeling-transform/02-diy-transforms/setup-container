@@ -1,0 +1,74 @@
+#!/bin/bash
+
+
+cat > /root/ingestion-spec.json << \EOF
+{
+    "type": "index_parallel",
+    "spec": {
+        "dataSchema": {
+            "dataSource": "process-data",
+            "timestampSpec": {
+                "column": "time",
+                "format": "iso"
+            },
+            "transformSpec": {
+              "transforms": [
+                {
+                  "type": "expression",
+                  "name": "upperProcessName",
+                  "expression": "upper(processName)"
+                }
+              ]
+            },
+            "dimensionsSpec": {
+                "dimensions": [
+                    "pid",
+                    "processName",
+                    "upperProcessName"
+                ]
+            },
+            "metricsSpec": [
+                { "type" : "floatSum", "name" : "cpu", "fieldName" : "cpu" },
+                { "type" : "floatSum", "name" : "memory", "fieldName" : "memory" },
+                { "type" : "count", "name" : "agg-count" }
+            ],
+            "granularitySpec": {
+                "segmentGranularity": "day",
+                "queryGranularity": "second",
+                "rollup": true
+            }
+        },
+        "ioConfig": {
+            "type": "index_parallel",
+            "inputSource": {
+                "type": "local",
+                "baseDir": "/root/",
+                "filter": "raw_data.csv"
+            },
+            "inputFormat": {
+                "type": "csv",
+                "findColumnsFromHeader": "true"
+            },
+            "appendToExisting": false
+
+        },
+        "tuningConfig": {
+            "type" : "index_parallel",
+            "maxRowsInMemory" : 25000,
+            "maxBytesInMemory" : 250000,
+            "partitionSpec" : {
+              "type" : "dynamic",
+              "maxRowsPerSegment" : 5000000
+            }
+        }
+    }
+}
+EOF
+
+
+cat > /root/query.json << \EOF
+{
+  "query":"SELECT __time,upperProcessName,cpu/\"agg-count\" as cpu, memory/\"agg-count\" as memory FROM \"process-data\" LIMIT 10",
+  "resultFormat" : "csv"
+}
+EOF

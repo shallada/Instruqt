@@ -1,0 +1,110 @@
+#!/bin/bash
+
+nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/log.out 2> /root/log.err < /dev/null & disown
+
+apt-get -y install bsdmainutils
+
+cat > /root/process-monitor-producer.sh << \EOF
+printf "time,pid,processName,cpu,memory\n" $(date --utc +%FT%TZ) $pid $name $cpu $mem
+top -d 0.1 -b -n $2 | \
+  grep -w -E "^\s*[0-9]+" | \
+  awk '{print $1 " " $9 " " $10}' | \
+  while read -r pid cpu mem
+    do
+      #printf "PID = %s, CPU = %s, Mem = %s\n" $pid $cpu $mem
+      ps -ef | grep "Main server [A-Za-z]*$" | awk 'NF{print $2 " " $NF}' | \
+        while read -r pspid name
+          do
+            if [[ "$pid" == "$pspid" ]]
+              then
+                if [[ $1 == "ISO" ]]
+                then
+                    printf "%s,%s,%s,%s,%s\n" $(date --iso-8601=ns | awk 'BEGIN { FS = ","} ; {printf "%s.%03d", $1, $2/1000000}') $pid $name $cpu $mem
+                else
+                    printf "%s,%s,%s,%s,%s\n" $(date +%s%N | cut -b1-13) $pid $name $cpu $mem
+                fi
+                #printf "%s,%s,%s,%s,%s\n" $(date --utc +%FT%TZ) $pid $name $cpu $mem
+              fi
+          done
+    done
+EOF
+chmod +x /root/process-monitor-producer.sh
+
+cat > /root/ingestion-spec.json << \EOF
+{
+  "type": "index_parallel",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "process-data",
+      "timestampSpec": {
+        "column": "time",
+        "format": "iso"
+      },
+      "transformSpec": {
+        "transforms": [
+          {
+            "type": "expression",
+            "name": "processName",
+            "expression": "concat(upper(substring(processName,0,1)),substring(processName,1,strlen(processName)-1))"
+          },
+          {
+            "type": "expression",
+            "name": "date",
+            "expression": "substring(time,0,10)"
+          },
+          {
+            "type": "expression",
+            "name": "milliseconds",
+            "expression": "__time % 1000"
+          },
+          {
+            "type": "expression",
+            "name": "seconds",
+            "expression": "(__time / 1000) % 60"
+          }
+        ],
+        "filter": {
+          "type": "regex",
+          "dimension": "processName",
+          "pattern": ".+er"
+        }
+      },
+      "dimensionsSpec": {
+      },
+      "granularitySpec": {
+        "segmentGranularity": "day",
+        "queryGranularity": "second",
+        "rollup": false
+      }
+    },
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "local",
+        "baseDir": "/root/",
+        "filter": "raw_data.csv"
+      },
+      "inputFormat": {
+        "type": "csv",
+        "findColumnsFromHeader": "true"
+      },
+      "appendToExisting": false
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "maxRowsInMemory": 25000,
+      "maxBytesInMemory": 250000,
+      "partitionSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 5000000
+      }
+    }
+  }
+}
+EOF
+
+cat > /root/query.json << \EOF
+{
+  "query":"SELECT * FROM \"process-data\" LIMIT 3"
+}
+EOF

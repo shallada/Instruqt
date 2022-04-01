@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo "Starting Druid"
+
+wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
+tar -xzf apache-druid-0.21.1-bin.tar.gz
+nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/log.out 2> /root/log.err < /dev/null & disown
+sleep 1

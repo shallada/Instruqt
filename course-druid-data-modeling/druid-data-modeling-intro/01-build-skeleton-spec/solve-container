@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cat > /root/ingestion-spec.json << EOF
+{
+    "type": "index_parallel",
+    "spec": {
+        "dataSchema": {},
+        "ioConfig": {},
+        "tuningConfig": {}
+    }
+}
+EOF

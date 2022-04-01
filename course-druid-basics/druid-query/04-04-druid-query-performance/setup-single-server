@@ -1,0 +1,145 @@
+#!/bin/bash
+
+
+#apt-get install python3 -y
+#apt install python3-pip -y
+#pip install plotext
+#pip3 install requests
+
+# Install kafka
+#curl -O https://archive.apache.org/dist/kafka/2.7.0/kafka_2.13-2.7.0.tgz
+#tar -xzf kafka_2.13-2.7.0.tgz
+
+# Create the producer script
+cat > /root/process-monitor-producer.sh << \EOF
+top -d 0.5 -b | \
+  grep -w -E "^\s*[0-9]+" | \
+  awk '{print $1 " " $9 " " $10}' | \
+  while read -r pid cpu mem
+    do
+      #printf "PID = %s, CPU = %s, Mem = %s\n" $pid $cpu $mem
+      ps -ef | grep "Main server [A-Za-z]*$" | awk 'NF{print $2 " " $NF}' | \
+        while read -r pspid name
+          do
+            if [[ "$pid" == "$pspid" ]]
+              then
+                printf "{\"time\":\"%s\",\"pid\":\"%s\",\"process-name\":\"%s\",\"cpu\":\"%s\",\"memory\":\"%s\"}\n" $(date --utc +%FT%TZ) $pid $name $cpu $mem
+              fi
+          done
+    done
+EOF
+chmod +x /root/process-monitor-producer.sh
+
+
+cat > /root/kafka-ingestion-spec.json << \EOF
+{
+  "type": "kafka",
+  "spec": {
+    "ioConfig": {
+      "type": "kafka",
+      "consumerProperties": {
+        "bootstrap.servers": "localhost:9092"
+      },
+      "topic": "druid-processes",
+      "inputFormat": {
+        "type": "json"
+      },
+      "useEarliestOffset": true
+    },
+    "tuningConfig": {
+      "type": "kafka"
+    },
+    "dataSchema": {
+      "dataSource": "druid-processes",
+      "timestampSpec": {
+        "column": "time",
+        "format": "iso"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          {
+            "type": "double",
+            "name": "cpu"
+          },
+          {
+            "type": "double",
+            "name": "memory"
+          },
+          {
+            "type": "long",
+            "name": "pid"
+          },
+          "process-name"
+        ]
+      },
+      "granularitySpec": {
+        "queryGranularity": "none",
+        "rollup": false,
+        "segmentGranularity": "day"
+      }
+    }
+  }
+}
+EOF
+
+
+cat > /root/query-wiki-activity-last-1-minute.json << \EOF
+{
+    "query":"SELECT __time, cpu, memory, pid, \"process-name\" FROM \"druid-processes\" WHERE __time >= CURRENT_TIMESTAMP - INTERVAL '1' MINUTE ORDER BY __time DESC"
+}
+EOF
+
+cat > /root/select-star-wikipedia.json << \EOF
+{
+    "query":"SELECT * FROM wikipedia"
+}
+EOF
+
+
+cat > /root/plot.py << \EOF
+import plotext as plt
+import json
+import requests
+
+
+url = 'http://localhost:8888/druid/v2/sql'
+with open('/root/query-wiki-activity-last-1-minute.json') as f:
+    query = json.load(f)
+
+process_list = ['router', 'middleManager', 'coordinator', 'broker', 'historical']
+colors = ['red', 'blue', 'artic', 'yellow', 'green']
+
+try:
+    while True:
+        r = requests.post(url, json=query)
+        #print(r.text)
+
+        plt.clf()
+        plt.colorless()
+        plt.plotsize(300, 60)
+        plt.ylim(0, 100)
+        plt.xlim(0, 100)
+        plt.xticks([0, 25, 50, 75, 100], ['0:00', '0:15', '0:30', '0:45', '1:00'])
+        plt.yticks([0, 25, 50, 75, 100, 125])
+        plt.xlabel('Time')
+        plt.ylabel('CPU Use')
+        plt.title("CPU Usage by Druid Processes")
+        if r.status_code == 200:
+            data = json.loads(r.text)
+
+            plt.clt()
+
+            for i in range(len(process_list)):
+                y = [d['cpu'] for d in data if d['process-name'] == process_list[i]]
+                plt.plot(y, label=process_list[i], color = colors[i])
+
+            try:
+                plt.show()
+                plt.sleep(0.5)
+            except IndexError:
+                pass
+
+except KeyboardInterrupt:
+    pass
+
+EOF

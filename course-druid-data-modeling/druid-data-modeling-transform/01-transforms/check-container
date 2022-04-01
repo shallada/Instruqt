@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "Checking ingestion spec skeleton."
+
+type=$(jq '.spec.dataSchema.transformSpec.transforms[0].type' /root/ingestion-spec.json)
+name=$(jq '.spec.dataSchema.transformSpec.transforms[0].name' /root/ingestion-spec.json)
+expression=$(jq '.spec.dataSchema.transformSpec.transforms[0].expression' /root/ingestion-spec.json | sed -r 's/\s+//g')
+
+
+if [ $type != '"expression"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.transformSpec.transforms[0].type set correctly"
+elif [ $name != '"upperProcessName"' ]
+then
+    MSG="The ingestion spec does not have spec.dataSchema.transformSpec.transforms[0].name set correctly"
+elif [ $expression != '"upper(processName)"' ]
+then
+  MSG="The ingestion spec does not have spec.dataSchema.transformSpec.transforms[0].expression set correctly"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

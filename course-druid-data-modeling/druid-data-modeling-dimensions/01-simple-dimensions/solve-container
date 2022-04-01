@@ -1,0 +1,97 @@
+#!/bin/bash
+
+# Create the data
+/root/process-monitor-producer.sh ISO 100 > /root/raw_data.csv
+
+cat > /root/ingestion-spec.json << \EOF
+{
+  "type": "index_parallel",
+  "spec": {
+    "dataSchema": {
+      "dataSource": "process-data",
+      "timestampSpec": {
+        "column": "time",
+        "format": "iso"
+      },
+      "transformSpec": {
+        "transforms": [
+          {
+            "type": "expression",
+            "name": "processName",
+            "expression": "concat(upper(substring(processName,0,1)),substring(processName,1,strlen(processName)-1))"
+          },
+          {
+            "type": "expression",
+            "name": "date",
+            "expression": "substring(time,0,10)"
+          },
+          {
+            "type": "expression",
+            "name": "milliseconds",
+            "expression": "__time % 1000"
+          },
+          {
+            "type": "expression",
+            "name": "seconds",
+            "expression": "(__time / 1000) % 60"
+          }
+        ],
+        "filter": {
+          "type": "regex",
+          "dimension": "processName",
+          "pattern": ".+er"
+        }
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          "processName",
+          "pid",
+          {
+            "name": "cpu",
+            "type": "float"
+          },
+          {
+            "name": "memory",
+            "type": "float"
+          },
+          {
+            "name": "seconds",
+            "type": "long"
+          },
+          {
+            "name": "milliseconds",
+            "type": "long"
+          }
+        ]
+      },
+      "granularitySpec": {
+        "segmentGranularity": "day",
+        "queryGranularity": "second",
+        "rollup": false
+      }
+    },
+    "ioConfig": {
+      "type": "index_parallel",
+      "inputSource": {
+        "type": "local",
+        "baseDir": "/root/",
+        "filter": "raw_data.csv"
+      },
+      "inputFormat": {
+        "type": "csv",
+        "findColumnsFromHeader": "true"
+      },
+      "appendToExisting": false
+    },
+    "tuningConfig": {
+      "type": "index_parallel",
+      "maxRowsInMemory": 25000,
+      "maxBytesInMemory": 250000,
+      "partitionSpec": {
+        "type": "dynamic",
+        "maxRowsPerSegment": 5000000
+      }
+    }
+  }
+}
+EOF

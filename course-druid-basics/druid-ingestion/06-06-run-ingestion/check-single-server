@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Checking the number of rows ingested."
+
+if ! curl -X 'POST' -H 'Content-Type:application/json' -d @/root/query-number-of-rows.json http://localhost:8888/druid/v2/sql | jq | grep -q '"numRows": 16999'
+then
+  MSG="Unable to query data - did you perform the ingestion?"
+fi
+
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

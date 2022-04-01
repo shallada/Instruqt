@@ -1,0 +1,47 @@
+#!/bin/bash
+
+echo "Checking ingestion spec skeleton."
+
+
+cat ingestion-spec.json | jq -e . >/dev/null 2>&1
+if [[ "$?" == 0 ]]
+then
+
+  pid=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "pid")' /root/ingestion-spec.json)
+  processName=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "processName")' /root/ingestion-spec.json)
+  cpu=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "cpu")' /root/ingestion-spec.json)
+  memory=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "memory")' /root/ingestion-spec.json)
+  seconds=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "seconds")' /root/ingestion-spec.json)
+  milliseconds=$(jq '.spec.dataSchema.dimensionsSpec.dimensions[] | walk(if type == "object" then .name else . end ) | select(. == "milliseconds")' /root/ingestion-spec.json)
+
+
+  if [ "$pid" != '"pid"' ]
+  then
+      MSG="Could not find the pid entry in the dimensionsSpec"
+  elif [ "$processName" != '"processName"'  ]
+  then
+    MSG="Could not find the processName entry in the dimensionsSpec"
+  elif [ "$cpu" != '"cpu"'  ]
+  then
+    MSG="Could not find the cpu entry in the dimensionsSpec"
+  elif [ "$memory" != '"memory"'  ]
+  then
+    MSG="Could not find the memory entry in the dimensionsSpec"
+  elif [ "$seconds" != '"seconds"'  ]
+  then
+    MSG="Could not find the seconds entry in the dimensionsSpec"
+  elif [ "$milliseconds" != '"milliseconds"'  ]
+  then
+    MSG="Could not find the milliseconds entry in the dimensionsSpec"
+  elif [[ ! -s /root/raw_data.csv ]]
+  then
+    MSG="raw_data.csv not found - please run the command to generate the data"
+  fi
+else
+  MSG="The ingestion spec has invalid JSON syntax - $(cat ingestion-spec.json | jq -e . 2>&1)"
+fi
+
+if [ ! -z "$MSG" ]
+then
+    fail-message "$MSG"
+fi

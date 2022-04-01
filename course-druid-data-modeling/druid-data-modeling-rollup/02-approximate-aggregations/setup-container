@@ -1,0 +1,85 @@
+#!/bin/bash
+
+
+#apt-get install python3 -y
+#apt install python3-pip -y
+#pip install plotext
+#pip3 install requests
+
+#apt-get -y install bsdmainutils
+
+# Install kafka
+curl -O https://archive.apache.org/dist/kafka/2.7.0/kafka_2.13-2.7.0.tgz
+tar -xzf kafka_2.13-2.7.0.tgz
+
+# Create the producer script
+cat > /root/process-monitor-producer.sh << \EOF
+top -d 0.5 -b | \
+  grep -w -E "^\s*[0-9]+" | \
+  awk '{print $1 " " $9 " " $10}' | \
+  while read -r pid cpu mem
+    do
+      #printf "PID = %s, CPU = %s, Mem = %s\n" $pid $cpu $mem
+      ps -ef | grep "Main server [A-Za-z]*$" | awk 'NF{print $2 " " $NF}' | \
+        while read -r pspid name
+          do
+            if [[ "$pid" == "$pspid" ]]
+              then
+                printf "{\"time\":\"%s\",\"pid\":\"%s\",\"process-name\":\"%s\",\"cpu\":\"%s\",\"memory\":\"%s\"}\n" $(date --utc +%FT%TZ) $pid $name $cpu $mem
+              fi
+          done
+    done
+EOF
+chmod +x /root/process-monitor-producer.sh
+
+
+cat > /root/ingestion-spec.json << \EOF
+{
+  "type": "kafka",
+  "spec": {
+    "ioConfig": {
+      "type": "kafka",
+      "consumerProperties": {
+        "bootstrap.servers": "localhost:9092"
+      },
+      "topic": "druid-processes",
+      "inputFormat": {
+        "type": "json"
+      },
+      "useEarliestOffset": true
+    },
+    "tuningConfig": {
+      "type": "kafka"
+    },
+    "dataSchema": {
+      "dataSource": "druid-processes",
+      "timestampSpec": {
+        "column": "time",
+        "format": "iso"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+            "pid",
+            "processName"
+        ]
+      },
+      "metricsSpec": [
+        { "type" : "count", "name" : "count" }
+      ],
+      "granularitySpec": {
+        "queryGranularity": "none",
+        "rollup": false,
+        "segmentGranularity": "day"
+      }
+    }
+  }
+}
+EOF
+
+
+cat > /root/query.json << \EOF
+{
+  "query":"SELECT APPROX_QUANTILE_DS(memory_sketch, .5) as \"50th memory percentile\" FROM \"druid-processes\" ",
+  "resultFormat" : "csv"
+}
+EOF
