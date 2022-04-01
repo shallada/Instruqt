@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+curl -X 'POST' -H 'Content-Type:application/json' -d @/root/apache-druid-0.21.1/quickstart/tutorial/wikipedia-index.json http://localhost:8081/druid/indexer/v1/task
+while [ $(curl -X 'POST' -H 'Content-Type:application/json' -d @/root/apache-druid-0.21.1/quickstart/tutorial/wikipedia-top-pages-sql.json http://localhost:8888/druid/v2/sql 2>/dev/null | grep Wikipedia:Vandalismusmeldung | wc -l) -eq 0 ]; do sleep 1; done

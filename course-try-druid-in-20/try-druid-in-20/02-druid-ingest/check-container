@@ -1,0 +1,12 @@
+#!/bin/bash
+
+#wait for peon to complete
+#while [ $(ps -ef | grep "internal peon" | wc -l) -gt 1 ]; do sleep 1; done
+
+ingest_count=$(curl http://localhost:8888/druid/coordinator/v1/loadstatus 2> /dev/null | grep '{"wikipedia":100.0}' | wc -l)
+if [ $ingest_count -eq 1 ]
+then
+    echo "Data successfully ingested"
+else
+    fail-message "Data has not been ingested. If you started the ingestion, you may have to wait for it to complete as indicated in the console's ingest job status."
+fi

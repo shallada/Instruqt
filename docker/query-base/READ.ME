@@ -1,0 +1,25 @@
+
+
+Useful commands:
+1 - Command used to build image:
+docker build -t query-base:1.0 .
+2 - Tag the container:
+docker tag query-base:1.0 gcr.io/instruqt-images-330918/query-base:1.0
+3 - Push the container to GCR
+docker push gcr.io/instruqt-images-330918/query-base:1.0
+4 - If you want to pull and run the container:
+docker run -it -d gcr.io/instruqt-images-330918/query-base:1.0
+5 - Get container ID:
+docker ps -a
+6 - connect to the container:
+docker exec -it <ID-FROM-PS> /bin/bash
+7 - Stop the running container:
+docker stop <ID-FROM-PS>
+8 - Remove the container:
+docker rm <ID-FROM-PS>
+9 - If you need to delete the container from GCR:
+gcloud container images delete gcr.io/instruqt-images-330918/query-base:1.0 --force-delete-tags
+
+
+In config.txt, use this image line:
+image: gcr.io/instruqt-images-330918/query-base:1.0

@@ -1,0 +1,28 @@
+This container has all the basic stuff used in many of the Instruqt tracks.
+
+Commands used to create and host container:
+
+0 - To authenticate with GCR: https://cloud.google.com/container-registry/docs/advanced-authentication
+
+1 - Build container from this folder:
+docker build -t java8base:1.0 .
+2 - Tag the container:
+docker tag java8base:1.0 gcr.io/instruqt-images-330918/java8base:1.0
+3 - Push the container to GCR
+docker push gcr.io/instruqt-images-330918/java8base:1.0
+4 - If you want to pull and run the container:
+docker run -it -d gcr.io/instruqt-images-330918/java8base:1.0
+5 - Get container ID:
+docker ps -a
+6 - connect to the container:
+docker exec -it <ID-FROM-PS> /bin/bash
+7 - Stop the running container:
+docker stop <ID-FROM-PS>
+8 - Remove the container:
+docker rm <ID-FROM-PS>
+9 - If you need to delete the container from GCR:
+gcloud container images delete gcr.io/instruqt-images-330918/java8base:1.0 --force-delete-tags
+
+
+In config.txt, use this image line:
+image: gcr.io/instruqt-images-330918/java8base:1.0
