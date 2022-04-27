@@ -211,6 +211,14 @@ Use the following command to ingest the data.
   --url http://localhost:8081
 ```
 
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>If the ingestion fails, you can use the editor to review the log files in the folder here: /root/apache-druid-0.21.1/var/druid/indexing-logs/.
+</i></p>
+
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span> <i>This command sends a request to the Overlord API.
+You can read more about it <a href="https://druid.apache.org/docs/latest/ingestion/tasks.html#task-api" target="_blank">here</a>.
+</i></p>
+
+
 <h2 style="color:cyan">Step 11</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Perform a query to see what the ingested data looks like.
@@ -221,6 +229,10 @@ curl -s -X 'POST' \
   -d @/root/query.json http://localhost:8888/druid/v2/sql \
   | column -t -s,
 ```
+
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span> <i>This command sends a request to the Broker API.
+You can read more about it <a href="https://druid.apache.org/docs/latest/tutorials/tutorial-query.html#query-sql-over-http" target="_blank">here</a>.
+</i></p>
 
 There are a few things we want to notice about the query results:
 <ul>

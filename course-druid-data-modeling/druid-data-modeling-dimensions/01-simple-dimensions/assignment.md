@@ -286,6 +286,9 @@ Ingest the data using the following command.
   --url http://localhost:8081
 ```
 
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>If the ingestion fails, you can use the editor to review the log files in the folder here: /root/apache-druid-0.21.1/var/druid/indexing-logs/.
+</i></p>
+
 <h2 style="color:cyan">Step 13</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Let's retrieve and review three records from the data.
@@ -297,6 +300,6 @@ curl -s -X 'POST' \
   | jq
 ```
 
-Notice that the results do _not_ include the _date_ field that was in the _transfomSpec_, but we did not include in the _dimensions_ list.
+Notice that the results do _not_ include the _date_ field that was in the _transfomSpec_, but we did not include that in the _dimensions_ list.
 
 <h2 style="color:cyan">There you have it! Ingestion specifying the dimensions is that easy.</h2>

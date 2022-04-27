@@ -57,6 +57,9 @@ Use the following command to ingest the data.
   --url http://localhost:8081
 ```
 
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>If the ingestion fails, you can use the editor to review the log files in the folder here: /root/apache-druid-0.21.1/var/druid/indexing-logs/.
+</i></p>
+
 <h2 style="color:cyan">Step 3</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Query and review the data to see what it looks like.
@@ -71,6 +74,9 @@ curl -s -X 'POST' \
 <h2 style="color:cyan">Step 4</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Now, let's look at where Druid stores the segment files.
+
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>In a production environment, Druid would store the segments in deep storage like S3. However, for our small educational setup, Druid uses local storage as the deep store.
+</i></p>
 
 Change directories with the following command.
 

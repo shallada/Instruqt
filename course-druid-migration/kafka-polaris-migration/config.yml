@@ -1,0 +1,6 @@
+version: "3"
+containers:
+- name: single-server
+  image: gcr.io/instruqt-images-330918/query-base:1.0
+  shell: /bin/bash
+  memory: 4096

@@ -1,0 +1,95 @@
+```
+curl -s -X 'POST' \
+  -H 'Content-Type:application/json' \
+  -d @/root/unix-query.json http://localhost:8888/druid/v2/sql \
+  | column -t -s,
+```
+
+
+"resultFormat" : "csv"
+
+
+apt-get -y install bsdmainutils
+
+
+jq '.spec.dataSchema.dimensionsSpec.dimensions | index("processName")' /root/ingestion-spec.json
+jq '.spec.dataSchema.dimensionsSpec.dimensions | length' /root/ingestion-spec.json
+
+
+
+/root/apache-druid-0.21.1/bin/post-index-task   --file /root/compaction-spec.json   --url http://localhost:8081
+
+
+{
+    "type": "compact",
+    "dataSource": "process-data",
+    "ioConfig": {
+        "type": "compact",
+        "inputSpec": {
+            "type": "interval",
+            "interval": "2022-01-18/2022-01-20"
+        },
+        "dropExisting": true
+    },
+    "dimensionsSpec": {
+        "dimensionExclusions": [
+            "pid"
+        ]
+    },
+    "tuningConfig": {
+        "type": "index_parallel",
+        "maxRowsInMemory": 25000,
+        "maxBytesInMemory": 250000,
+        "partitionSpec": {
+            "type": "dynamic",
+            "maxRowsPerSegment": 5000000
+        }
+    },
+    "granularitySpec": {
+        "segmentGranularity": "day",
+        "queryGranularity": "second",
+        "rollup": false
+    }
+}
+
+
+cat > /root/query_schema.json << \EOF
+{
+  "query":"SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = 'druid' AND TABLE_NAME = 'process-data'",
+  "resultFormat" : "csv"
+}
+EOF
+
+
+cat > /root/compaction-spec.json << EOF
+{
+    "type": "compact",
+    "dataSource": "process-data",
+    "ioConfig": {
+        "type": "compact",
+        "inputSpec": {
+            "type": "interval",
+            "interval": $(printf "\"%s/%s\"" $(date +"%y-%m-%d") $(date --date="tomorrow" +"%y-%m-%d"))
+        },
+        "dropExisting": true
+    },
+    "dimensionsSpec": {
+        "dimensions": [
+        ]
+    },
+    "tuningConfig": {
+        "type": "index_parallel",
+        "maxRowsInMemory": 25000,
+        "maxBytesInMemory": 250000,
+        "partitionSpec": {
+            "type": "dynamic",
+            "maxRowsPerSegment": 5000000
+        }
+    },
+    "granularitySpec": {
+        "segmentGranularity": "day",
+        "queryGranularity": "second",
+        "rollup": false
+    }
+}
+EOF

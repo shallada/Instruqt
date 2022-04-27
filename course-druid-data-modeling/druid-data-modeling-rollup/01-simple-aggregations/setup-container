@@ -2,6 +2,7 @@
 
 nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/log.out 2> /root/log.err < /dev/null & disown
 
+apt-get update
 apt-get -y install bsdmainutils
 
 cat > /root/process-monitor-producer.sh << \EOF
@@ -91,6 +92,7 @@ EOF
 
 cat > /root/query.json << \EOF
 {
-  "query":"SELECT * FROM \"process-data\" LIMIT 3"
+  "query":"SELECT * FROM \"process-data\" LIMIT 3",
+  "resultFormat" : "csv"
 }
 EOF

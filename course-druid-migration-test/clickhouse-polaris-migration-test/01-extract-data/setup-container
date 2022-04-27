@@ -1,0 +1,51 @@
+#!/bin/bash
+
+apt install sudo
+
+curl -O 'https://builds.clickhouse.com/master/amd64/clickhouse' && chmod a+x clickhouse
+./clickhouse install
+rm clickhouse
+
+
+sudo -u clickhouse clickhouse start
+
+cat > /root/create_kttm.sql << \EOF
+CREATE TABLE tutorial.kttm
+(
+
+	"timestamp" DateTime,
+	"agent_category" String,
+	"agent_type" String,
+	"browser" String,
+	"browser_version" String,
+	"city" String,
+	"continent" String,
+	"country" String,
+	"version" String,
+	"event_type" String,
+	"event_subtype" String,
+	"loaded_image" String,
+	"adblock_list" String,
+	"forwarded_for" String,
+	"language" String,
+	"number" Int16,
+	"os" String,
+	"path" String,
+	"platform" String,
+	"referrer" String,
+	"referrer_host" String,
+	"region" String,
+	"remote_address" String,
+	"screen" String,
+	"session" String,
+	"session_length" Int16,
+	"timezone" String,
+	"timezone_offset" String,
+	"window" String
+)
+ENGINE = MergeTree()
+PARTITION BY toYYYYMM("timestamp")
+ORDER BY ("agent_category", "timestamp")
+EOF
+
+apt install python2-minimal

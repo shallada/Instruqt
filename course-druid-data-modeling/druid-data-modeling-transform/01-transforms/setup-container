@@ -5,6 +5,7 @@ nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/log.out 2> /ro
 sleep 3
 set-workdir /root
 
+apt-get update
 apt-get -y install bsdmainutils
 
 cat > /root/process-monitor-producer.sh << \EOF

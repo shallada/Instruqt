@@ -66,7 +66,7 @@ You will need to make the following adjustments:
   <li>Change the timestamp format to work with the new timestamp values</li>
 </ul>
 
-Remember, the [docs](https://druid.apache.org/docs/latest/ingestion/ingestion-spec.html) are very helpful.
+Remember, the [docs](https://druid.apache.org/docs/latest/ingestion/ingestion-spec.html#timestampspec) are very helpful.
 
 <details>
   <summary style="color:cyan"><b>Need more help?</b></summary>
@@ -138,12 +138,15 @@ Back in the shell, ingest the data using the following command.
   --file /root/unix-ingestion-spec.json \
   --url http://localhost:8081
 # now wait for new segments to load
-until curl localhost:8888/druid/coordinator/v1/datasources/process-data/loadstatus?forceMetadataRefresh=true 2> /dev/null | \
-  grep -q '"process-data":100'
+until curl localhost:8888/druid/coordinator/v1/datasources/unix-process-data/loadstatus?forceMetadataRefresh=true 2> /dev/null | \
+  grep -q '"unix-process-data":100'
   do
     sleep 1
   done
 ```
+
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>If the ingestion fails, you can use the editor to review the log files in the folder here: /root/apache-druid-0.21.1/var/druid/indexing-logs/.
+</i></p>
 
 <details>
   <summary style="color:cyan"><b>What does the loop do after the ingest command?</b></summary>

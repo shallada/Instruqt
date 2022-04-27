@@ -6,7 +6,7 @@ title: Let's Install Druid
 teaser: Learn how to install and run Druid
 notes:
 - type: video
-  url: https://fast.wistia.net/embed/iframe/5y2r0bee6c
+  url: ../assets/Splash1Video.mp4
 tabs:
 - title: Shell
   type: terminal
@@ -18,12 +18,9 @@ timelimit: 700
 <details>
   <summary style="color:cyan"><b>Are you new to these exercises? Click here for instructions.</b></summary>
 <hr style="background-color:cyan">
-<br>These exercises allow you to actually <i>do</i> the tasks involved in learning Druid within the comfort of your browser!<br><br>
+These exercises allow you to actually <i>do</i> the tasks involved in learning Druid within the comfort of your browser!<br><br>
 Click on the command boxes to copy the commands to your clipboard.
-Then, paste the commands in the terminal to execute them.<br><br>
-Some of the steps of the exercise will require using browser tabs external to the exercise tab.
-When necessary, the exercise will explain how to open these external tabs.
-When working in other browser tabs, you will want to switch back and forth between the tabs.<br><br>
+Then, paste the commands in the terminal to execute them.
 That's all there is to it! Enjoy!
 <hr style="background-color:cyan">
 </details>
@@ -33,7 +30,6 @@ Here's what the [official website](https://druid.apache.org/docs/0.21.1/tutorial
 TL;DR we need an environment with Java 8 installed (including the JAVA_HOME environment variable).
 Let's verify our environment is ready to go.
 
-<br>
 <h2 style="color:cyan">Step 1</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 First, look at the Java version.
@@ -42,7 +38,6 @@ First, look at the Java version.
 java -version
 ```
 
-<br>
 <h2 style="color:cyan">Step 2</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 Next, check that <i>JAVA_HOME</i> is set correctly.
@@ -51,7 +46,6 @@ Next, check that <i>JAVA_HOME</i> is set correctly.
 echo $JAVA_HOME
 ```
 
-<br>
 <h2 style="color:cyan">Step 3</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 Download Druid (here's a [list of mirror sites](https://www.apache.org/dyn/closer.cgi?path=/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz) if you want to find one close to your location).
@@ -61,7 +55,6 @@ Depending on the download speed, this may take a few minutes.
 wget https://ftp.wayne.edu/apache/druid/0.21.1/apache-druid-0.21.1-bin.tar.gz
 ```
 
-<br>
 <h2 style="color:cyan">Step 4</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 Unzip the downloaded file.
@@ -70,7 +63,6 @@ Unzip the downloaded file.
 tar -xzf apache-druid-0.21.1-bin.tar.gz
 ```
 
-<br>
 <h2 style="color:cyan">Step 5</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 We'll start Druid with _nohup_ so that the Druid processes persist between Instruqt challenges.
@@ -78,10 +70,10 @@ We'll start Druid with _nohup_ so that the Druid processes persist between Instr
 <details>
   <summary style="color:cyan"><b><i>nohup</i> is scary! How would I run Quickstart Druid without <i>nohup</i>? Click here.</b></summary>
 <hr style="background-color:cyan">
-<br>Don't let the <code>nohup</code> command scare you.
+Don't let the <code>nohup</code> command scare you.
 At its core, here's the real command to start Druid.
-<code>root/apache-druid-0.21.1/bin/start-nano-quickstart</code>
-All the other trimmings are just to allow the Druid processes to continue running when we move to the next challenge.
+<code>/root/apache-druid-0.21.1/bin/start-nano-quickstart</code>
+All the other trimmings are just to allow the Druid processes to continue running when we move to the next lab.
 <hr style="background-color:cyan">
 </details>
 
@@ -89,7 +81,6 @@ All the other trimmings are just to allow the Druid processes to continue runnin
 nohup /root/apache-druid-0.21.1/bin/start-nano-quickstart > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
 ```
 
-<br>
 <h2 style="color:cyan">Step 6</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 You can see the various Druid processes with this command.
@@ -104,16 +95,5 @@ ps -ef | grep "Main server [A-Za-z]*$" | awk 'NF{print $NF}'
 Also, we aren't showing the ZooKeeper process in the list.</i></p>
 <hr style="background-color:cyan">
 
-<br>
-<h2 style="color:cyan">Step 7</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
-Another way to see what is running is to check out the log file.
-
-```
-cat /root/apache-druid-0.21.1/log.out
-```
-
-Notice that the log file also shows that ZooKeeper was started.
-
-<br>
 <h2 style="color:cyan">Outstanding! Druid is up and running!</h2>

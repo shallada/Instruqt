@@ -62,7 +62,7 @@ EOF
 
 chmod +r keyfile.pem
 
-nohup stunnel webserver.conf > /root/apache-druid-0.21.1/log.out 2> /root/apache-druid-0.21.1/log.err < /dev/null & disown
+nohup stunnel webserver.conf > /dev/null 2> /dev/null < /dev/null & disown
 
 
 # Wait for router to be initialized

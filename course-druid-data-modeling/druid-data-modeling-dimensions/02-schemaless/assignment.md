@@ -135,6 +135,9 @@ until curl localhost:8888/druid/coordinator/v1/datasources/process-data/loadstat
   done
 ```
 
+<p><span style="color:cyan"><strong><em>NOTE: </em></strong></span><i>If the ingestion fails, you can use the editor to review the log files in the folder here: /root/apache-druid-0.21.1/var/druid/indexing-logs/.
+</i></p>
+
 <h2 style="color:cyan">Step 8</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Finally, let's perform the query again to verify that _pid_ is no longer a dimension.

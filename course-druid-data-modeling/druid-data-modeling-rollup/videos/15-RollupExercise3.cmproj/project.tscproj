@@ -951,10 +951,34 @@
       "metadata" : {
         "timeAdded" : "20220223T220535.594116"
       }
+    },
+    {
+      "id" : 39,
+      "src" : "./media/vKoxOsWU/Pasted Image.pdf",
+      "rect" : [0, 0, 560, 144],
+      "lastMod" : "20220414T214240",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 560, 144],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220414T214240.097992"
+      }
     }
   ],
   "timeline" : {
-    "id" : 39,
+    "id" : 40,
     "sceneTrack" : {
       "scenes" : [
         {
@@ -964,11 +988,11 @@
                 "trackIndex" : 0,
                 "medias" : [
                   {
-                    "id" : 40,
+                    "id" : 41,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 41,
+                          "id" : 42,
                           "_type" : "VMFile",
                           "src" : 1,
                           "trackNumber" : 0,
@@ -976,61 +1000,17 @@
                             "ident" : "Intro"
                           },
                           "parameters" : {
-                            "translation0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.00983247208450422,
-                              "interp" : "eioe"
-                            },
-                            "scale0" : {
-                              "type" : "double",
-                              "defaultValue" : 1.11109521042728,
-                              "interp" : "eioe"
-                            },
-                            "scale1" : {
-                              "type" : "double",
-                              "defaultValue" : 1.11109521042728,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            }
+                            "translation0" : 0.00983247208450422,
+                            "scale0" : 1.11109521042728,
+                            "scale1" : 1.11109521042728,
+                            "sourceCrop0" : 0.0,
+                            "sourceCrop1" : 0.0,
+                            "sourceCrop2" : 0.0,
+                            "sourceCrop3" : 0.0,
+                            "geometryCrop0" : 0.0,
+                            "geometryCrop1" : 0.0,
+                            "geometryCrop2" : 0.0,
+                            "geometryCrop3" : 0.0
                           },
                           "effects" : [
 
@@ -1046,7 +1026,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 42,
+                          "id" : 43,
                           "_type" : "AMFile",
                           "src" : 1,
                           "trackNumber" : 1,
@@ -1083,7 +1063,7 @@
                     }
                   },
                   {
-                    "id" : 43,
+                    "id" : 44,
                     "_type" : "IMFile",
                     "src" : 3,
                     "trackNumber" : 0,
@@ -1092,61 +1072,17 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -0.00446377787577745,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 1.33334735223417,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 1.33334735223417,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation1" : -0.00446377787577745,
+                      "scale0" : 1.33334735223417,
+                      "scale1" : 1.33334735223417,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -1167,11 +1103,11 @@
                     }
                   },
                   {
-                    "id" : 44,
+                    "id" : 45,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 45,
+                          "id" : 46,
                           "_type" : "VMFile",
                           "src" : 1,
                           "trackNumber" : 0,
@@ -1179,61 +1115,17 @@
                             "ident" : "Intro"
                           },
                           "parameters" : {
-                            "translation0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.00983247208450422,
-                              "interp" : "eioe"
-                            },
-                            "scale0" : {
-                              "type" : "double",
-                              "defaultValue" : 1.11109521042728,
-                              "interp" : "eioe"
-                            },
-                            "scale1" : {
-                              "type" : "double",
-                              "defaultValue" : 1.11109521042728,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            }
+                            "translation0" : 0.00983247208450422,
+                            "scale0" : 1.11109521042728,
+                            "scale1" : 1.11109521042728,
+                            "sourceCrop0" : 0.0,
+                            "sourceCrop1" : 0.0,
+                            "sourceCrop2" : 0.0,
+                            "sourceCrop3" : 0.0,
+                            "geometryCrop0" : 0.0,
+                            "geometryCrop1" : 0.0,
+                            "geometryCrop2" : 0.0,
+                            "geometryCrop3" : 0.0
                           },
                           "effects" : [
 
@@ -1249,7 +1141,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 46,
+                          "id" : 47,
                           "_type" : "AMFile",
                           "src" : 1,
                           "trackNumber" : 1,
@@ -1290,7 +1182,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 43,
+                    "rightMedia" : 44,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -1303,7 +1195,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 43,
+                    "leftMedia" : 44,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -1319,11 +1211,11 @@
                 "trackIndex" : 1,
                 "medias" : [
                   {
-                    "id" : 47,
+                    "id" : 48,
                     "_type" : "UnifiedMedia",
                     "video" : 
                         {
-                          "id" : 48,
+                          "id" : 49,
                           "_type" : "VMFile",
                           "src" : 2,
                           "trackNumber" : 0,
@@ -1331,66 +1223,18 @@
                             "ident" : "15 - talkingHead"
                           },
                           "parameters" : {
-                            "translation0" : {
-                              "type" : "double",
-                              "defaultValue" : 473.691677702163,
-                              "interp" : "eioe"
-                            },
-                            "translation1" : {
-                              "type" : "double",
-                              "defaultValue" : -219.625888356256,
-                              "interp" : "eioe"
-                            },
-                            "scale0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.646870558218721,
-                              "interp" : "eioe"
-                            },
-                            "scale1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.646870558218721,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "sourceCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop0" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop1" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop2" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            },
-                            "geometryCrop3" : {
-                              "type" : "double",
-                              "defaultValue" : 0.0,
-                              "interp" : "eioe"
-                            }
+                            "translation0" : 473.691677702163,
+                            "translation1" : -219.625888356256,
+                            "scale0" : 0.646870558218721,
+                            "scale1" : 0.646870558218721,
+                            "sourceCrop0" : 0.0,
+                            "sourceCrop1" : 0.0,
+                            "sourceCrop2" : 0.0,
+                            "sourceCrop3" : 0.0,
+                            "geometryCrop0" : 0.0,
+                            "geometryCrop1" : 0.0,
+                            "geometryCrop2" : 0.0,
+                            "geometryCrop3" : 0.0
                           },
                           "effects" : [
 
@@ -1406,7 +1250,7 @@
                         },
                     "audio" : 
                         {
-                          "id" : 49,
+                          "id" : 50,
                           "_type" : "AMFile",
                           "src" : 2,
                           "trackNumber" : 1,
@@ -1447,7 +1291,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 47,
+                    "rightMedia" : 48,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -1460,7 +1304,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 47,
+                    "leftMedia" : 48,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -1476,7 +1320,7 @@
                 "trackIndex" : 2,
                 "medias" : [
                   {
-                    "id" : 50,
+                    "id" : 51,
                     "_type" : "IMFile",
                     "src" : 4,
                     "trackNumber" : 0,
@@ -1488,7 +1332,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -403.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 54,
@@ -1501,7 +1344,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : 37.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 54,
@@ -1514,7 +1356,6 @@
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 54,
@@ -1527,7 +1368,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 54,
@@ -1537,46 +1377,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -1603,7 +1411,7 @@
                     }
                   },
                   {
-                    "id" : 51,
+                    "id" : 52,
                     "_type" : "IMFile",
                     "src" : 13,
                     "trackNumber" : 0,
@@ -1612,20 +1420,11 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -162.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -180.0,
-                        "interp" : "eioe"
-                      },
+                      "translation0" : -162.0,
+                      "translation1" : -180.0,
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 0.5,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 69,
@@ -1638,7 +1437,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 0.5,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 69,
@@ -1648,46 +1446,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -1714,7 +1480,7 @@
                     }
                   },
                   {
-                    "id" : 52,
+                    "id" : 53,
                     "_type" : "IMFile",
                     "src" : 15,
                     "trackNumber" : 0,
@@ -1723,66 +1489,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -162.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -98.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 1.25,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 1.25,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -162.0,
+                      "translation1" : -98.0,
+                      "scale0" : 1.25,
+                      "scale1" : 1.25,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -1803,7 +1521,7 @@
                     }
                   },
                   {
-                    "id" : 53,
+                    "id" : 54,
                     "_type" : "IMFile",
                     "src" : 16,
                     "trackNumber" : 0,
@@ -1812,66 +1530,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -147.793891808591,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -129.246182380369,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.576884544049077,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.576884544049077,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -147.793891808591,
+                      "translation1" : -129.246182380369,
+                      "scale0" : 0.576884544049077,
+                      "scale1" : 0.576884544049077,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -1892,7 +1562,7 @@
                     }
                   },
                   {
-                    "id" : 54,
+                    "id" : 55,
                     "_type" : "IMFile",
                     "src" : 17,
                     "trackNumber" : 0,
@@ -1904,7 +1574,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -361.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 228,
@@ -1917,7 +1586,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -111.878577535954,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 228,
@@ -1930,7 +1598,6 @@
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 0.370002469555636,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 228,
@@ -1943,7 +1610,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 0.370002469555636,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 228,
@@ -1953,46 +1619,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2019,7 +1653,7 @@
                     }
                   },
                   {
-                    "id" : 55,
+                    "id" : 56,
                     "_type" : "IMFile",
                     "src" : 20,
                     "trackNumber" : 0,
@@ -2028,56 +1662,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 157.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -98.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 157.0,
+                      "translation1" : -98.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2098,7 +1692,7 @@
                     }
                   },
                   {
-                    "id" : 56,
+                    "id" : 57,
                     "_type" : "IMFile",
                     "src" : 19,
                     "trackNumber" : 0,
@@ -2107,56 +1701,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -129.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -77.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -129.0,
+                      "translation1" : -77.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2177,7 +1731,7 @@
                     }
                   },
                   {
-                    "id" : 57,
+                    "id" : 58,
                     "_type" : "IMFile",
                     "src" : 28,
                     "trackNumber" : 0,
@@ -2186,66 +1740,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -162.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -132.496965208401,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.317192033013561,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.317192033013561,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -162.0,
+                      "translation1" : -132.496965208401,
+                      "scale0" : 0.317192033013561,
+                      "scale1" : 0.317192033013561,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2266,7 +1772,7 @@
                     }
                   },
                   {
-                    "id" : 58,
+                    "id" : 59,
                     "_type" : "IMFile",
                     "src" : 29,
                     "trackNumber" : 0,
@@ -2275,56 +1781,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -228.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 54.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -228.0,
+                      "translation1" : 54.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2349,33 +1815,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 50,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
                     "rightMedia" : 51,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "leftMedia" : 51,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -2453,7 +1893,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 55,
+                    "leftMedia" : 54,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -2466,7 +1906,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 55,
+                    "rightMedia" : 55,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -2553,6 +1993,32 @@
                       "useVisualPreRoll" : true
                     }
 
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 59,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 59,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
                   }
                 ]
               },
@@ -2560,7 +2026,7 @@
                 "trackIndex" : 3,
                 "medias" : [
                   {
-                    "id" : 59,
+                    "id" : 60,
                     "_type" : "IMFile",
                     "src" : 5,
                     "trackNumber" : 0,
@@ -2572,7 +2038,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -403.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 70,
@@ -2585,7 +2050,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -38.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 70,
@@ -2598,7 +2062,6 @@
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 70,
@@ -2611,7 +2074,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 70,
@@ -2621,46 +2083,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2687,7 +2117,7 @@
                     }
                   },
                   {
-                    "id" : 60,
+                    "id" : 61,
                     "_type" : "IMFile",
                     "src" : 14,
                     "trackNumber" : 0,
@@ -2696,66 +2126,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 270.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 5.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.899999976158142,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.899999976158142,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 270.0,
+                      "translation1" : 5.0,
+                      "scale0" : 0.899999976158142,
+                      "scale1" : 0.899999976158142,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2776,7 +2158,7 @@
                     }
                   },
                   {
-                    "id" : 61,
+                    "id" : 62,
                     "_type" : "IMFile",
                     "src" : 18,
                     "trackNumber" : 0,
@@ -2788,7 +2170,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : 47.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 225,
@@ -2801,7 +2182,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -104.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 225,
@@ -2811,46 +2191,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2877,7 +2225,7 @@
                     }
                   },
                   {
-                    "id" : 62,
+                    "id" : 63,
                     "_type" : "IMFile",
                     "src" : 21,
                     "trackNumber" : 0,
@@ -2886,56 +2234,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -382.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -98.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -382.0,
+                      "translation1" : -98.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -2956,7 +2264,7 @@
                     }
                   },
                   {
-                    "id" : 63,
+                    "id" : 64,
                     "_type" : "IMFile",
                     "src" : 22,
                     "trackNumber" : 0,
@@ -2965,66 +2273,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -100.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -148.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -100.0,
+                      "translation1" : -148.0,
+                      "scale0" : 1.5,
+                      "scale1" : 1.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3045,7 +2305,7 @@
                     }
                   },
                   {
-                    "id" : 64,
+                    "id" : 65,
                     "_type" : "IMFile",
                     "src" : 26,
                     "trackNumber" : 0,
@@ -3054,66 +2314,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -392.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -174.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.75,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.75,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -392.0,
+                      "translation1" : -174.0,
+                      "scale0" : 0.75,
+                      "scale1" : 0.75,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3134,7 +2346,7 @@
                     }
                   },
                   {
-                    "id" : 65,
+                    "id" : 66,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "TypeWinSVG",
@@ -3199,47 +2411,19 @@
                     }
                   },
                   {
-                    "id" : 66,
+                    "id" : 67,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "TypeWinSVG",
                       "shape" : "",
                       "style" : "",
-                      "DrawTime" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorBlue" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorGreen" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorRed" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0156862745098039,
-                        "interp" : "linr"
-                      },
-                      "borderWidth" : {
-                        "type" : "double",
-                        "defaultValue" : 3.0,
-                        "interp" : "linr"
-                      },
-                      "height" : {
-                        "type" : "double",
-                        "defaultValue" : 158.653,
-                        "interp" : "linr"
-                      },
-                      "width" : {
-                        "type" : "double",
-                        "defaultValue" : 462.438579741768,
-                        "interp" : "linr"
-                      },
+                      "DrawTime" : 1.0,
+                      "borderColorBlue" : 0.0,
+                      "borderColorGreen" : 1.0,
+                      "borderColorRed" : 0.0156862745098039,
+                      "borderWidth" : 3.0,
+                      "height" : 158.653,
+                      "width" : 462.438579741768,
                       "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"493.211px\" height=\"420px\" viewBox=\"0 0 493.211 420\" enable-background=\"new 0 0 493.211 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M15.386,209.423c0,0,302.233-31.333,420.78-10.62\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M300.132,130.673c0,0,164.923,30.692,177.062,66.399\r\n\tc12.143,35.708-155.115,92.254-155.115,92.254\"/>\r\n</svg>\r\n"
                     },
                     "attributes" : {
@@ -3247,66 +2431,18 @@
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -444.933812870138,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -275.609592906916,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.1498161613784,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.1498161613784,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -444.933812870138,
+                      "translation1" : -275.609592906916,
+                      "scale0" : 0.1498161613784,
+                      "scale1" : 0.1498161613784,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "leftEdgeMods" : [
                       {
@@ -3340,7 +2476,7 @@
                     }
                   },
                   {
-                    "id" : 67,
+                    "id" : 68,
                     "_type" : "IMFile",
                     "src" : 30,
                     "trackNumber" : 0,
@@ -3349,56 +2485,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -213.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 14.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -213.0,
+                      "translation1" : 14.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3423,33 +2519,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 59,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
                     "rightMedia" : 60,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "leftMedia" : 60,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3475,7 +2545,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 62,
+                    "leftMedia" : 61,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3488,7 +2558,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 62,
+                    "rightMedia" : 62,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3553,12 +2623,25 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
+                    "rightMedia" : 65,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
                     "leftMedia" : 65,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
                       "trivial" : false,
-                      "useAudioPreRoll" : false,
+                      "useAudioPreRoll" : true,
                       "useVisualPreRoll" : true
                     }
 
@@ -3579,7 +2662,20 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 67,
+                    "leftMedia" : 67,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : false,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 68,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3592,7 +2688,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 67,
+                    "leftMedia" : 68,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -3608,7 +2704,7 @@
                 "trackIndex" : 4,
                 "medias" : [
                   {
-                    "id" : 68,
+                    "id" : 69,
                     "_type" : "IMFile",
                     "src" : 6,
                     "trackNumber" : 0,
@@ -3620,7 +2716,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -374.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 91,
@@ -3633,7 +2728,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -178.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 91,
@@ -3646,7 +2740,6 @@
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 91,
@@ -3659,7 +2752,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 91,
@@ -3669,46 +2761,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3735,7 +2795,7 @@
                     }
                   },
                   {
-                    "id" : 69,
+                    "id" : 70,
                     "_type" : "IMFile",
                     "src" : 19,
                     "trackNumber" : 0,
@@ -3744,56 +2804,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -129.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -77.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -129.0,
+                      "translation1" : -77.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3814,7 +2834,7 @@
                     }
                   },
                   {
-                    "id" : 70,
+                    "id" : 71,
                     "_type" : "IMFile",
                     "src" : 25,
                     "trackNumber" : 0,
@@ -3823,66 +2843,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -163.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -70.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -163.0,
+                      "translation1" : -70.0,
+                      "scale0" : 1.5,
+                      "scale1" : 1.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3903,7 +2875,7 @@
                     }
                   },
                   {
-                    "id" : 71,
+                    "id" : 72,
                     "_type" : "IMFile",
                     "src" : 27,
                     "trackNumber" : 0,
@@ -3912,66 +2884,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 169.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -172.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.75,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.75,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 169.0,
+                      "translation1" : -172.0,
+                      "scale0" : 0.75,
+                      "scale1" : 0.75,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -3992,47 +2916,19 @@
                     }
                   },
                   {
-                    "id" : 72,
+                    "id" : 73,
                     "_type" : "Callout",
                     "def" : {
                       "kind" : "TypeWinSVG",
                       "shape" : "",
                       "style" : "",
-                      "DrawTime" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorBlue" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorGreen" : {
-                        "type" : "double",
-                        "defaultValue" : 1.0,
-                        "interp" : "linr"
-                      },
-                      "borderColorRed" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0156862745098039,
-                        "interp" : "linr"
-                      },
-                      "borderWidth" : {
-                        "type" : "double",
-                        "defaultValue" : 3.0,
-                        "interp" : "linr"
-                      },
-                      "height" : {
-                        "type" : "double",
-                        "defaultValue" : 158.653,
-                        "interp" : "linr"
-                      },
-                      "width" : {
-                        "type" : "double",
-                        "defaultValue" : 462.438579741768,
-                        "interp" : "linr"
-                      },
+                      "DrawTime" : 1.0,
+                      "borderColorBlue" : 0.0,
+                      "borderColorGreen" : 1.0,
+                      "borderColorRed" : 0.0156862745098039,
+                      "borderWidth" : 3.0,
+                      "height" : 158.653,
+                      "width" : 462.438579741768,
                       "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"493.211px\" height=\"420px\" viewBox=\"0 0 493.211 420\" enable-background=\"new 0 0 493.211 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M15.386,209.423c0,0,302.233-31.333,420.78-10.62\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M300.132,130.673c0,0,164.923,30.692,177.062,66.399\r\n\tc12.143,35.708-155.115,92.254-155.115,92.254\"/>\r\n</svg>\r\n"
                     },
                     "attributes" : {
@@ -4040,66 +2936,18 @@
                       "autoRotateText" : true
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -444.933812870138,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -209.609592906916,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.1498161613784,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.1498161613784,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -444.933812870138,
+                      "translation1" : -209.609592906916,
+                      "scale0" : 0.1498161613784,
+                      "scale1" : 0.1498161613784,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "leftEdgeMods" : [
                       {
@@ -4133,7 +2981,7 @@
                     }
                   },
                   {
-                    "id" : 73,
+                    "id" : 74,
                     "_type" : "IMFile",
                     "src" : 31,
                     "trackNumber" : 0,
@@ -4142,66 +2990,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -199.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -193.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -199.0,
+                      "translation1" : -193.0,
+                      "scale0" : 0.5,
+                      "scale1" : 0.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4222,7 +3022,7 @@
                     }
                   },
                   {
-                    "id" : 74,
+                    "id" : 75,
                     "_type" : "IMFile",
                     "src" : 36,
                     "trackNumber" : 0,
@@ -4231,56 +3031,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -205.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -23.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -205.0,
+                      "translation1" : -23.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4305,33 +3065,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 68,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
                     "rightMedia" : 69,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "leftMedia" : 69,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4396,12 +3130,12 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 72,
+                    "rightMedia" : 72,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
                       "trivial" : false,
-                      "useAudioPreRoll" : false,
+                      "useAudioPreRoll" : true,
                       "useVisualPreRoll" : true
                     }
 
@@ -4409,7 +3143,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 73,
+                    "leftMedia" : 72,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -4427,7 +3161,7 @@
                       "bypass" : false,
                       "reverse" : false,
                       "trivial" : false,
-                      "useAudioPreRoll" : true,
+                      "useAudioPreRoll" : false,
                       "useVisualPreRoll" : true
                     }
 
@@ -4457,6 +3191,32 @@
                       "useVisualPreRoll" : true
                     }
 
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 75,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 75,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
                   }
                 ]
               },
@@ -4464,7 +3224,7 @@
                 "trackIndex" : 5,
                 "medias" : [
                   {
-                    "id" : 75,
+                    "id" : 76,
                     "_type" : "IMFile",
                     "src" : 7,
                     "trackNumber" : 0,
@@ -4476,7 +3236,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -403.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 112,
@@ -4489,7 +3248,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -308.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 112,
@@ -4502,7 +3260,6 @@
                       "scale0" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 112,
@@ -4515,7 +3272,6 @@
                       "scale1" : {
                         "type" : "double",
                         "defaultValue" : 1.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 112,
@@ -4525,46 +3281,14 @@
                           }
                         ]
                       },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4591,7 +3315,7 @@
                     }
                   },
                   {
-                    "id" : 76,
+                    "id" : 77,
                     "_type" : "IMFile",
                     "src" : 23,
                     "trackNumber" : 0,
@@ -4603,7 +3327,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : 157.009298087549,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 53,
@@ -4622,7 +3345,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -219.870693516614,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 53,
@@ -4638,56 +3360,16 @@
                           }
                         ]
                       },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.289567603450728,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.289567603450728,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "scale0" : 0.289567603450728,
+                      "scale1" : 0.289567603450728,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4719,7 +3401,7 @@
                     }
                   },
                   {
-                    "id" : 77,
+                    "id" : 78,
                     "_type" : "IMFile",
                     "src" : 24,
                     "trackNumber" : 0,
@@ -4728,61 +3410,17 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -119.0,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 1.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -119.0,
+                      "scale0" : 1.5,
+                      "scale1" : 1.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4803,7 +3441,7 @@
                     }
                   },
                   {
-                    "id" : 78,
+                    "id" : 79,
                     "_type" : "IMFile",
                     "src" : 32,
                     "trackNumber" : 0,
@@ -4815,7 +3453,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -396.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 369,
@@ -4828,7 +3465,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -114.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 369,
@@ -4838,56 +3474,16 @@
                           }
                         ]
                       },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "scale0" : 0.5,
+                      "scale1" : 0.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4914,7 +3510,7 @@
                     }
                   },
                   {
-                    "id" : 79,
+                    "id" : 80,
                     "_type" : "IMFile",
                     "src" : 37,
                     "trackNumber" : 0,
@@ -4923,56 +3519,16 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -301.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -68.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -301.0,
+                      "translation1" : -68.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -4997,33 +3553,7 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 75,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
                     "rightMedia" : 76,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "leftMedia" : 76,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5075,6 +3605,19 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
+                    "leftMedia" : 78,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
                     "rightMedia" : 79,
                     "attributes" : {
                       "bypass" : false,
@@ -5088,7 +3631,20 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 79,
+                    "rightMedia" : 80,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 80,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5104,7 +3660,7 @@
                 "trackIndex" : 6,
                 "medias" : [
                   {
-                    "id" : 80,
+                    "id" : 81,
                     "_type" : "IMFile",
                     "src" : 8,
                     "trackNumber" : 0,
@@ -5113,56 +3669,16 @@
                       "ident" : "\n\n\n\n\n"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 31.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 57.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 31.0,
+                      "translation1" : 57.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -5183,7 +3699,7 @@
                     }
                   },
                   {
-                    "id" : 81,
+                    "id" : 82,
                     "_type" : "IMFile",
                     "src" : 34,
                     "trackNumber" : 0,
@@ -5195,7 +3711,6 @@
                       "translation0" : {
                         "type" : "double",
                         "defaultValue" : -310.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 277,
@@ -5208,7 +3723,6 @@
                       "translation1" : {
                         "type" : "double",
                         "defaultValue" : -296.0,
-                        "interp" : "eioe",
                         "keyframes" : [
                           {
                             "endTime" : 277,
@@ -5218,56 +3732,16 @@
                           }
                         ]
                       },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.5,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "scale0" : 0.5,
+                      "scale1" : 0.5,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -5294,7 +3768,7 @@
                     }
                   },
                   {
-                    "id" : 82,
+                    "id" : 83,
                     "_type" : "IMFile",
                     "src" : 38,
                     "trackNumber" : 0,
@@ -5303,66 +3777,18 @@
                       "ident" : "Pasted Image"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : -285.094088534293,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : -220.094088534293,
-                        "interp" : "eioe"
-                      },
-                      "scale0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.192040486665166,
-                        "interp" : "eioe"
-                      },
-                      "scale1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.192040486665166,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : -285.094088534293,
+                      "translation1" : -220.094088534293,
+                      "scale0" : 0.192040486665166,
+                      "scale1" : 0.192040486665166,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -5384,19 +3810,6 @@
                   }
                 ],
                 "transitions" : [
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "rightMedia" : 80,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
                   {
                     "name" : "Fade",
                     "duration" : 30,
@@ -5426,7 +3839,20 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 82,
+                    "rightMedia" : 83,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 83,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5442,7 +3868,7 @@
                 "trackIndex" : 7,
                 "medias" : [
                   {
-                    "id" : 83,
+                    "id" : 84,
                     "_type" : "IMFile",
                     "src" : 9,
                     "trackNumber" : 0,
@@ -5451,56 +3877,16 @@
                       "ident" : "\n\n\n\n\n"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 31.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 25.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 31.0,
+                      "translation1" : 25.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
@@ -5521,9 +3907,9 @@
                     }
                   },
                   {
-                    "id" : 84,
+                    "id" : 85,
                     "_type" : "IMFile",
-                    "src" : 35,
+                    "src" : 39,
                     "trackNumber" : 0,
                     "trimStartSum" : 0,
                     "attributes" : {
@@ -5614,19 +4000,6 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "rightMedia" : 83,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  },
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
                     "rightMedia" : 84,
                     "attributes" : {
                       "bypass" : false,
@@ -5640,7 +4013,20 @@
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 84,
+                    "rightMedia" : 85,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 85,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
@@ -5656,7 +4042,7 @@
                 "trackIndex" : 8,
                 "medias" : [
                   {
-                    "id" : 85,
+                    "id" : 86,
                     "_type" : "IMFile",
                     "src" : 10,
                     "trackNumber" : 0,
@@ -5665,161 +4051,22 @@
                       "ident" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 30.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 28.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 30.0,
+                      "translation1" : 28.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
                     ],
                     "start" : 203,
                     "duration" : 42,
-                    "mediaStart" : 0,
-                    "mediaDuration" : 1,
-                    "scalar" : 1,
-                    "metadata" : {
-                      "clipSpeedAttribute" : false,
-                      "default-scale" : "1",
-                      "effectApplied" : "none",
-                      "lockAspectRatio" : true
-                    },
-                    "animationTracks" : {
-
-                    }
-                  }
-                ],
-                "transitions" : [
-                  {
-                    "name" : "Fade",
-                    "duration" : 30,
-                    "rightMedia" : 85,
-                    "attributes" : {
-                      "bypass" : false,
-                      "reverse" : false,
-                      "trivial" : false,
-                      "useAudioPreRoll" : true,
-                      "useVisualPreRoll" : true
-                    }
-
-                  }
-                ]
-              },
-              {
-                "trackIndex" : 9,
-                "medias" : [
-                  {
-                    "id" : 86,
-                    "_type" : "IMFile",
-                    "src" : 11,
-                    "trackNumber" : 0,
-                    "trimStartSum" : -6,
-                    "attributes" : {
-                      "ident" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
-                    },
-                    "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 30.0,
-                        "interp" : "eioe"
-                      },
-                      "translation1" : {
-                        "type" : "double",
-                        "defaultValue" : 15.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
-                    },
-                    "effects" : [
-
-                    ],
-                    "start" : 215,
-                    "duration" : 47,
                     "mediaStart" : 0,
                     "mediaDuration" : 1,
                     "scalar" : 1,
@@ -5851,69 +4098,34 @@
                 ]
               },
               {
-                "trackIndex" : 10,
+                "trackIndex" : 9,
                 "medias" : [
                   {
                     "id" : 87,
                     "_type" : "IMFile",
-                    "src" : 12,
+                    "src" : 11,
                     "trackNumber" : 0,
-                    "trimStartSum" : 0,
+                    "trimStartSum" : -6,
                     "attributes" : {
-                      "ident" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                      "ident" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
                     },
                     "parameters" : {
-                      "translation0" : {
-                        "type" : "double",
-                        "defaultValue" : 30.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "sourceCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop0" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop1" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop2" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      },
-                      "geometryCrop3" : {
-                        "type" : "double",
-                        "defaultValue" : 0.0,
-                        "interp" : "eioe"
-                      }
+                      "translation0" : 30.0,
+                      "translation1" : 15.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
                     },
                     "effects" : [
 
                     ],
-                    "start" : 232,
-                    "duration" : 115,
+                    "start" : 215,
+                    "duration" : 47,
                     "mediaStart" : 0,
                     "mediaDuration" : 1,
                     "scalar" : 1,
@@ -5941,11 +4153,69 @@
                       "useVisualPreRoll" : true
                     }
 
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 10,
+                "medias" : [
+                  {
+                    "id" : 88,
+                    "_type" : "IMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+                    },
+                    "parameters" : {
+                      "translation0" : 30.0,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 232,
+                    "duration" : 115,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 88,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
                   },
                   {
                     "name" : "Fade",
                     "duration" : 30,
-                    "leftMedia" : 87,
+                    "leftMedia" : 88,
                     "attributes" : {
                       "bypass" : false,
                       "reverse" : false,
