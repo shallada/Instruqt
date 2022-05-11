@@ -5,15 +5,12 @@ type: challenge
 title: Start Data Streaming
 teaser: Set up a Polaris table and start pumping data into it
 notes:
-- type: text
-  contents: Please wait while we set up the challenge
+- type: video
+  url: ../assets/02-SetUpPolarisTable.mp4
 tabs:
 - title: Shell
   type: terminal
   hostname: single-server
-- title: Polaris
-  type: website
-  url: https://single-server-8000-${_SANDBOX_ID}.env.play.instruqt.com/
 - title: Editor
   type: code
   hostname: single-server

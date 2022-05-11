@@ -5,8 +5,8 @@ type: challenge
 title: Setup a Producer
 teaser: Let's setup an event producer and observe its output
 notes:
-- type: text
-  contents: Please wait while we set up the challenge
+- type: video
+  url: ../assets/01-CreateData.mp4
 tabs:
 - title: Shell
   type: terminal

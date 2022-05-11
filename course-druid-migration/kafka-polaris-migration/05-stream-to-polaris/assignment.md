@@ -5,8 +5,8 @@ type: challenge
 title: Stream Kafka Data to Polaris
 teaser: Let's create a Python program that reads from Kafka and pushes to Polaris
 notes:
-- type: text
-  contents: Please wait while we set up the challenge
+- type: video
+  url: ../assets/05-ConnectKafkaToPolaris.mp4
 tabs:
 - title: Shell
   type: terminal

@@ -5,8 +5,8 @@ type: challenge
 title: Set Up Kafka
 teaser: Let's get the Kafka pipeline set up with a produce and consumer.
 notes:
-- type: text
-  contents: Please wait while we set up the challenge
+- type: video
+  url: ../assets/04-SetupKafka.mp4
 tabs:
 - title: Shell
   type: terminal

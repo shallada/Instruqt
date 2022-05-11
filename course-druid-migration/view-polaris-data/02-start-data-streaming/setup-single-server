@@ -174,7 +174,15 @@ curl --location --request PUT "https://api.imply.io/v1/tables/$TABLE_ID" \
               \"type\": \"float\",
               \"name\": \"memory\"
           }
-      ]
+      ],
+      \"rollupSchema\": {
+        \"dimensions\": [
+          \"processName\",
+          \"cpu\",
+          \"memory\"
+        ],
+        \"timeResolution\": \"minute\"
+      }
   }" \
 | jq
 
@@ -250,3 +258,8 @@ cat > /root/setup_web_server.sh << \EOF
 python2 redirect.py -p 8000 https://$1.app.imply.io/home > /dev/null &
 EOF
 chmod +x setup_web_server.sh
+
+# Here's how to start the server
+#```
+#./setup_web_server.sh <your-org-goes-here>
+#```

@@ -5,8 +5,8 @@ type: challenge
 title: Polaris Signup
 teaser: Sign up for a free 60 day trial of Polaris
 notes:
-- type: text
-  contents: Please wait while we set up the challenge
+- type: video
+  url: ../assets/01-SettingUpPolarisAccount.mp4
 tabs:
 - title: Polaris-signup-page
   type: website
