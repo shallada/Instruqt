@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In the last exercise we created a transform by treating the raw data's timestamp value as a string.

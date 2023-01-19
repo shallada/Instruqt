@@ -9,7 +9,7 @@ notes:
   contents: That's all there is to running Druid! Click the start button to review
     what we have done.
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 
 Here's what we did:

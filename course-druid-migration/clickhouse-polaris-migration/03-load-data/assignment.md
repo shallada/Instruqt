@@ -12,7 +12,7 @@ tabs:
   type: terminal
   hostname: container
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In this lab, we'll ingest the data we extracted in the first step.

@@ -1,6 +1,5 @@
 slug: try-druid
 id: ayzqzjxgulzm
-type: track
 title: Try Druid
 teaser: Stand-up a single-node Druid cluster, ingest data and query the data
 description: |-
@@ -12,7 +11,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "10877068735273146662"
+checksum: "2112074512535917395"
+idle_timeout: 600
+timelimit: 2100

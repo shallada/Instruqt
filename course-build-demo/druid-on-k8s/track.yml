@@ -1,0 +1,25 @@
+slug: druid-on-k8s
+id: 7n1mtft2mze9
+type: track
+title: Apache Druid® on Kubernetes
+teaser: Learn how to set Apache Druid® on Kubernetes
+description: |-
+  # Apache Druid® on Kubernetes
+
+  In this track, we'll set up a complete demo environment including:
+    - Kubernetes for cluster management
+    - S3 for deep storage
+    - Simluated clickstream data generation (both batch and realtime)
+    - Kafka for processing clickstream events
+    - Druid for aggregating and storing clickstream data
+    - Grafana for viewing the analytics
+icon: https://cdn.instruqt.com/assets/templates/ubuntu.png
+tags: []
+owner: imply
+developers:
+- steve.halladay@imply.io
+private: false
+published: true
+show_timer: true
+skipping_enabled: true
+checksum: "4167407424355407534"

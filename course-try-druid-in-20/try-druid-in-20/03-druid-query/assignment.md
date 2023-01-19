@@ -12,7 +12,7 @@ tabs:
   type: website
   url: https://container-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 300
+timelimit: 600
 ---
 
 With Druid running and data ingested, let's execute a query using the Druid console.

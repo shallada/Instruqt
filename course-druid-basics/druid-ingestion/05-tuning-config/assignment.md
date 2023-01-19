@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 The final piece we need to put in place is the [_tuningConfig_](https://druid.apache.org/docs/latest/ingestion/index.html#tuningconfig) section.
 This section gives the ingestion process some parameters for segment creation.

@@ -17,6 +17,6 @@ solution:
 - 1
 - 2
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 In the ingestion spec, what are the three objects within the _spec_?

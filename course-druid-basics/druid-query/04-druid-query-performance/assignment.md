@@ -22,7 +22,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 In this challenge, we want to do some queries and see the effects on the various Druid processes.
 

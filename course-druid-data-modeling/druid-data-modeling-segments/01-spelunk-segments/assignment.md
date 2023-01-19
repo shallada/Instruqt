@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In this exercise, we want to understand how Druid stores segments.

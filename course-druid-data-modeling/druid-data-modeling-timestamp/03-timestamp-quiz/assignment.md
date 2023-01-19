@@ -15,6 +15,6 @@ answers:
 solution:
 - 2
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 In the ingestion spec, where can one specify the level of timestamp precision?

@@ -12,7 +12,7 @@ tabs:
   type: website
   url: https://single-server-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In this challenge we'll query the example Wikipedia data using the Druid Console.

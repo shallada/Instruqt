@@ -1,0 +1,45 @@
+#!/bin/sh
+#
+# This script runs when the platform setup the challenge.
+#
+# The platform determines if the script was successful using the exit code of this
+# script. If the exit code is not 0, the script fails.
+
+curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+chmod 700 get_helm.sh
+./get_helm.sh
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+
+# Wait for the Kubernetes API server to become available
+while ! curl --silent --fail --output /dev/null http://localhost:8001/api
+do
+    sleep 1
+done
+
+helm repo update
+helm install my-ingress-nginx ingress-nginx/ingress-nginx --version 4.0.13
+
+# set up Minio
+helm repo add minio https://charts.min.io/
+
+cat > /root/minio_values.yaml << \EOF
+mode: standalone
+replicas: 1
+rootUser: rootuser
+rootPassword: rootpass123
+persistence:
+  size: 50Gi
+  enabled: true
+resources:
+  requests:
+    memory: 512M
+environment:
+  MINIO_SITE_REGION: “us-west-1”
+EOF
+
+helm install -n dev --create-namespace -f minio_values.yaml minio minio/minio
+
+wget https://dl.min.io/client/mc/release/linux-amd64/mc
+chmod +x mc
+
+exit 0

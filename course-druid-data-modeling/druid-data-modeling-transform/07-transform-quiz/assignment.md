@@ -25,6 +25,6 @@ solution:
 - 5
 - 6
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 Which of the following is true about transforms (select all that apply)?

@@ -22,7 +22,7 @@ tabs:
   type: terminal
   hostname: container
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 <h2 style="color:cyan">Let's become familiar with the various log files.</h2>

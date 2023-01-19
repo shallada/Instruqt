@@ -1,6 +1,5 @@
 slug: kafka-polaris-migration
 id: svy1ngwxblii
-type: track
 title: Stream data from Kafaka to Polaris
 teaser: Get started quickly with a single container-based sandbox host
 description: Want to know how to stream messages from Kafka to Polaris? This lesson
@@ -10,7 +9,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "14992012557044410905"
+checksum: "16216351479831684579"
+idle_timeout: 600
+timelimit: 3600

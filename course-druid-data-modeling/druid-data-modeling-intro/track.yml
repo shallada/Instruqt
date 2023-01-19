@@ -1,6 +1,5 @@
 slug: data-modeling-intro
 id: jkdzvtwxjgua
-type: track
 title: Apache Druid® Ingestion and Data Modeling
 teaser: Learn principles and practices for preparing and importing data to Apache
   Druid®
@@ -17,8 +16,8 @@ owner: imply
 developers:
 - steve.halladay@imply.io
 - peter.marshall@imply.io
-private: false
-published: true
 show_timer: true
 skipping_enabled: true
-checksum: "3442185709871644772"
+checksum: "16923198982407085904"
+idle_timeout: 600
+timelimit: 900

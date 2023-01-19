@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 Now that the ingestion spec is ready, let's ingest some data!
 

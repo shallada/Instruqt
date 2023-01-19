@@ -21,6 +21,6 @@ solution:
 - 2
 - 3
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 Select all the true statements about segments.

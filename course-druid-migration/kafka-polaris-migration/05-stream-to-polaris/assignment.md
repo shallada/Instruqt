@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In the previous challenge we set up Kafka and produced Kafka messages.

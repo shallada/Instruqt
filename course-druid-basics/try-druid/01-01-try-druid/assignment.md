@@ -12,7 +12,7 @@ tabs:
   type: terminal
   hostname: container
 difficulty: basic
-timelimit: 700
+timelimit: 600
 ---
 
 <details>

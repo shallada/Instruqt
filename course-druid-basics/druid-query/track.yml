@@ -1,6 +1,5 @@
 slug: druid-query
 id: 7oymaemejvvj
-type: track
 title: Apache Druid® Queries
 teaser: Query your Druid database
 description: |-
@@ -16,7 +15,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "821258191219169536"
+checksum: "2941865851970939525"
+idle_timeout: 600
+timelimit: 3600

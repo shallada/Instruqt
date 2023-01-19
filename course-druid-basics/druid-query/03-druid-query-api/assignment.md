@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 You may want to perform Druid queries using an API.
 In this challenge, we'll use the API to perform the same query we used in the previous challenge.

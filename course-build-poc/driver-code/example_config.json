@@ -1,0 +1,49 @@
+{
+  "target": {
+    "type": "stdout"
+  },
+  "emitters": [
+    {
+      "name": "simple",
+      "dimensions": [
+        {
+          "type": "float",
+          "name": "test",
+          "distribution": {"type": "uniform", "min": 0, "max": 5},
+          "cardinality": 0,
+          "cardinality_distribution": {"type": "normal", "mean": 2, "stddev": 1}
+        },
+        {
+          "type": "enum",
+          "name": "state",
+          "values": ["AL", "CO", "UT", "CA"],
+          "cardinality_distribution": {"type": "uniform", "min": 0, "max": 3}
+        }
+      ]
+    }
+  ],
+  "interarrival": {
+    "type": "constant",
+    "value": 1
+  },
+  "states": [
+    {
+      "name": "first",
+      "emitter": "simple",
+      "delay": {"type": "uniform", "min": 0, "max": 0.5},
+      "transitions": [{"next": "second", "probability": 1.0}]
+    },
+    {
+      "name": "second",
+      "emitter": "simple",
+      "delay": {"type": "uniform", "min": 0, "max": 0.5},
+      "transitions": [{"next": "third", "probability": 1.0}]
+    },
+    {
+      "name": "third",
+      "emitter": "simple",
+      "delay": {"type": "uniform", "min": 0, "max": 0.5},
+      "transitions": [{"next": "stop", "probability": 1.0}]
+    }
+  ]
+}

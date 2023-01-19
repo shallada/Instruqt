@@ -1,6 +1,5 @@
 slug: druid-polaris-migration
 id: nyyqsmvcdupo
-type: track
 title: druid-polaris-migration
 teaser: Migrate data from Druid to Polaris
 description: Move data from your Duid table to Polaris
@@ -9,7 +8,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "5242197636307612772"
+checksum: "4798852298774261599"
+idle_timeout: 600
+timelimit: 3300

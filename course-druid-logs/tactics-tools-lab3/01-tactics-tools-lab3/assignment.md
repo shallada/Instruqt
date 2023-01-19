@@ -22,7 +22,7 @@ tabs:
   type: website
   url: https://container-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 Here's another relatively common ingestion problem.

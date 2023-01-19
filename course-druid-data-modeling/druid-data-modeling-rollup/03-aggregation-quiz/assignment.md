@@ -15,6 +15,6 @@ solution:
 - 0
 - 2
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 Which are the two types of aggregation we learned about (select two)?

@@ -1,6 +1,5 @@
 slug: clickhouse-polaris-migration
 id: gqhx4futfgak
-type: track
 title: Clickhouse to polaris
 teaser: Migrate data from a Clickhouse table to Polaris
 description: Polaris is Imply's Druid SaaS product. If you need to scale beyond Clickhouse,
@@ -10,7 +9,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "12335743266054387209"
+checksum: "5360718217323037185"
+idle_timeout: 600
+timelimit: 2400

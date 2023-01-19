@@ -1,6 +1,5 @@
 slug: druid-data-modeling-segments
 id: s5v6zudcav88
-type: track
 title: Data Modeling and Segment Management
 teaser: Improve Druid performance by managing its segments
 description: |-
@@ -14,8 +13,8 @@ owner: imply
 developers:
 - steve.halladay@imply.io
 - peter.marshall@imply.io
-private: false
-published: true
 show_timer: true
 skipping_enabled: true
-checksum: "15216018752443722943"
+checksum: "7038049539118647672"
+idle_timeout: 600
+timelimit: 900

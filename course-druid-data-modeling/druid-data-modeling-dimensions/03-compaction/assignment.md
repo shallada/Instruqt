@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In the previous exercises, when we wanted to change our schema, we re-ingested the original data.

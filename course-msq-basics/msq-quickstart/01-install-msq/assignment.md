@@ -19,7 +19,7 @@ tabs:
   type: website
   url: https://container-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 <h2 style="color:cyan">Install and configure Druid 24.0 release</h2>
 

@@ -1,6 +1,5 @@
 slug: druid-architecture
 id: udfhmyejqzoh
-type: track
 title: Druid Architecture
 teaser: Learn about the Druid process architecture and how to deploy it
 description: |-
@@ -12,7 +11,7 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
-checksum: "17873663128279309726"
+checksum: "10331642799122099447"
+idle_timeout: 600
+timelimit: 3600

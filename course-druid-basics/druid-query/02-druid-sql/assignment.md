@@ -12,7 +12,7 @@ tabs:
   type: terminal
   hostname: single-server
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 Sometimes it's helpful to use a command line interface.

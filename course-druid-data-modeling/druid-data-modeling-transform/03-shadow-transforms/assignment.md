@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 So far when changing the process name, we have transformed raw data into a new dimension.

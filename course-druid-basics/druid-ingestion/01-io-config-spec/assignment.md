@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 For this track, we have installed and launched a single-server Apache Druid® system.
 

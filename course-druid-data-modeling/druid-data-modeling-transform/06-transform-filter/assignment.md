@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 So far, we have seen how to transform values, but the _transformSpec_ can also filter rows based on dimension values.

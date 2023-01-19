@@ -1,6 +1,5 @@
 slug: druid-ingestion
 id: ixizshlv9emo
-type: track
 title: Apache Druid® Ingestion
 teaser: Let's ingest raw data and write Druid segments
 description: |-
@@ -15,8 +14,8 @@ tags: []
 owner: imply
 developers:
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
 skipping_enabled: true
-checksum: "16751271560728471864"
+checksum: "8711991328049201832"
+idle_timeout: 600
+timelimit: 4500

@@ -1,6 +1,5 @@
 slug: druid-data-modeling-rollup
 id: iouvzqupldcx
-type: track
 title: Ingestion, Rollup and Metrics
 teaser: Try out Druid rollup
 description: |-
@@ -16,8 +15,8 @@ owner: imply
 developers:
 - peter.marshall@imply.io
 - steve.halladay@imply.io
-private: false
-published: true
 show_timer: true
 skipping_enabled: true
-checksum: "3775152404152236182"
+checksum: "7755644191150363743"
+idle_timeout: 600
+timelimit: 1500

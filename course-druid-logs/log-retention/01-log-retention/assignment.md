@@ -20,7 +20,7 @@ tabs:
   type: website
   url: https://container-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 In this lab, we'll look at how to configure retention of both the process logs, and the task logs.

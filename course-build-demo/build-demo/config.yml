@@ -1,0 +1,10 @@
+version: "3"
+virtualmachines:
+- name: server
+  image: instruqt/docker-2010
+  shell: /bin/bash
+  machine_type: e2-highmem-2
+  allow_external_ingress:
+  - http
+  - https
+  - high-ports

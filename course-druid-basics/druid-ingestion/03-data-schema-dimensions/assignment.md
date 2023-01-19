@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 
 The next step in setting up the data schema is to define the dimensions.

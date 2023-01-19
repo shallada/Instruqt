@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 The _dimensionSpec_ is part of the _dataSchema_ and during ingestion, Druid processes it after the _transformSpec_, but before the _metricsSpec_.

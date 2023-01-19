@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 
 Let's set up some metrics columns in our table.

@@ -12,7 +12,7 @@ tabs:
   type: website
   url: https://signup.imply.io/get-started
 difficulty: basic
-timelimit: 900
+timelimit: 600
 ---
 
 We'll help you get signed up for a free 60 day Polaris trail!

@@ -15,6 +15,6 @@ answers:
 solution:
 - 2
 difficulty: basic
-timelimit: 60
+timelimit: 600
 ---
 When using schemaless ingestion, what is the data type of the columns that Druid creates?

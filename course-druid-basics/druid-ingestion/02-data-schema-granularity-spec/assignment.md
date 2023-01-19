@@ -16,7 +16,7 @@ tabs:
   hostname: single-server
   path: /root
 difficulty: basic
-timelimit: 750
+timelimit: 600
 ---
 In the previous challenge, we looked at the ioConfigSpec.
 In this challenge we introduce the [_dataSchema_](https://druid.apache.org/docs/latest/ingestion/index.html#dataschema) and dig into the [_timestampSpec_](https://druid.apache.org/docs/latest/ingestion/index.html#timestampspec) and [_granularitySpec_](https://druid.apache.org/docs/latest/ingestion/index.html#granularityspec).

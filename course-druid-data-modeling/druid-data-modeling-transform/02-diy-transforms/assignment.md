@@ -16,7 +16,7 @@ tabs:
   hostname: container
   path: /root
 difficulty: basic
-timelimit: 1200
+timelimit: 600
 ---
 
 Here's another chance to practice transforming data.
