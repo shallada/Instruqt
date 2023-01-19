@@ -1,0 +1,19 @@
+slug: metrics-grafana
+id: j3djbxqff1e0
+title: Viewing Apache Druid® Metrics with Grafana
+teaser: Let's look at how to view Druid metrics using Grafana
+description: |-
+  Topics we'll cover:
+    - Installing and configuring Prometheus to work with Druid
+    - Configuring Druid to emit metrics to Prometheus
+    - Installing and configuring Grafana to work with Prometheus
+    - Vizualizing Druid metrics in Grafana
+icon: https://storage.googleapis.com/instruqt-frontend/img/tracks/default.png
+tags: []
+owner: imply
+developers:
+- steve.halladay@imply.io
+show_timer: true
+checksum: "284097324451528181"
+idle_timeout: 600
+timelimit: 2700

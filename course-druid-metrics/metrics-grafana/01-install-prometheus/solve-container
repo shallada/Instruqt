@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# if Prometheus is running, kill it
+if [ $(ps -ef | grep '/root/prometheus' | wc -l) -eq 2 ]
+then
+  kill $(ps -ef | grep '/root/prometheus' | awk 'NF{print $2}' | head -n 1)
+fi
+
+# remove the installation (if it exists) so we can start fresh
+rm -rf /root/prometheus-2.40.2.linux-amd64
+# Make sure we have the tar file
+if [ ! -f /root/prometheus-2.40.2.linux-amd64.tar.gz ]
+then
+  wget https://github.com/prometheus/prometheus/releases/download/v2.40.2/prometheus-2.40.2.linux-amd64.tar.gz
+fi
+
+# Install and configure Prometheus
+tar -xzf  /root/prometheus-2.40.2.linux-amd64.tar.gz
+sed -i 's/\["localhost:9090"\]/\["localhost:9091", "localhost:9092", "localhost:9093", "localhost:9094", "localhost:9095"\]/g' \
+  /root/prometheus-2.40.2.linux-amd64/prometheus.yml
+
+# Start Prometheus
+pushd /root/prometheus-2.40.2.linux-amd64
+nohup /root/prometheus-2.40.2.linux-amd64/prometheus --config.file=./prometheus.yml > /root/prometheus.log 2> /root/prometheus.err & disown
+popd

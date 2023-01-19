@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Make sure Kafka is running
+if [ $(ps -ef | grep '/root/kafka_2.13-2.7.0' | wc -l) -eq 1 ]
+then
+  nohup /root/kafka_2.13-2.7.0/bin/kafka-server-start.sh /root/kafka_2.13-2.7.0/config/server.properties 2> /dev/null > /dev/null & disown
+fi
+
+# Make sure the ingestion is running
+if [ $(ps -ef | grep 'var/druid/task/index_kafka_druid-metrics' | wc -l) -eq 1 ]
+then
+  curl -XPOST \
+    -H'Content-Type: application/json' \
+    -d@/root/clarity-kafka-supervisor.json \
+    http://localhost:8090/druid/indexer/v1/supervisor
+fi

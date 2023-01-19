@@ -1,0 +1,8 @@
+#!/bin/bash
+
+
+cat > /root/mystery_query.json << EOF
+{
+  "query": "SELECT * FROM \"clickstream-data\""
+}
+EOF

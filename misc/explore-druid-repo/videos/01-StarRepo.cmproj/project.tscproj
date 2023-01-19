@@ -1,0 +1,4115 @@
+{
+  "title" : "",
+  "description" : "",
+  "author" : "",
+  "targetLoudness" : -18.0,
+  "shouldApplyLoudnessNormalization" : true,
+  "videoFormatFrameRate" : 30,
+  "audioFormatSampleRate" : 44100,
+  "width" : 1280.0,
+  "height" : 720.0,
+  "version" : "5.0",
+  "editRate" : 30,
+  "authoringClientName" :  {
+    "name" : "Camtasia",
+    "platform" : "Mac",
+    "version" : "2021.0.12"
+  },
+  "sourceBin" : [
+    {
+      "id" : 1,
+      "src" : "./media/FpIhMole/Pasted Image.pdf",
+      "rect" : [0, 0, 960, 540],
+      "lastMod" : "20220801T215407",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 960, 540],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T215407.839694"
+      }
+    },
+    {
+      "id" : 2,
+      "src" : "./media/1659397283.987702/01-TalkingHead.mp4",
+      "rect" : [0, 0, 400, 474],
+      "lastMod" : "20220801T214952",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 4423230],
+          "type" : 0,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 400, 474],
+          "sampleRate" : 30,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        },
+        {
+          "range" : [0, 4423230],
+          "type" : 2,
+          "editRate" : 44100,
+          "trackRect" : [0, 0, 0, 0],
+          "sampleRate" : 44100,
+          "bitDepth" : 0,
+          "numChannels" : 2,
+          "integratedLUFS" : -18.0126309604897,
+          "peakLevel" : 0.937384963035583,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T215424.553266"
+      }
+    },
+    {
+      "id" : 3,
+      "src" : "./media/1659397283.989394/Pasted Image.pdf",
+      "rect" : [0, 0, 658, 540],
+      "lastMod" : "20220711T165841",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 658, 540],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T215722.637342"
+      }
+    },
+    {
+      "id" : 4,
+      "src" : "./media/1659397283.990191/Screen Recording 2022-08-01 at 3.59.43 PM.mov",
+      "rect" : [0, 0, 2276, 1422],
+      "lastMod" : "20220801T220117",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 104400],
+          "type" : 0,
+          "editRate" : 6000,
+          "trackRect" : [0, 0, 2276, 1422],
+          "sampleRate" : "58733/1000",
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T220215.472700"
+      }
+    },
+    {
+      "id" : 5,
+      "src" : "./media/G7M89FcT/Pasted Image.tiff",
+      "rect" : [0, 0, 1280, 1217],
+      "lastMod" : "20220801T220718",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 1280, 1217],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T220718.904387"
+      }
+    },
+    {
+      "id" : 6,
+      "src" : "./media/nV2SC7AI/Pasted Image.tiff",
+      "rect" : [0, 0, 2284, 1424],
+      "lastMod" : "20220801T220853",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2284, 1424],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T220853.392926"
+      }
+    },
+    {
+      "id" : 7,
+      "src" : "./media/g8pefPoc/Pasted Image.pdf",
+      "rect" : [0, 0, 838, 293],
+      "lastMod" : "20220801T221503",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 838, 293],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T221503.968776"
+      }
+    },
+    {
+      "id" : 8,
+      "src" : "./media/I7blXXNt/The benefits of starring a repo:\r\n.pdf",
+      "rect" : [0, 0, 494, 77],
+      "lastMod" : "20220801T221554",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 494, 77],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T221554.105579"
+      }
+    },
+    {
+      "id" : 9,
+      "src" : "./media/GbLgc9wD/The benefits of starring a repo:\r\nStarring a repo makes it easy to find the repo\r\n.pdf",
+      "rect" : [0, 0, 758, 120],
+      "lastMod" : "20220801T221640",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 758, 120],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T221640.943680"
+      }
+    },
+    {
+      "id" : 10,
+      "src" : "./media/kS2RyvC8/Pasted Image.tiff",
+      "rect" : [0, 0, 2284, 1092],
+      "lastMod" : "20220801T221910",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2284, 1092],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T221910.859538"
+      }
+    },
+    {
+      "id" : 11,
+      "src" : "./media/zD2ipRvl/Pasted Image.tiff",
+      "rect" : [0, 0, 236, 50],
+      "lastMod" : "20220801T222006",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 236, 50],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T222006.421261"
+      }
+    },
+    {
+      "id" : 12,
+      "src" : "./media/LTb6VzL3/Pasted Image.pdf",
+      "rect" : [0, 0, 838, 293],
+      "lastMod" : "20220801T222429",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 838, 293],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T222429.266640"
+      }
+    },
+    {
+      "id" : 13,
+      "src" : "./media/SIEOdcHk/Pasted Image.tiff",
+      "rect" : [0, 0, 1424, 328],
+      "lastMod" : "20220801T222525",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 1424, 328],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T222525.115197"
+      }
+    },
+    {
+      "id" : 14,
+      "src" : "./media/AgdfVsIG/Pasted Image.tiff",
+      "rect" : [0, 0, 668, 94],
+      "lastMod" : "20220801T223215",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 668, 94],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T223215.469965"
+      }
+    },
+    {
+      "id" : 15,
+      "src" : "./media/2zMpfcUa/Pasted Image.pdf",
+      "rect" : [0, 0, 892, 540],
+      "lastMod" : "20220801T223923",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 892, 540],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T223923.172372"
+      }
+    },
+    {
+      "id" : 16,
+      "src" : "./media/uJ6zXG4W/Pasted Image.tiff",
+      "rect" : [0, 0, 1516, 910],
+      "lastMod" : "20220801T224028",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 1516, 910],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T224028.039509"
+      }
+    },
+    {
+      "id" : 17,
+      "src" : "./media/vdLGgfjo/Pasted Image.tiff",
+      "rect" : [0, 0, 1024, 1280],
+      "lastMod" : "20220801T224405",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 1024, 1280],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T224405.482243"
+      }
+    },
+    {
+      "id" : 18,
+      "src" : "./media/BOavI2DZ/Pasted Image.pdf",
+      "rect" : [0, 0, 960, 540],
+      "lastMod" : "20220801T225407",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 960, 540],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T225407.168500"
+      }
+    },
+    {
+      "id" : 19,
+      "src" : "./media/YoMa33Ie/Pasted Image.tiff",
+      "rect" : [0, 0, 862, 128],
+      "lastMod" : "20220801T225611",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 862, 128],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T225611.187300"
+      }
+    },
+    {
+      "id" : 20,
+      "src" : "./media/jbn4d1JD/Pasted Image.tiff",
+      "rect" : [0, 0, 480, 54],
+      "lastMod" : "20220801T225806",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 480, 54],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T225806.148178"
+      }
+    },
+    {
+      "id" : 21,
+      "src" : "./media/N9p5CZSR/Pasted Image.pdf",
+      "rect" : [0, 0, 464, 148],
+      "lastMod" : "20220801T230108",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 464, 148],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T230108.477180"
+      }
+    },
+    {
+      "id" : 22,
+      "src" : "./media/3PSuHFsJ/Pasted Image.pdf",
+      "rect" : [0, 0, 463, 43],
+      "lastMod" : "20220801T230314",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 463, 43],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T230314.346229"
+      }
+    },
+    {
+      "id" : 23,
+      "src" : "./media/L0zW5DRs/Pasted Image.tiff",
+      "rect" : [0, 0, 930, 70],
+      "lastMod" : "20220801T230435",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 930, 70],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T230435.207192"
+      }
+    },
+    {
+      "id" : 24,
+      "src" : "./media/9Y8xH4Jv/Pasted Image.tiff",
+      "rect" : [0, 0, 484, 78],
+      "lastMod" : "20220801T231004",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 484, 78],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T231004.317792"
+      }
+    },
+    {
+      "id" : 25,
+      "src" : "./media/6iyt9wJs/Pasted Image.tiff",
+      "rect" : [0, 0, 2284, 1432],
+      "lastMod" : "20220801T231853",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2284, 1432],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T231853.087132"
+      }
+    },
+    {
+      "id" : 26,
+      "src" : "./media/ETjCOPb8/Pasted Image.tiff",
+      "rect" : [0, 0, 3302, 126],
+      "lastMod" : "20220801T231932",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 3302, 126],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T231932.578249"
+      }
+    },
+    {
+      "id" : 27,
+      "src" : "./media/SwzyE3KY/Pasted Image.tiff",
+      "rect" : [0, 0, 2548, 1588],
+      "lastMod" : "20220801T232456",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2548, 1588],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T232456.285016"
+      }
+    },
+    {
+      "id" : 28,
+      "src" : "./media/RVWpmHQU/Pasted Image.tiff",
+      "rect" : [0, 0, 2546, 1582],
+      "lastMod" : "20220801T232723",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2546, 1582],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T232723.214874"
+      }
+    },
+    {
+      "id" : 29,
+      "src" : "./media/i3aFWUM3/Pasted Image.tiff",
+      "rect" : [0, 0, 2550, 1588],
+      "lastMod" : "20220801T233037",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2550, 1588],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T233037.989401"
+      }
+    },
+    {
+      "id" : 30,
+      "src" : "./media/1659397283.990884/Screen Recording 2022-08-01 at 5.31.55 PM.mov",
+      "rect" : [0, 0, 2548, 1576],
+      "lastMod" : "20220801T233237",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 77700],
+          "type" : 0,
+          "editRate" : 6000,
+          "trackRect" : [0, 0, 2548, 1576],
+          "sampleRate" : "14787/250",
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T233311.591632"
+      }
+    },
+    {
+      "id" : 31,
+      "src" : "./media/Tp3ycR14/Pasted Image.tiff",
+      "rect" : [0, 0, 2278, 1420],
+      "lastMod" : "20220801T234026",
+      "loudnessNormalization" : true,
+      "sourceTracks" : [
+        {
+          "range" : [0, 1],
+          "type" : 1,
+          "editRate" : 600,
+          "trackRect" : [0, 0, 2278, 1420],
+          "sampleRate" : 0,
+          "bitDepth" : 0,
+          "numChannels" : 0,
+          "integratedLUFS" : 100.0,
+          "peakLevel" : -1.0,
+          "metaData" : ""
+        }
+      ],
+      "metadata" : {
+        "timeAdded" : "20220801T234026.742920"
+      }
+    }
+  ],
+  "timeline" : {
+    "id" : 32,
+    "sceneTrack" : {
+      "scenes" : [
+        {
+          "csml" : {
+            "tracks" : [
+              {
+                "trackIndex" : 0,
+                "medias" : [
+                  {
+                    "id" : 33,
+                    "_type" : "IMFile",
+                    "src" : 1,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.00564556360496482,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 1.33336789042209,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 1.33336789042209,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 0,
+                    "duration" : 3009,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 33,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 1,
+                "medias" : [
+                  {
+                    "id" : 34,
+                    "_type" : "UnifiedMedia",
+                    "video" : 
+                        {
+                          "id" : 35,
+                          "_type" : "VMFile",
+                          "src" : 2,
+                          "trackNumber" : 0,
+                          "attributes" : {
+                            "ident" : "01-TalkingHead"
+                          },
+                          "parameters" : {
+                            "translation0" : {
+                              "type" : "double",
+                              "defaultValue" : 475.670201695414,
+                              "interp" : "eioe"
+                            },
+                            "translation1" : {
+                              "type" : "double",
+                              "defaultValue" : -167.524189009065,
+                              "interp" : "eioe"
+                            },
+                            "scale0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.706648991522932,
+                              "interp" : "eioe"
+                            },
+                            "scale1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.706648991522932,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "sourceCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop0" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop1" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop2" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            },
+                            "geometryCrop3" : {
+                              "type" : "double",
+                              "defaultValue" : 0.0,
+                              "interp" : "eioe"
+                            }
+                          },
+                          "effects" : [
+
+                          ],
+                          "start" : 0,
+                          "duration" : 2970,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 2970,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        },
+                    "audio" : 
+                        {
+                          "id" : 36,
+                          "_type" : "AMFile",
+                          "src" : 2,
+                          "trackNumber" : 1,
+                          "attributes" : {
+                            "ident" : "",
+                            "gain" : 1.0,
+                            "mixToMono" : false,
+                            "loudnessNormalization" : true,
+                            "sourceFileOffset" : 0
+                          },
+                            "channelNumber" : "0,1",
+                          "effects" : [
+
+                          ],
+                          "start" : 0,
+                          "duration" : 2970,
+                          "mediaStart" : 0,
+                          "mediaDuration" : 2970,
+                          "scalar" : 1,
+                          "animationTracks" : {
+
+                          }
+                        }
+,
+                    "start" : 0,
+                    "duration" : 2970,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 3009,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 34,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 34,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 2,
+                "medias" : [
+                  {
+                    "id" : 37,
+                    "_type" : "IMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.0,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -69.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 30,
+                    "duration" : 535,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 38,
+                    "_type" : "IMFile",
+                    "src" : 12,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -164.0,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 24.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 666,
+                    "duration" : 1278,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 39,
+                    "_type" : "IMFile",
+                    "src" : 15,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -151.0,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -58.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1944,
+                    "duration" : 99,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 40,
+                    "_type" : "IMFile",
+                    "src" : 17,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -174.378391861293,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -60.4729898266167,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.428948453395911,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.428948453395911,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2046,
+                    "duration" : 61,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.5625",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 41,
+                    "_type" : "IMFile",
+                    "src" : 3,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.0,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -69.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2113,
+                    "duration" : 790,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 37,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 37,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 38,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 38,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 39,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 20,
+                    "rightMedia" : 40,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 20,
+                    "leftMedia" : 40,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 41,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 41,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 3,
+                "medias" : [
+                  {
+                    "id" : 42,
+                    "_type" : "VMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Screen Recording 2022-08-01 at 3.59.43 PM"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.530689621318,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -17.2932158868569,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 30,
+                    "duration" : 247,
+                    "mediaStart" : 0,
+                    "mediaDuration" : "621/2",
+                    "scalar" : "494/621",
+                    "metadata" : {
+                      "clipSpeedAttribute" : true,
+                      "default-scale" : "0.506329",
+                      "effectApplied" : "Clip Speed",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 43,
+                    "_type" : "VMFile",
+                    "src" : 4,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Screen Recording 2022-08-01 at 3.59.43 PM"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.530689621318,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -17.2932158868569,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 277,
+                    "duration" : 100,
+                    "mediaStart" : "621/2",
+                    "mediaDuration" : 210,
+                    "scalar" : "10/21",
+                    "metadata" : {
+                      "clipSpeedAttribute" : true,
+                      "default-scale" : "0.506329",
+                      "effectApplied" : "Clip Speed",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 44,
+                    "_type" : "IMFile",
+                    "src" : 6,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.530689621318,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -17.2932158868569,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.263988734379162,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 377,
+                    "duration" : 188,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.505618",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 45,
+                    "_type" : "IMFile",
+                    "src" : 13,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -192.503739938532,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 4.69532741780745,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 187,
+                            "time" : 157,
+                            "value" : -45.3046725821926,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 572,
+                            "time" : 542,
+                            "value" : -131.304672582193,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 1008,
+                            "time" : 978,
+                            "value" : -217.304672582193,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.670968931374028,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.670968931374028,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 666,
+                    "duration" : 1008,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.898876",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 187,
+                          "duration" : 30,
+                          "range" : [ 157, 30]
+                        },
+                        {
+                          "endTime" : 572,
+                          "duration" : 30,
+                          "range" : [ 542, 30]
+                        },
+                        {
+                          "endTime" : 1008,
+                          "duration" : 30,
+                          "range" : [ 978, 30]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 46,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "TypeWinSVG",
+                      "shape" : "",
+                      "style" : "",
+                      "DrawTime" : 1.0,
+                      "borderColorBlue" : 0.0,
+                      "borderColorGreen" : 1.0,
+                      "borderColorRed" : 1.0,
+                      "borderWidth" : 3.0,
+                      "height" : 336.91984430937,
+                      "width" : 375.190857472471,
+                      "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"svg2\" xmlns:svg=\"http://www.w3.org/2000/svg\"\r\n\t xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"420px\" height=\"420px\"\r\n\t viewBox=\"0 0 420 420\" enable-background=\"new 0 0 420 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M132.968,54.075C74.986,99.438,15.9,156.278,22.984,236.573\r\n\tc12.956,146.86,179.74,165.719,292.017,116.53c51.739-22.666,93.197-55.022,80.18-116.617\r\n\tc-8.94-42.322-30.213-103.91-55.106-139.708C303.76,44.563,189.074,24.91,132.968,54.075\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M135.869,120.684c-3.34,17.829-24.567,93.923,24.365,51.993\r\n\tc12.604-10.803,24.361-55.877,12.932-70.326C160.273,86.058,140.61,101.801,135.869,120.684\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M269.875,114.592c5.717,6.905-36.803,95.573,26.646,58.013\r\n\tC335.948,149.266,310.241,110.702,269.875,114.592\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M102.367,245.555c-9.187,29.555,85.902,46.52,109.631,48.875\r\n\tc31.57,3.139,67.215-8.91,85.289-33.646\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M78.002,248.6c10.595,9.817,22.25,4.215,30.456-6.091\"/>\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M295.941,245.555c-6.357,14.219,3.267,21.404,15.229,24.363\"/>\r\n</svg>\r\n"
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : -157.376260211693,
+                      "translation1" : -227.456424855795,
+                      "scale0" : 0.637765590767293,
+                      "scale1" : 0.637765590767293,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "leftEdgeMods" : [
+                      {
+                        "group" : "DrawPercentageFade",
+                        "duration" : 60,
+                        "parameters" : [
+                          {
+                            "name" : "DrawTime",
+                              "func" : "FadeInFunc"
+                            }
+                        ]
+                      }
+                    ],
+                    "effects" : [
+
+                    ],
+                    "start" : 1693,
+                    "duration" : 251,
+                    "mediaStart" : 0,
+                    "mediaDuration" : "251/2",
+                    "scalar" : 2,
+                    "metadata" : {
+                      "clipSpeedAttribute" : true,
+                      "default-scale" : "1",
+                      "effectApplied" : "Clip Speed",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 47,
+                    "_type" : "IMFile",
+                    "src" : 16,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -164.636881844847,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 56,
+                            "time" : 0,
+                            "value" : 313.363118155153,
+                            "duration" : 56
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -63.2187087591099,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.608310530199758,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 56,
+                            "time" : 0,
+                            "value" : 0.000659630606860158,
+                            "duration" : 56
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.608310530199758,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 56,
+                            "time" : 0,
+                            "value" : 0.608310530199758,
+                            "duration" : 56
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1944,
+                    "duration" : 65,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.791209",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : false
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 56,
+                          "duration" : 56,
+                          "range" : [ 0, 56]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 48,
+                    "_type" : "IMFile",
+                    "src" : 18,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.441511701098,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -8.49181883906169,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.624080183956045,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.624080183956045,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2113,
+                    "duration" : 321,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 49,
+                    "_type" : "IMFile",
+                    "src" : 28,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.571627159698,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -15.261515626927,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.239871661660016,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.239871661660016,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2434,
+                    "duration" : 137,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.45512",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 50,
+                    "_type" : "VMFile",
+                    "src" : 30,
+                    "trackNumber" : 0,
+                    "attributes" : {
+                      "ident" : "Screen Recording 2022-08-01 at 5.31.55 PM"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.571627159698,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -15.261515626927,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.239871661660016,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.239871661660016,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2571,
+                    "duration" : 162,
+                    "mediaStart" : 120,
+                    "mediaDuration" : 162,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.456853",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 51,
+                    "_type" : "IMFile",
+                    "src" : 31,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -214.571627159698,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -9.66186665301668,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.271079018572411,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.271079018572411,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2737,
+                    "duration" : 166,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.507042",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 42,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 44,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 46,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : false,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 48,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 50,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 51,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 51,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 4,
+                "medias" : [
+                  {
+                    "id" : 52,
+                    "_type" : "IMFile",
+                    "src" : 5,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 25,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : 230.195129417949,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 106,
+                            "time" : 76,
+                            "value" : -245.820192558263,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 110.58396289191,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 106,
+                            "time" : 76,
+                            "value" : -30.3991255103947,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.164013641573693,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 106,
+                            "time" : 76,
+                            "value" : 0.259302200985861,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.164013641573693,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 106,
+                            "time" : 76,
+                            "value" : 0.259302200985861,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 440,
+                    "duration" : 125,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.591619",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 106,
+                          "duration" : 30,
+                          "range" : [ 76, 30]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 53,
+                    "_type" : "IMFile",
+                    "src" : 10,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -203.903459697858,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -127.824246055193,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.31532096348699,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.31532096348699,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 946,
+                    "duration" : 233,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.56042",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 54,
+                    "_type" : "IMFile",
+                    "src" : 6,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -204.281590187831,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -190.277161036682,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.224797206490516,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.224797206490516,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1238,
+                    "duration" : 364,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "0.505618",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 55,
+                    "_type" : "IMFile",
+                    "src" : 19,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -353.650529681431,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : -206.069978889044,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 288,
+                            "time" : 271,
+                            "value" : -353.650529681431,
+                            "duration" : 17
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 130.0,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 108.911316166931,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 288,
+                            "time" : 271,
+                            "value" : 130.0,
+                            "duration" : 17
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.153943086586007,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 0.825868042457731,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 288,
+                            "time" : 271,
+                            "value" : 0.153943086586007,
+                            "duration" : 17
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.153943086586007,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 0.825868042457731,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 288,
+                            "time" : 271,
+                            "value" : 0.153943086586007,
+                            "duration" : 17
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2143,
+                    "duration" : 291,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 30,
+                          "duration" : 30,
+                          "range" : [ 0, 30]
+                        },
+                        {
+                          "endTime" : 288,
+                          "duration" : 17,
+                          "range" : [ 271, 17]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 56,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "TypeWinSVG",
+                      "shape" : "",
+                      "style" : "",
+                      "DrawTime" : 1.0,
+                      "borderColorBlue" : 0.0,
+                      "borderColorGreen" : 1.0,
+                      "borderColorRed" : 0.0,
+                      "borderWidth" : 3.0,
+                      "height" : 281.438741657777,
+                      "width" : 393.874114954144,
+                      "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_2\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"420px\" height=\"420px\" viewBox=\"0 0 420 420\" enable-background=\"new 0 0 420 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M200.161,69.581c0,0-34.007-4.101-97.206,31.526\r\n\tC12.011,151.033-34.086,275.31,81.937,327.045c70.942,31.605,156.128,30.13,229.878,5.254\r\n\tc52.001-17.164,108.586-56.52,91.95-119.537C370.825,87.977,218.521,59.95,109.522,82.715\"/>\r\n</svg>\r\n"
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 23.1981410424358,
+                      "translation1" : 139.2560345933,
+                      "scale0" : 0.220496054037477,
+                      "scale1" : 0.220496054037477,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "leftEdgeMods" : [
+                      {
+                        "group" : "DrawPercentageFade",
+                        "duration" : 30,
+                        "parameters" : [
+                          {
+                            "name" : "DrawTime",
+                              "func" : "FadeInFunc"
+                            }
+                        ]
+                      }
+                    ],
+                    "effects" : [
+
+                    ],
+                    "start" : 2434,
+                    "duration" : 122,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 122,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-callout-stroke-color" : "(255,255,0,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  },
+                  {
+                    "id" : 57,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "TypeWinSVG",
+                      "shape" : "",
+                      "style" : "",
+                      "DrawTime" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "borderColorBlue" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "linr"
+                      },
+                      "borderColorGreen" : {
+                        "type" : "double",
+                        "defaultValue" : 1.0,
+                        "interp" : "linr"
+                      },
+                      "borderColorRed" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "linr"
+                      },
+                      "borderWidth" : {
+                        "type" : "double",
+                        "defaultValue" : 3.0,
+                        "interp" : "linr"
+                      },
+                      "height" : {
+                        "type" : "double",
+                        "defaultValue" : 281.438741657777,
+                        "interp" : "linr"
+                      },
+                      "width" : {
+                        "type" : "double",
+                        "defaultValue" : 393.874114954144,
+                        "interp" : "linr"
+                      },
+                      "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_2\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"420px\" height=\"420px\" viewBox=\"0 0 420 420\" enable-background=\"new 0 0 420 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M200.161,69.581c0,0-34.007-4.101-97.206,31.526\r\n\tC12.011,151.033-34.086,275.31,81.937,327.045c70.942,31.605,156.128,30.13,229.878,5.254\r\n\tc52.001-17.164,108.586-56.52,91.95-119.537C370.825,87.977,218.521,59.95,109.522,82.715\"/>\r\n</svg>\r\n"
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : 20.1981410424358,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 113.2560345933,
+                        "interp" : "eioe"
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.220496054037477,
+                        "interp" : "eioe"
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.220496054037477,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "leftEdgeMods" : [
+                      {
+                        "group" : "DrawPercentageFade",
+                        "duration" : 30,
+                        "parameters" : [
+                          {
+                            "name" : "DrawTime",
+                              "func" : "FadeInFunc"
+                            }
+                        ]
+                      }
+                    ],
+                    "effects" : [
+
+                    ],
+                    "start" : 2611,
+                    "duration" : 122,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 122,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-callout-stroke-color" : "(255,255,0,255)",
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 52,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 52,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 53,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 53,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "rightMedia" : 54,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 54,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 56,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : false,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 57,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : false,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 5,
+                "medias" : [
+                  {
+                    "id" : 58,
+                    "_type" : "IMFile",
+                    "src" : 11,
+                    "trackNumber" : 0,
+                    "trimStartSum" : -32,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -439.061052622132,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : -2,
+                            "time" : -32,
+                            "value" : -370.081251397761,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 34.0,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : -2,
+                            "time" : -32,
+                            "value" : 33.0042794016163,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.319999992847443,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : -2,
+                            "time" : -32,
+                            "value" : 1.31982881678279,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.319999992847443,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : -2,
+                            "time" : -32,
+                            "value" : 1.31982881678279,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1060,
+                    "duration" : 119,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : -2,
+                          "duration" : 30,
+                          "range" : [ -32, 30]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 59,
+                    "_type" : "IMFile",
+                    "src" : 14,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -225.22709003577,
+                        "interp" : "eioe"
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : -43.0,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 42,
+                            "time" : 12,
+                            "value" : -86.5660110951713,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.224999994039536,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 42,
+                            "time" : 12,
+                            "value" : 1.15193640031978,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.224999994039536,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 42,
+                            "time" : 12,
+                            "value" : 1.15193640031978,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 1410,
+                    "duration" : 192,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 42,
+                          "duration" : 30,
+                          "range" : [ 12, 30]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "id" : 60,
+                    "_type" : "IMFile",
+                    "src" : 24,
+                    "trackNumber" : 0,
+                    "trimStartSum" : 0,
+                    "attributes" : {
+                      "ident" : "Pasted Image"
+                    },
+                    "parameters" : {
+                      "translation0" : {
+                        "type" : "double",
+                        "defaultValue" : -342.454292847696,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : -175.0,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 113,
+                            "time" : 83,
+                            "value" : -40.5909922996844,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 169,
+                            "time" : 151,
+                            "value" : -27.590337731376,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 200,
+                            "time" : 182,
+                            "value" : 52.1023735706586,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 233,
+                            "time" : 217,
+                            "value" : 62.868897689465,
+                            "duration" : 16
+                          },
+                          {
+                            "endTime" : 257,
+                            "time" : 248,
+                            "value" : 132.59358716933,
+                            "duration" : 9
+                          }
+                        ]
+                      },
+                      "translation1" : {
+                        "type" : "double",
+                        "defaultValue" : 130.56494802091,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 109.0,
+                            "duration" : 30
+                          }
+                        ]
+                      },
+                      "scale0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.241924409720263,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 1.22107438016529,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 113,
+                            "time" : 83,
+                            "value" : 0.669045486364941,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 169,
+                            "time" : 151,
+                            "value" : 0.633924224250512,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 200,
+                            "time" : 182,
+                            "value" : 0.29381146103578,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 233,
+                            "time" : 217,
+                            "value" : 0.241057229139885,
+                            "duration" : 16
+                          },
+                          {
+                            "endTime" : 257,
+                            "time" : 248,
+                            "value" : 0.0335171899668896,
+                            "duration" : 9
+                          }
+                        ]
+                      },
+                      "scale1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.241924409720263,
+                        "interp" : "eioe",
+                        "keyframes" : [
+                          {
+                            "endTime" : 30,
+                            "time" : 0,
+                            "value" : 1.0,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 113,
+                            "time" : 83,
+                            "value" : 1.0151034965537,
+                            "duration" : 30
+                          },
+                          {
+                            "endTime" : 169,
+                            "time" : 151,
+                            "value" : 1.1090932634919,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 200,
+                            "time" : 182,
+                            "value" : 0.968670810662425,
+                            "duration" : 18
+                          },
+                          {
+                            "endTime" : 233,
+                            "time" : 217,
+                            "value" : 0.794744700372785,
+                            "duration" : 16
+                          },
+                          {
+                            "endTime" : 257,
+                            "time" : 248,
+                            "value" : 0.839366244456084,
+                            "duration" : 9
+                          }
+                        ]
+                      },
+                      "sourceCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "sourceCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop0" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop1" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop2" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      },
+                      "geometryCrop3" : {
+                        "type" : "double",
+                        "defaultValue" : 0.0,
+                        "interp" : "eioe"
+                      }
+                    },
+                    "effects" : [
+
+                    ],
+                    "start" : 2143,
+                    "duration" : 277,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 1,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : false
+                    },
+                    "animationTracks" : {
+                      "visual" : [
+                        {
+                          "endTime" : 30,
+                          "duration" : 30,
+                          "range" : [ 0, 30]
+                        },
+                        {
+                          "endTime" : 113,
+                          "duration" : 30,
+                          "range" : [ 83, 30]
+                        },
+                        {
+                          "endTime" : 169,
+                          "duration" : 18,
+                          "range" : [ 151, 18]
+                        },
+                        {
+                          "endTime" : 200,
+                          "duration" : 18,
+                          "range" : [ 182, 18]
+                        },
+                        {
+                          "endTime" : 233,
+                          "duration" : 16,
+                          "range" : [ 217, 16]
+                        },
+                        {
+                          "endTime" : 257,
+                          "duration" : 9,
+                          "range" : [ 248, 9]
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 58,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  },
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 59,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : true,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 6,
+                "medias" : [
+                  {
+                    "id" : 61,
+                    "_type" : "Callout",
+                    "def" : {
+                      "kind" : "TypeWinSVG",
+                      "shape" : "",
+                      "style" : "",
+                      "DrawTime" : 1.0,
+                      "borderColorBlue" : 0.0,
+                      "borderColorGreen" : 1.0,
+                      "borderColorRed" : 1.0,
+                      "borderWidth" : 3.0,
+                      "height" : 281.438741657777,
+                      "width" : 393.874114954144,
+                      "xmlContent" : "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">\r\n<svg version=\"1.1\" id=\"Layer_2\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"\r\n\t width=\"420px\" height=\"420px\" viewBox=\"0 0 420 420\" enable-background=\"new 0 0 420 420\" xml:space=\"preserve\">\r\n<path fill=\"none\" stroke=\"#000000\" stroke-miterlimit=\"10\" d=\"M200.161,69.581c0,0-34.007-4.101-97.206,31.526\r\n\tC12.011,151.033-34.086,275.31,81.937,327.045c70.942,31.605,156.128,30.13,229.878,5.254\r\n\tc52.001-17.164,108.586-56.52,91.95-119.537C370.825,87.977,218.521,59.95,109.522,82.715\"/>\r\n</svg>\r\n"
+                    },
+                    "attributes" : {
+                      "ident" : "",
+                      "autoRotateText" : true
+                    },
+                    "parameters" : {
+                      "translation0" : 66.3252543336559,
+                      "translation1" : -81.5872426416246,
+                      "scale0" : 0.45641836048795,
+                      "scale1" : 0.45641836048795,
+                      "sourceCrop0" : 0.0,
+                      "sourceCrop1" : 0.0,
+                      "sourceCrop2" : 0.0,
+                      "sourceCrop3" : 0.0,
+                      "geometryCrop0" : 0.0,
+                      "geometryCrop1" : 0.0,
+                      "geometryCrop2" : 0.0,
+                      "geometryCrop3" : 0.0
+                    },
+                    "leftEdgeMods" : [
+                      {
+                        "group" : "DrawPercentageFade",
+                        "duration" : 30,
+                        "parameters" : [
+                          {
+                            "name" : "DrawTime",
+                              "func" : "FadeInFunc"
+                            }
+                        ]
+                      }
+                    ],
+                    "effects" : [
+
+                    ],
+                    "start" : 1452,
+                    "duration" : 150,
+                    "mediaStart" : 0,
+                    "mediaDuration" : 150,
+                    "scalar" : 1,
+                    "metadata" : {
+                      "clipSpeedAttribute" : false,
+                      "default-scale" : "1",
+                      "effectApplied" : "none",
+                      "lockAspectRatio" : true
+                    },
+                    "animationTracks" : {
+
+                    }
+                  }
+                ],
+                "transitions" : [
+                  {
+                    "name" : "Fade",
+                    "duration" : 30,
+                    "leftMedia" : 61,
+                    "attributes" : {
+                      "bypass" : false,
+                      "reverse" : false,
+                      "trivial" : false,
+                      "useAudioPreRoll" : false,
+                      "useVisualPreRoll" : true
+                    }
+
+                  }
+                ]
+              },
+              {
+                "trackIndex" : 7,
+                "medias" : [
+                ]
+              }            ]
+          }
+        }
+      ]
+    },
+    "trackAttributes" : [
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      },
+      {
+        "ident" : "",
+        "audioMuted" : false,
+        "videoHidden" : false,
+        "magnetic" : false,
+        "matte" : 0,
+        "solo" : false,
+        "metadata" : {
+          "IsLocked" : "False",
+          "trackHeight" : "54"
+        }
+      }
+    ],
+    "captionAttributes" : {
+      "enabled" : true,
+      "fontName" : "Arial",
+      "fontSize" : 32,
+      "backgroundColor" : [ 0, 0, 0, 204],
+      "foregroundColor" : [ 255, 255, 255, 255],
+      "lang" : "en",
+      "alignment" : 0,
+      "defaultFontSize" : true,
+      "opacity" : 0.5,
+      "backgroundEnabled" : true,
+      "backgroundOnlyAroundText" : true
+    },
+    "gain" : 1.0,
+    "legacyAttenuateAudioMix" : false,
+    "backgroundColor" : [ 0, 0, 0, 255]
+  },
+  "metadata" : {
+    "ProjectThumbnail" : "iVBORw0KGgoAAAANSUhEUgAAAeAAAAEOCAYAAABRmsRnAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAB4KADAAQAAAABAAABDgAAAAARszjOAAAK9ElEQVR4Ae3VwQnAMAwEQcX995zk4Rq0nzH4fTAI9pmZ9/8eAQIECBAgsChwFrdMESBAgAABAldAgJ0CAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQECA3QABAgQIEAgEBDhAN0mAAAECBATYDRAgQIAAgUBAgAN0kwQIECBAQIDdAAECBAgQCAQEOEA3SYAAAQIEBNgNECBAgACBQECAA3STBAgQIEBAgN0AAQIECBAIBAQ4QDdJgAABAgQE2A0QIECAAIFAQIADdJMECBAgQOAD2LUDGxJi0IsAAAAASUVORK5CYII=",
+    "activeThemeId" : "e59eeb42-ccf0-4a36-bdf9-e630fdab686d",
+    "audiateSessionId" : "",
+    "firstMedia" : true,
+    "hasNotifiedAboutHFRMedia" : true,
+    "projectDuration" : "01:40"
+  }
+}

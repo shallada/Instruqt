@@ -1,0 +1,28 @@
+#!/bin/bash
+
+
+
+# Remove the data generator (if it exists) so we can start fresh
+rm -rf /root/druid-datagenerator
+# Clone the data generator
+git clone https://github.com/implydata/druid-datagenerator.git
+# Configure clickstream for Kafka
+sed -i 's/"target": {"type": "stdout"}/"target": {"type": "kafka", "endpoint": "localhost:9092", "topic": "clickstream-data"}/g' \
+  /root/druid-datagenerator/examples/clickstream_config.json
+
+# Create the Kafka topic
+# (TBD - make sure the topic isn't already there)
+/root/kafka_2.13-2.7.0/bin/kafka-topics.sh --create --topic clickstream-data --bootstrap-server localhost:9092
+
+# Start the data generator
+if [ $(ps -ef | grep '/root/druid-datagenerator/DruidDataDriver.py' | wc -l) -eq 1 ]
+then
+  nohup python3 /root/druid-datagenerator/DruidDataDriver.py -f /root/druid-datagenerator/examples/clickstream_config.json 2> /dev/null > /dev/null & disown
+fi
+
+# Begin the streaming ingestion
+# (TBD - make sure ingestion is not already started)
+curl -XPOST \
+  -H'Content-Type: application/json' \
+  -d@/root/clickstream-ingestion.json \
+  http://localhost:8090/druid/indexer/v1/supervisor

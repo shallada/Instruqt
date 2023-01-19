@@ -1,0 +1,25 @@
+#!/bin/bash
+
+apt-get update
+apt-get -y install bsdmainutils
+apt-get install python3 -y
+
+
+cat >> /root/index.html <<-EOF
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imgWrapper">
+      <img src="https://drive.google.com/uc?export=view&id=1Oaoh8nLNn62ts9CgFpNyBCVxU4T2cOFC" alt="Some image" style="max-width: 100%">
+    </dev>
+</body>
+</html>
+EOF
+
+nohup python3 -m http.server > /dev/null 2> /dev/null & disown

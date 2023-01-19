@@ -1,0 +1,55 @@
+#!/bin/bash
+
+
+# Libraries needed for data driver
+apt-get update
+apt-get install -y python3-pip
+pip install python-dateutil
+pip install kafka-python
+pip install numpy
+pip install requests
+pip install sortedcontainers
+
+cat > /root/clickstream-ingestion.json << EOF
+{
+  "type": "kafka",
+  "spec": {
+    "ioConfig": {
+      "type": "kafka",
+      "consumerProperties": {
+        "bootstrap.servers": "localhost:9092"
+      },
+      "topic": "clickstream-data",
+      "inputFormat": {
+        "type": "json"
+      },
+      "useEarliestOffset": true
+    },
+    "tuningConfig": {
+      "type": "kafka"
+    },
+    "dataSchema": {
+      "dataSource": "clickstream-data",
+      "timestampSpec": {
+        "column": "!!!_no_such_column_!!!",
+        "missingValue": "2010-01-01T00:00:00Z"
+      },
+      "dimensionsSpec": {
+        "dimensions": [
+          "client_ip",
+          "client_device",
+          "client_lang",
+          "client_country",
+          "referrer",
+          "event_type"
+        ]
+      },
+      "granularitySpec": {
+        "queryGranularity": "none",
+        "rollup": false,
+        "segmentGranularity": "day"
+      }
+    }
+  }
+}
+EOF

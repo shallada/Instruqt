@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Start the query generator (if it's not already running)
+if [ $(ps -ef | grep '/root/druid-datagenerator/druid-querygenerator/DruidQueryDriver.py' | wc -l) -eq 1 ]
+then
+  nohup python3 /root/druid-datagenerator/druid-querygenerator/DruidQueryDriver.py -f /root/druid-datagenerator/druid-querygenerator/examples/clickstream_query.json 2> /dev/null > /dev/null & disown
+fi

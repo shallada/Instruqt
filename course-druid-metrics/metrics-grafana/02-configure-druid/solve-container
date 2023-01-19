@@ -1,0 +1,52 @@
+#!/bin/bash
+
+if [ $(ps -ef | grep 'perl /root' | wc -l) -eq 2 ] # if Druid is running, kill it
+then
+  kill $(ps -ef | grep 'perl /root' | awk 'NF{print $2}' | head -n 1)
+  while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -eq 0 ]; do sleep 1; done
+fi
+# remove the installation (if it exists) so we can start fresh
+rm -rf /root/apache-druid-24.0.0/
+# Make sure we have the tar file
+if [ ! -f /root/apache-druid-24.0.0-bin.tar.gz ]
+then
+  wget https://ftp.wayne.edu/apache/druid/24.0.0/apache-druid-24.0.0-bin.tar.gz
+fi
+tar -xzf apache-druid-24.0.0-bin.tar.gz
+
+# Add the extensions
+pushd /root/apache-druid-24.0.0
+java \
+  -cp "lib/*" \
+  -Ddruid.extensions.directory="extensions" \
+  -Ddruid.extensions.hadoopDependenciesDir="hadoop-dependencies" \
+  org.apache.druid.cli.Main tools pull-deps \
+  --no-default-hadoop \
+  -c "org.apache.druid.extensions.contrib:prometheus-emitter:24.0.0"
+popd
+
+# Configure the prometheus emitter
+sed -i 's/druid.extensions.loadList=\[/druid.extensions.loadList=\["prometheus-emitter", /g' \
+  /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/_common/common.runtime.properties
+sed -i 's/noop/prometheus/g' \
+  /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/_common/common.runtime.properties
+
+echo 'druid.emitter.prometheus.port=9091' \
+  >> /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/broker/runtime.properties
+echo 'druid.emitter.prometheus.port=9092' \
+  >> /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/coordinator-overlord/runtime.properties
+echo 'druid.emitter.prometheus.port=9093' \
+  >> /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/historical/runtime.properties
+echo 'druid.emitter.prometheus.port=9094' \
+  >> /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/middleManager/runtime.properties
+echo 'druid.emitter.prometheus.port=9095' \
+  >> /root/apache-druid-24.0.0/conf/druid/single-server/nano-quickstart/router/runtime.properties
+
+# Start Druid
+nohup /root/apache-druid-24.0.0/bin/start-nano-quickstart \
+  > /root/log.out 2> /root/log.err \
+  < /dev/null & disown
+while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -gt 0 ]
+do
+  sleep 3
+done

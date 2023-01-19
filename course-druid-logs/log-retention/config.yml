@@ -1,0 +1,7 @@
+version: "3"
+containers:
+- name: container
+  image: gcr.io/instruqt-images-330918/java8base:1.0
+  shell: /bin/bash
+  memory: 8192
+  

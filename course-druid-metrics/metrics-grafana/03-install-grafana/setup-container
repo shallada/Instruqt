@@ -1,0 +1,1298 @@
+#!/bin/bash
+
+cat > /root/ingestion.json << \EOF
+{
+    "query":"INSERT INTO wikipedia SELECT TIME_PARSE(\"timestamp\") AS __time, page FROM TABLE( EXTERN( '{\"type\": \"http\", \"uris\": [\"https://static.imply.io/gianm/wikipedia-2016-06-27-sampled.json\"]}', '{\"type\": \"json\"}', '[{\"name\": \"timestamp\", \"type\": \"string\"}, {\"name\": \"page\", \"type\": \"string\"}, {\"name\": \"user\", \"type\": \"string\"}]')) PARTITIONED BY DAY"
+}
+EOF
+
+cat > /root/query.json << \EOF
+{
+  "query":"SELECT * FROM wikipedia LIMIT 1"
+}
+EOF
+
+
+mkdir /root/dashboards
+chmod 777 /root
+chmod 777 /root/dashboards
+cat > /root/dashboards/DruidMetricsDash.json << \EOF
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "target": {
+          "limit": 100,
+          "matchAny": false,
+          "tags": [],
+          "type": "dashboard"
+        },
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 1,
+  "links": [],
+  "liveNow": false,
+  "panels": [
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheusdata"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 2750
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 23,
+        "x": 0,
+        "y": 0
+      },
+      "id": 4,
+      "options": {
+        "orientation": "auto",
+        "reduceOptions": {
+          "calcs": [
+            "lastNotNull"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showThresholdLabels": false,
+        "showThresholdMarkers": true
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_gc_cpu_total{instance=\"localhost:9091\"}",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_gc_cpu_total{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_gc_cpu_total{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_gc_cpu_total{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_gc_cpu_total{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "JVM GC Cpu Total",
+      "type": "gauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 4
+      },
+      "id": 11,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "count by(le) (druid_query_time_bucket)",
+          "format": "heatmap",
+          "legendFormat": "{{le}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Query Time Histogram (Seconds taken to complete a query)",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 4
+      },
+      "id": 12,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segment_time_bucket{instance=\"localhost:9093\"}",
+          "format": "heatmap",
+          "legendFormat": "{{le}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Query segment Time Histogram (Seconds taken to query individual segment)",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 13
+      },
+      "id": 13,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "count by(le) (druid_query_cpu_time_bucket)",
+          "format": "heatmap",
+          "legendFormat": "{{le}}",
+          "range": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Query CPU Time Histogram (Seconds of CPU time taken to complete a query)",
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              }
+            ]
+          },
+          "unit": "none"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 13
+      },
+      "id": 14,
+      "options": {
+        "displayMode": "gradient",
+        "minVizHeight": 10,
+        "minVizWidth": 0,
+        "orientation": "horizontal",
+        "reduceOptions": {
+          "calcs": [
+            "sum"
+          ],
+          "fields": "",
+          "values": false
+        },
+        "showUnfilled": true
+      },
+      "pluginVersion": "9.3.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "exemplar": false,
+          "expr": "count by(le) (druid_query_wait_time_bucket)",
+          "format": "heatmap",
+          "instant": true,
+          "legendFormat": "{{le}}",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Druid Query Wait Time Histogram (Seconds waiting for a segment to be scanned)",
+      "transformations": [
+        {
+          "id": "groupBy",
+          "options": {
+            "fields": {
+              "0.1": {
+                "aggregations": []
+              },
+              "0.25": {
+                "aggregations": []
+              },
+              "0.5": {
+                "aggregations": []
+              },
+              "0.75": {
+                "aggregations": []
+              },
+              "1.0": {
+                "aggregations": []
+              }
+            }
+          }
+        }
+      ],
+      "type": "bargauge"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheusdata"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 0,
+        "y": 22
+      },
+      "id": 6,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_delta_hitrate{instance=\"localhost:9091\"}",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_delta_hitrate{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_delta_hitrate{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_delta_hitrate{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_delta_hitrate{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "Druid Query Cache Delta Hit Rate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheusdata"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 6,
+        "w": 12,
+        "x": 12,
+        "y": 22
+      },
+      "id": 5,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_total_hitrate{instance=\"localhost:9091\"}",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_total_hitrate{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_total_hitrate{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_total_hitrate{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_cache_total_hitrate{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "Druid Query Cache Total Hit Rate",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheusdata"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 28
+      },
+      "id": 10,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_segment_size{instance=\"localhost:9091\"}",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_segment_size{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_segment_size{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_segment_size{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_segment_size{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "Druid Segment Size (Size in bytes of available segments)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "prometheusdata"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 28
+      },
+      "id": 2,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_bufferpool_count{bufferpoolName=\"direct\", instance=\"localhost:9091\"}",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_bufferpool_count{bufferpoolName=\"direct\", instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_bufferpool_count{bufferpoolName=\"direct\", instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_bufferpool_count{bufferpoolName=\"direct\", instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_jvm_bufferpool_count{bufferpoolName=\"direct\", instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "JVM Bufferpool Count",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 0,
+        "y": 35
+      },
+      "id": 8,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_historical_segment_count",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_historical_segment_count{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_historical_segment_count{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_historical_segment_count{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_historical_segment_count{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "Druid Historical Segment Count (Number of served segments)",
+      "type": "timeseries"
+    },
+    {
+      "datasource": {
+        "type": "prometheus",
+        "uid": "PE60866158CA1A677"
+      },
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "custom": {
+            "axisCenteredZero": false,
+            "axisColorMode": "text",
+            "axisLabel": "",
+            "axisPlacement": "auto",
+            "barAlignment": 0,
+            "drawStyle": "line",
+            "fillOpacity": 0,
+            "gradientMode": "none",
+            "hideFrom": {
+              "legend": false,
+              "tooltip": false,
+              "viz": false
+            },
+            "lineInterpolation": "linear",
+            "lineWidth": 1,
+            "pointSize": 5,
+            "scaleDistribution": {
+              "type": "linear"
+            },
+            "showPoints": "auto",
+            "spanNulls": false,
+            "stacking": {
+              "group": "A",
+              "mode": "none"
+            },
+            "thresholdsStyle": {
+              "mode": "off"
+            }
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 80
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 12,
+        "x": 12,
+        "y": 35
+      },
+      "id": 9,
+      "options": {
+        "legend": {
+          "calcs": [],
+          "displayMode": "list",
+          "placement": "bottom",
+          "showLegend": true
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segmentandcache_time",
+          "legendFormat": "Broker",
+          "range": true,
+          "refId": "A"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segmentandcache_time{instance=\"localhost:9092\"}",
+          "hide": false,
+          "legendFormat": "Coordinator-Overlord",
+          "range": true,
+          "refId": "B"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segmentandcache_time{instance=\"localhost:9093\"}",
+          "hide": false,
+          "legendFormat": "Historical",
+          "range": true,
+          "refId": "C"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segmentandcache_time{instance=\"localhost:9094\"}",
+          "hide": false,
+          "legendFormat": "MiddleManager",
+          "range": true,
+          "refId": "D"
+        },
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "prometheusdata"
+          },
+          "editorMode": "builder",
+          "expr": "druid_query_segmentandcache_time{instance=\"localhost:9095\"}",
+          "hide": false,
+          "legendFormat": "Router",
+          "range": true,
+          "refId": "E"
+        }
+      ],
+      "title": "Druid Query Segment and Cache Time (Seconds taken to query individual segment or hit the cache)",
+      "type": "timeseries"
+    }
+  ],
+  "refresh": "5s",
+  "schemaVersion": 37,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "",
+  "title": "Druid Metrics",
+  "uid": "prometheusdata",
+  "version": 6,
+  "weekStart": ""
+}
+EOF

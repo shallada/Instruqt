@@ -1,0 +1,238 @@
+#!/bin/bash
+
+apt-get update
+apt-get -y install bsdmainutils
+
+DEBIAN_FRONTEND=noninteractive apt -y install screen
+
+cat > ~/.screenrc <<-EOF
+# ~/.screenrc configuration file
+
+# Set the default shell
+shell "/bin/bash"
+
+# These lines give us a pretty navigation bar at the bottom
+hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kW}[ %{m}%H %{W}][%= %{= kw}%?%-Lw%?%{r}(%{g}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{W}][%{Y} %d/%m %{Y}%c %{W}]'
+
+# Disable the startup message
+startup_message off
+
+# Disable Visual Bell
+vbell off
+
+# Increase the scrollback buffer
+defscrollback 10000
+
+# Use SHIFT-right and SHIFT-left arrow to change windows
+bindkey ^[[1;2D prev
+bindkey ^[[1;2C next
+
+# Add your own programs here to auto-start them in a window.
+screen -t shell 0
+EOF
+
+# Append this onto the end of ~/.bashrc
+# The \ ensures the target file has a literal $STY and not an empty string.
+cat >> ~/.bashrc <<-EOF
+if [[ -z "\$STY" ]]; then
+   screen -xRR default
+fi
+EOF
+
+apt-get -y install stunnel4
+
+cat > /root/webserver.conf << \EOF
+pid = /root/stunnel.pid
+
+[https]
+accept = 8443
+connect = 8888
+cert = keyfile.pem
+EOF
+
+cat > /root/keyfile.pem << \EOF
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRo5VkCKXJOEBn
+rMwg8ngUDr7VQ3HOcZlU/6hpjDsXjdPC+o9QvwF47zgEUAlZ0S82Ebo9ja8/V7fX
+tCMiXH8XP8xmI41wkeECZQ4cFPeB4RAT3q893958Wsapv2e7syns957/1hSdf+rQ
+/iOFwXFelFybuD4FWUCwaoSxajs4LVBYWGv+sL2Cl8UWJ3wokiiwfPQqHC+4SBb2
+ExgH664bQZ3tSdSOzegNUWYoe6OG+9cjrb+X8OFTrYBHFDXa7irMSXWngLs1RVan
+r6sP+3Glxq+GoEdQoIOi0hyZADyf+ZeUDA3sBkcrvVCpFWyfJLng4UvKdk02yNtB
+43TyGv9NAgMBAAECggEAeF7TInMMrjMMV/sR4kEWzX2B+XYWXJFBl1qMWr5YF7gp
+xSSVManasJO6uE80b0v7LbKUG0/FNjuppcMbAVnW54SMWoFDb0Vzyyo3JcysKPkP
+gDk2qfJnD0QYGdN7Pn0rL5MmyoMjpyORspqZzu05qTLK0ebCRdPvntwqgKwcgK4J
++p1S8a+fhAPyNe/5oAmEro9iuiq6fea1lDpdl3AmOvi4sjkp8hpsw1k/4ryZZD45
+Xrvbw3JtH36UnyS9o//fWY0UsvvOrd/ULIJAwUZQtWelEXxiYmqnQ8J0bCcXTpq7
+chIZGFk3zUN3V/FuqZp7r+O4k5QPUnFYGu4HHzRCyQKBgQDtqQ1c1PWJ+bKAai3B
+dnRd+64BuhuH3Sf5oXmPSZElHO8p8pPcsoLTOKZf+7VeFky0Dd3bWGyMBi1djNau
+soT6cPCNmYLNYJOet58DIerld2q801F76s2aoJ4Vr8Fe8frUu0T7DlojIoXtWkxJ
+UKM92rj+agzNzkVFlpIffO3LfwKBgQDh0Pkjtw38lPfI4jjWcEuquzPsWFFj442X
+43AJXS4gehPJCeVwYBSASzRznABo1nJ/O7XjBz2TyGS368VoS0XwkzYWKl709m8d
+sirvOr3gazQbIVg1+6Xcwp+fkXLDdnDgLRybk97WGLt8bcL72vfSdiPkA+ZCldTk
+MEM8y4MLMwKBgQCV98Y53Rwv+8Pa6qWC3geiQq3T4yd6PWD7UhzOAUM44yA8HRmW
++4I4XRgHm2MgQvwV5mYoAo1EcqVv0e6qgHYPPvNctxDmHloonoAVzvJV6FwPWV2i
+z1D8kPwQfT6Ndi6szJtDvRO99gwC8acP4HWSE5IG4M7Bk7b8qX39pqy7awKBgBNa
+ps/R06gPWIFmKjru2v1iGBwsoaUvDqay/po+20I7VFDJwVl1UqyARZmXCE3z+1I+
+WuN/bl6pMUC2O3Ap62+oHl2d+g+Cw5lG+PkSDs4aQhgFLptJ2zhlkerKO4zXLOt5
+0lbfQJ0W95K9kZWmedEXARJ85xJT5zA7lreyNaQTAoGBAOVV+UPbtX4fodKW3wUF
+9Wu2SWDl7dMugT/SIxBELXowg5wbUEDqY1egevNkzITfRuRK8dUmQN2BXHB6o8rt
+OWYPAArAlIPhfMZ48GiPqvJix5v4RcL+dXrLpcIBerym8R3qii0vHM7FHOYux1PD
+cVpCyhG+KgfJRfbhyhiT3F7m
+-----END PRIVATE KEY-----
+-----BEGIN CERTIFICATE-----
+MIIC2TCCAcGgAwIBAgIUB1uIZhHQIL9DQyuVeGjmQD/u30IwDQYJKoZIhvcNAQEL
+BQAwFDESMBAGA1UEAwwJbG9jYWxob3N0MB4XDTIyMDMyOTIyMTMwNFoXDTMyMDMy
+NjIyMTMwNFowFDESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEA0aOVZAilyThAZ6zMIPJ4FA6+1UNxznGZVP+oaYw7F43T
+wvqPUL8BeO84BFAJWdEvNhG6PY2vP1e317QjIlx/Fz/MZiONcJHhAmUOHBT3geEQ
+E96vPd/efFrGqb9nu7Mp7Pee/9YUnX/q0P4jhcFxXpRcm7g+BVlAsGqEsWo7OC1Q
+WFhr/rC9gpfFFid8KJIosHz0KhwvuEgW9hMYB+uuG0Gd7UnUjs3oDVFmKHujhvvX
+I62/l/DhU62ARxQ12u4qzEl1p4C7NUVWp6+rD/txpcavhqBHUKCDotIcmQA8n/mX
+lAwN7AZHK71QqRVsnyS54OFLynZNNsjbQeN08hr/TQIDAQABoyMwITAJBgNVHRME
+AjAAMBQGA1UdEQQNMAuCCWxvY2FsaG9zdDANBgkqhkiG9w0BAQsFAAOCAQEAPKD5
+7cv0wk1v45ui6M9ui+jyNiC4cU6J5CfIhxbBMmkEv31yPxCTGNyk04ic5EoW6gKt
+kI0A7uNPSd7ph5gWwMpCNfA7uUs8XHARJcAxasGeu6JVYILI52rhDGznjetisPWM
+z/BEDhHYDEWsbgkpy46/a/ha9gddZ5apA4s9JAm3fiQ9g1V5sEIC2lJpyaYCIZdN
+mAbCQrJGc7MqUgOQKnLpw2inOr3K+tEJPG7PmY2yJ0geSA3lrnbjIdM8YQQ+jSWJ
+Nx20QuT2mjFoq+vJg0o9acJvkZQjnIHuKkUAzK7aH1fTRx77d/5SGBepLOP6GTyj
+kCztd6hQYUZe3MbxuA==
+-----END CERTIFICATE-----
+EOF
+
+chmod +r keyfile.pem
+
+nohup stunnel webserver.conf > /dev/null 2> /dev/null < /dev/null & disown
+
+
+cat > /root/ingestion.json << \EOF
+{
+    "context": {},
+    "query":"INSERT INTO w000 SELECT TIME_PARSE(\"timestamp\") AS __time, page FROM TABLE( EXTERN( '{\"type\": \"http\", \"uris\": [\"https://static.imply.io/gianm/wikipedia-2016-06-27-sampled.json\"]}', '{\"type\": \"json\"}', '[{\"name\": \"timestamp\", \"type\": \"string\"}, {\"name\": \"page\", \"type\": \"string\"}, {\"name\": \"user\", \"type\": \"string\"}]')) PARTITIONED BY DAY"
+}
+EOF
+
+
+cat > /root/langs.json << \EOF
+{"channel": "#ar.wikipedia", "language": "Arabic"}
+{"channel": "#bg.wikipedia", "language": "Bulgarian"}
+{"channel": "#ca.wikipedia", "language": "Catalan"}
+{"channel": "#ce.wikipedia", "language": "Chechen"}
+{"channel": "#ceb.wikipedia", "language": "Cebuano"}
+{"channel": "#cs.wikipedia", "language": "Czech"}
+{"channel": "#da.wikipedia", "language": "Danish"}
+{"channel": "#de.wikipedia", "language": "German"}
+{"channel": "#el.wikipedia", "language": "Greek"}
+{"channel": "#en.wikipedia", "language": "English"}
+{"channel": "#eo.wikipedia", "language": "Esperanto"}
+{"channel": "#es.wikipedia", "language": "Spanish"}
+{"channel": "#et.wikipedia", "language": "Estonian"}
+{"channel": "#eu.wikipedia", "language": "Basque"}
+{"channel": "#fa.wikipedia", "language": "Persian"}
+{"channel": "#fi.wikipedia", "language": "Finnish"}
+{"channel": "#fr.wikipedia", "language": "French"}
+{"channel": "#gl.wikipedia", "language": "Galician"}
+{"channel": "#he.wikipedia", "language": "Hebrew"}
+{"channel": "#hi.wikipedia", "language": "Hindi"}
+{"channel": "#hr.wikipedia", "language": "Croatian"}
+{"channel": "#hu.wikipedia", "language": "Hungarian"}
+{"channel": "#hy.wikipedia", "language": "Armenian"}
+{"channel": "#id.wikipedia", "language": "Indonesian"}
+{"channel": "#it.wikipedia", "language": "Italian"}
+{"channel": "#ja.wikipedia", "language": "Japanese"}
+{"channel": "#kk.wikipedia", "language": "Kazakh"}
+{"channel": "#ko.wikipedia", "language": "Korean"}
+{"channel": "#la.wikipedia", "language": "Latin"}
+{"channel": "#lt.wikipedia", "language": "Lithuanian"}
+{"channel": "#ms.wikipedia", "language": "Malay"}
+{"channel": "#nl.wikipedia", "language": "Dutch"}
+{"channel": "#nn.wikipedia", "language": "Norwegian (Nynorsk)"}
+{"channel": "#no.wikipedia", "language": "Norwegian (Bokmål)"}
+{"channel": "#pl.wikipedia", "language": "Polish"}
+{"channel": "#pt.wikipedia", "language": "Portuguese"}
+{"channel": "#ro.wikipedia", "language": "Romanian"}
+{"channel": "#ru.wikipedia", "language": "Russian"}
+{"channel": "#sh.wikipedia", "language": "Serbo-Croatian"}
+{"channel": "#simple.wikipedia", "language": "Simple English"}
+{"channel": "#sk.wikipedia", "language": "Slovak"}
+{"channel": "#sl.wikipedia", "language": "Slovene"}
+{"channel": "#sr.wikipedia", "language": "Serbian"}
+{"channel": "#sv.wikipedia", "language": "Swedish"}
+{"channel": "#tr.wikipedia", "language": "Turkish"}
+{"channel": "#uk.wikipedia", "language": "Ukrainian"}
+{"channel": "#uz.wikipedia", "language": "Uzbek"}
+{"channel": "#vi.wikipedia", "language": "Vietnamese"}
+{"channel": "#war.wikipedia", "language": "Waray"}
+{"channel": "#zh.wikipedia", "language": "Mandarin"}
+EOF
+
+###################################################
+#
+# The following is from Implies Docker setup-os.sh
+#
+###################################################
+
+#
+# Base OS stuff
+#
+
+apt-get update
+apt-get -y upgrade
+apt-get -y install --no-install-recommends \
+                   curl apt-transport-https \
+                   python python2.7 perl \
+                   software-properties-common gnupg2 jq vim less
+
+#
+# Sync Java (Azul Zulu) repository
+#
+
+apt-key add - <<'EOT'
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+Version: SKS 1.1.6
+Comment: Hostname: keyserver.ubuntu.com
+
+mQINBFNgFa8BEADTL/REB10M+TfiZOtFHqL5LHKkzTMn/O2r5iIqXGhi6iwZazFs9S5g1eU7
+WMen5Xp9AREs+OvaHx91onPZ7ZiP7VpZ6ZdwWrnVk1Y/HfI59tWxmNYWDmKYBGMj4EUpFPSE
+9EnFj7dm1WdlCvpognCwZQl9D3BseGqN7OLHfwqqmOlbYN9hHYkT+CaqOoWDIGMB3UkBlMr0
+GuujEP8N1gxg7EOcSCsZH5aKtXubdUlVSphfAAwDz4MviB39J22sPBnKmaOT3TUTO5vGeKtC
+9BAvtgA82jY2TtCEjetnfK/qtzj/6j2NxVUbHQydwNQVRU92A7334YvCbn3xUUNI0WOscdmf
+pgCU0Z9Gb2IqDb9cMjgUi8F6MG/QY9/CZjX62XrHRPm3aXsCJOVh/PO1sl2A/rvv8AkpJKYy
+hm6T8OBFptCsA3V4Oic7ZyYhqV0u2r4NON+1MoUeuuoeY2tIrbRxe3ffVOxPzrESzSbc8LC2
+tYaP+wGdW0f57/CoDkUzlvpReCUI1Bv5zP4/jhC63Rh6lffvSf2tQLwOsf5ivPhUtwUfOQjg
+v9P8Wc8K7XZpSOMnDZuDe9wuvB/DiH/P5yiTs2RGsbDdRh5iPfwbtf2+IX6h2lNZXiDKt9Gc
+26uzeJRx/c7+sLunxq6DLIYvrsEipVI9frHIHV6fFTmqMJY6SwARAQABtEdBenVsIFN5c3Rl
+bXMsIEluYy4gKFBhY2thZ2Ugc2lnbmluZyBrZXkuKSA8cGtpLXNpZ25pbmdAYXp1bHN5c3Rl
+bXMuY29tPokCOAQTAQIAIgUCU2AVrwIbAwYLCQgHAwIGFQgCCQoLBBYCAwECHgECF4AACgkQ
+sZmDYSGb2cnJ8xAAz1V1PJnfOyaRIP2NHo2uRwGdPsA4eFMXb4Z08eGjDMD3b9WW3D0XnCLb
+JpaZ6klz0W0s2tcYSneTBaSsRAqxgJgBZ5ZMXtrrHld/5qFoBbStLZLefmcPhnfvamwHDCTL
+Uex8NIAI1u3e9Rhb5fbH+gpuYpwHX7hz0FOfpn1sxR03UyxU+ey4AdKe9LG3TJVnB0Wcgxpo
+bpbqweLHyzcEQCNoFV3r1rlE13Y0aE31/9apoEwiYvqAzEmE38TukDLl/Qg8rkR1t0/lok2P
+G6pWqdN7pmoUovBTvDi5YOthcjZcdOTXXn2Yw4RZVF9uhRsVfku1Eg25SnOje3uYsmtQLME4
+eESbePdjyV/okCIle66uHZse+7gNyNmWpf01hM+VmAySIAyKa0Ku8AXZMydEcJTebrNfW9uM
+LsBx3Ts7z/CBfRng6F8louJGlZtlSwddTkZVcb26T20xeo0aZvdFXM2djTi/a5nbBoZQL85A
+EeV7HaphFLdPrgmMtS8sSZUEVvdaxp7WJsVuF9cONxsvx40OYTvfco0W41Lm8/sEuQ7YueEV
+pZxiv5kX56GTU9vXaOOi+8Z7Ee2w6Adz4hrGZkzztggs4tM9geNYnd0XCdZ/ICAskKJABg7b
+iDD1PhEBrqCIqSE3U497vibQMpkkl/Zpp0BirhGWNyTg8K4JrsQ=
+=d320
+-----END PGP PUBLIC KEY BLOCK-----
+EOT
+
+echo "deb http://repos.azulsystems.com/debian stable main" > /etc/apt/sources.list.d/zulu.list
+
+#
+# Java
+#
+
+apt-get update
+apt-get -y install zulu-8
+
+#
+# Housekeeping
+#
+
+apt-get -y remove software-properties-common
+apt-get -y autoremove
+apt-get -y clean
+rm -fr /tmp/*
