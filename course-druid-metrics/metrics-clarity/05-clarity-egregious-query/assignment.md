@@ -1,6 +1,6 @@
 ---
 slug: clarity-egregious-query
-id: wwqxgycbnqir
+id: bfyo6pxlhzos
 type: challenge
 title: Identify a Problematic Query
 teaser: Let's Clarity's metrics to identify an egregious query
@@ -158,7 +158,7 @@ grep $QUERY_ID /root/imply-2022.11/var/sv/broker/current | grep -P '"SELECT.*?",
 ```
 
 We can see the logged query within the log message.
-Note that this query performs a _SELECT *_, which requires Druid to do a full table scan - a very slow query.
+Note that this query performs a _SELECT *_ with no _WHERE_ clause, which requires Druid to do a full table scan - a very slow query.
 
 It's no wonder that the query was so slow!
 

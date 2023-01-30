@@ -4,6 +4,7 @@ apt-get install python3
 apt-get update
 apt-get install -y python3-pip
 
+pip install kafka-python
 pip install python-dateutil
 pip install kafka-python
 pip install numpy

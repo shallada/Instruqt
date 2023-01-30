@@ -4,6 +4,7 @@
 # Libraries needed for data driver
 apt-get update
 apt-get install -y python3-pip
+pip install confluent-kafka
 pip install python-dateutil
 pip install kafka-python
 pip install numpy

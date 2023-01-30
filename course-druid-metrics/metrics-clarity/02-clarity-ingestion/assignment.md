@@ -1,6 +1,6 @@
 ---
 slug: clarity-ingestion
-id: zyvfcssds6bm
+id: yeyypvhtxopi
 type: challenge
 title: Create a Workload
 teaser: Let's create a workload and use Clarity to review Druid metrics

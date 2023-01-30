@@ -1,6 +1,6 @@
 ---
 slug: configure-clarity
-id: bv7lx7nkexfy
+id: u2oihkdidogb
 type: challenge
 title: Configure Clarity
 teaser: Let's uconfigure Clarity to view Druid metrics

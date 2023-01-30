@@ -1,6 +1,6 @@
 ---
 slug: clarity-query
-id: pwkma3slnsdj
+id: gire5lmrofar
 type: challenge
 title: Create a Clarity Query Load
 teaser: Let's simulate a query load and views its metrics in Clarity

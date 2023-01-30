@@ -1,6 +1,6 @@
 ---
 slug: ingestion-problems
-id: iqzb9nle9cli
+id: x2xok3h9h8fn
 type: challenge
 title: Metrics for Ingestion Problems
 teaser: Let's learn what metrics can show us about ingestion problems
