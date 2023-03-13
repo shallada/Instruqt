@@ -1,0 +1,141 @@
+#!/bin/bash
+
+# Start with a fresh install
+if [ $(ps -ef | grep 'perl /root' | wc -l) -eq 2 ] # if Druid is running, kill it
+then
+  echo "Killing old Druid"
+  kill $(ps -ef | grep 'perl /root' | awk 'NF{print $2}' | head -n 1)
+  while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -eq 0 ]; do sleep 1; done
+fi
+# remove the installation (if it exists) so we can start fresh
+echo "Removing old Druid"
+rm -rf /root/apache-druid-25.0.0/
+# Make sure we have the tar file
+if [ ! -f /root/apache-druid-25.0.0-bin.tar.gz ]
+then
+  echo "downloading Druid"
+  wget https://ftp.wayne.edu/apache/druid/25.0.0/apache-druid-25.0.0-bin.tar.gz
+fi
+echo "launching Druid"
+tar -xzf apache-druid-25.0.0-bin.tar.gz
+nohup /root/apache-druid-25.0.0/bin/start-nano-quickstart > /root/log.out 2> /root/log.err < /dev/null & disown
+
+# Install the tools for this lab
+apt-get update
+if [ $(dpkg -l | grep 'ii  bsdmainutils' | wc -l) -eq 0 ]
+then
+  echo "Installing admin utils"
+  apt-get -y install bsdmainutils
+fi
+
+if [ $(dpkg -l | grep 'ii  tree' | wc -l) -eq 0 ]
+then
+  echo "Installin tree command"
+  apt install tree
+fi
+
+if [ $(dpkg -l | grep 'ii  stunnel4' | wc -l) -eq 0 ]
+then
+  echo "Installing stunnel"
+  apt-get -y install stunnel4
+fi
+
+
+if [ ! -f /root/webserver.conf ]
+then
+  echo "Creating stunnel config"
+  # set up stunnel so we can run the Druid console in a tab
+  cat > /root/webserver.conf << \EOF
+pid = /root/stunnel.pid
+
+[https]
+accept = 8443
+connect = 8888
+cert = keyfile.pem
+EOF
+fi
+
+if [ ! -f /root/keyfile.pem ]
+then
+  echo "Creating key file"
+  cat > /root/keyfile.pem << \EOF
+-----BEGIN PRIVATE KEY-----
+MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRo5VkCKXJOEBn
+rMwg8ngUDr7VQ3HOcZlU/6hpjDsXjdPC+o9QvwF47zgEUAlZ0S82Ebo9ja8/V7fX
+tCMiXH8XP8xmI41wkeECZQ4cFPeB4RAT3q893958Wsapv2e7syns957/1hSdf+rQ
+/iOFwXFelFybuD4FWUCwaoSxajs4LVBYWGv+sL2Cl8UWJ3wokiiwfPQqHC+4SBb2
+ExgH664bQZ3tSdSOzegNUWYoe6OG+9cjrb+X8OFTrYBHFDXa7irMSXWngLs1RVan
+r6sP+3Glxq+GoEdQoIOi0hyZADyf+ZeUDA3sBkcrvVCpFWyfJLng4UvKdk02yNtB
+43TyGv9NAgMBAAECggEAeF7TInMMrjMMV/sR4kEWzX2B+XYWXJFBl1qMWr5YF7gp
+xSSVManasJO6uE80b0v7LbKUG0/FNjuppcMbAVnW54SMWoFDb0Vzyyo3JcysKPkP
+gDk2qfJnD0QYGdN7Pn0rL5MmyoMjpyORspqZzu05qTLK0ebCRdPvntwqgKwcgK4J
++p1S8a+fhAPyNe/5oAmEro9iuiq6fea1lDpdl3AmOvi4sjkp8hpsw1k/4ryZZD45
+Xrvbw3JtH36UnyS9o//fWY0UsvvOrd/ULIJAwUZQtWelEXxiYmqnQ8J0bCcXTpq7
+chIZGFk3zUN3V/FuqZp7r+O4k5QPUnFYGu4HHzRCyQKBgQDtqQ1c1PWJ+bKAai3B
+dnRd+64BuhuH3Sf5oXmPSZElHO8p8pPcsoLTOKZf+7VeFky0Dd3bWGyMBi1djNau
+soT6cPCNmYLNYJOet58DIerld2q801F76s2aoJ4Vr8Fe8frUu0T7DlojIoXtWkxJ
+UKM92rj+agzNzkVFlpIffO3LfwKBgQDh0Pkjtw38lPfI4jjWcEuquzPsWFFj442X
+43AJXS4gehPJCeVwYBSASzRznABo1nJ/O7XjBz2TyGS368VoS0XwkzYWKl709m8d
+sirvOr3gazQbIVg1+6Xcwp+fkXLDdnDgLRybk97WGLt8bcL72vfSdiPkA+ZCldTk
+MEM8y4MLMwKBgQCV98Y53Rwv+8Pa6qWC3geiQq3T4yd6PWD7UhzOAUM44yA8HRmW
++4I4XRgHm2MgQvwV5mYoAo1EcqVv0e6qgHYPPvNctxDmHloonoAVzvJV6FwPWV2i
+z1D8kPwQfT6Ndi6szJtDvRO99gwC8acP4HWSE5IG4M7Bk7b8qX39pqy7awKBgBNa
+ps/R06gPWIFmKjru2v1iGBwsoaUvDqay/po+20I7VFDJwVl1UqyARZmXCE3z+1I+
+WuN/bl6pMUC2O3Ap62+oHl2d+g+Cw5lG+PkSDs4aQhgFLptJ2zhlkerKO4zXLOt5
+0lbfQJ0W95K9kZWmedEXARJ85xJT5zA7lreyNaQTAoGBAOVV+UPbtX4fodKW3wUF
+9Wu2SWDl7dMugT/SIxBELXowg5wbUEDqY1egevNkzITfRuRK8dUmQN2BXHB6o8rt
+OWYPAArAlIPhfMZ48GiPqvJix5v4RcL+dXrLpcIBerym8R3qii0vHM7FHOYux1PD
+cVpCyhG+KgfJRfbhyhiT3F7m
+-----END PRIVATE KEY-----
+-----BEGIN CERTIFICATE-----
+MIIC2TCCAcGgAwIBAgIUB1uIZhHQIL9DQyuVeGjmQD/u30IwDQYJKoZIhvcNAQEL
+BQAwFDESMBAGA1UEAwwJbG9jYWxob3N0MB4XDTIyMDMyOTIyMTMwNFoXDTMyMDMy
+NjIyMTMwNFowFDESMBAGA1UEAwwJbG9jYWxob3N0MIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEA0aOVZAilyThAZ6zMIPJ4FA6+1UNxznGZVP+oaYw7F43T
+wvqPUL8BeO84BFAJWdEvNhG6PY2vP1e317QjIlx/Fz/MZiONcJHhAmUOHBT3geEQ
+E96vPd/efFrGqb9nu7Mp7Pee/9YUnX/q0P4jhcFxXpRcm7g+BVlAsGqEsWo7OC1Q
+WFhr/rC9gpfFFid8KJIosHz0KhwvuEgW9hMYB+uuG0Gd7UnUjs3oDVFmKHujhvvX
+I62/l/DhU62ARxQ12u4qzEl1p4C7NUVWp6+rD/txpcavhqBHUKCDotIcmQA8n/mX
+lAwN7AZHK71QqRVsnyS54OFLynZNNsjbQeN08hr/TQIDAQABoyMwITAJBgNVHRME
+AjAAMBQGA1UdEQQNMAuCCWxvY2FsaG9zdDANBgkqhkiG9w0BAQsFAAOCAQEAPKD5
+7cv0wk1v45ui6M9ui+jyNiC4cU6J5CfIhxbBMmkEv31yPxCTGNyk04ic5EoW6gKt
+kI0A7uNPSd7ph5gWwMpCNfA7uUs8XHARJcAxasGeu6JVYILI52rhDGznjetisPWM
+z/BEDhHYDEWsbgkpy46/a/ha9gddZ5apA4s9JAm3fiQ9g1V5sEIC2lJpyaYCIZdN
+mAbCQrJGc7MqUgOQKnLpw2inOr3K+tEJPG7PmY2yJ0geSA3lrnbjIdM8YQQ+jSWJ
+Nx20QuT2mjFoq+vJg0o9acJvkZQjnIHuKkUAzK7aH1fTRx77d/5SGBepLOP6GTyj
+kCztd6hQYUZe3MbxuA==
+-----END CERTIFICATE-----
+EOF
+
+  chmod +r keyfile.pem
+fi
+
+if [ $(ps -ef | grep 'stunnel' | wc -l) -lt 2 ]
+then
+  echo "Starting stunnel"
+  nohup stunnel webserver.conf > /dev/null 2> /dev/null < /dev/null & disown
+fi
+
+
+
+cat > /root/ingestion.json << \EOF
+{
+    "query": "INSERT INTO wikipedia SELECT TIME_PARSE(\"timestamp\") AS __time, isRobot, channel, flags, isUnpatrolled, page, diffUrl, added, comment, commentLength, isNew, isMinor, delta, isAnonymous, user, deltaBucket, deleted, namespace, cityName, countryName, regionIsoCode, metroCode, countryIsoCode, regionName FROM TABLE( EXTERN( '{\"type\": \"http\", \"uris\": [\"https://static.imply.io/gianm/wikipedia-2016-06-27-sampled.json\"]}', '{\"type\": \"json\"}', '[{\"name\": \"added\", \"type\": \"long\"}, {\"name\": \"channel\", \"type\": \"string\"}, {\"name\": \"cityName\", \"type\": \"string\"}, {\"name\": \"comment\", \"type\": \"string\"}, {\"name\": \"commentLength\", \"type\": \"long\"}, {\"name\": \"countryIsoCode\", \"type\": \"string\"}, {\"name\": \"countryName\", \"type\": \"string\"}, {\"name\": \"deleted\", \"type\": \"long\"}, {\"name\": \"delta\", \"type\": \"long\"}, {\"name\": \"deltaBucket\", \"type\": \"string\"}, {\"name\": \"diffUrl\", \"type\": \"string\"}, {\"name\": \"flags\", \"type\": \"string\"}, {\"name\": \"isAnonymous\", \"type\": \"string\"}, {\"name\": \"isMinor\", \"type\": \"string\"}, {\"name\": \"isNew\", \"type\": \"string\"}, {\"name\": \"isRobot\", \"type\": \"string\"}, {\"name\": \"isUnpatrolled\", \"type\": \"string\"}, {\"name\": \"metroCode\", \"type\": \"string\"}, {\"name\": \"namespace\", \"type\": \"string\"}, {\"name\": \"page\", \"type\": \"string\"}, {\"name\": \"regionIsoCode\", \"type\": \"string\"}, {\"name\": \"regionName\", \"type\": \"string\"}, {\"name\": \"timestamp\", \"type\": \"string\"}, {\"name\": \"user\", \"type\": \"string\"}]')) PARTITIONED BY DAY"
+}
+EOF
+
+echo "Waiting for Druid to initialize"
+# make sure Druid is initialized
+while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -gt 0 ]; do echo sleep 3; done
+sleep 10
+
+echo "Trying to start ingestion"
+# Ingest wikipedia
+while [ $(curl -X POST -H'Content-Type: application/json' -d @/root/ingestion.json http://localhost:8888/druid/v2/sql/task  2>&1 >/dev/null | grep Fail | wc -w) -gt 0 ]; do echo sleep 3; done
+echo "Ingestion started"
+# Wait for ingestion to complete
+while [ $(curl -X GET http://localhost:8888/druid/v2/datasources 2> /dev/null | grep wikipedia | wc -w) -eq 0 ]
+  do
+  sleep 3
+  done
+cho "Ingestion completed!"
