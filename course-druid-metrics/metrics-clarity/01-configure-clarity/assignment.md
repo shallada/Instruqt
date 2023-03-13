@@ -3,7 +3,7 @@ slug: configure-clarity
 id: u2oihkdidogb
 type: challenge
 title: Configure Clarity
-teaser: Let's uconfigure Clarity to view Druid metrics
+teaser: Let's configure Clarity to view Druid metrics
 notes:
 - type: video
   url: ../assets/06-VisualizeMetrics.mp4

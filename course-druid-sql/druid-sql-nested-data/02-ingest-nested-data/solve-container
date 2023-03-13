@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Wait for druid to initialize
+while [ $(curl localhost:8888/ 2>&1 >/dev/null | grep Fail | wc -w) -gt 0 ]; do sleep 3; done
+
+# Create ingestion.json to ingest nested data
+GLOBIGNORE=*
+q='{"query":"'
+q+=' INSERT INTO nested_data'
+q+=' WITH \"ext\" AS (SELECT *'
+q+=' FROM TABLE('
+q+='   EXTERN('
+q+=$'     \'{\\\"type\\\":\\\"local\\\",\\\"baseDir\\\":\\\"/root\\\",\\\"filter\\\":\\\"nested_data.json\\\"}\','
+q+=$'     \'{\\\"type\\\":\\\"json\\\"}\','
+q+=$'     \'[{\\\"name\\\":\\\"timestamp\\\",\\\"type\\\":\\\"string\\\"},{\\\"name\\\":\\\"product\\\",\\\"type\\\":\\\"string\\\"},{\\\"name\\\":\\\"price\\\",\\\"type\\\":\\\"double\\\"},{\\\"name\\\":\\\"ShippingInfo\\\",\\\"type\\\":\\\"COMPLEX<json>\\\"}]\''
+q+='   )'
+q+=' ))'
+q+=' SELECT'
+q+='   TIME_PARSE(\"timestamp\") AS __time,'
+q+='   product,'
+q+='   price,'
+q+='   ShippingInfo'
+q+=' FROM \"ext\"'
+q+=' PARTITIONED BY DAY'
+q+='"}'
+echo $q > /root/ingestion.json
+
+# Ingest the nested data
+curl -X POST \
+  -H'Content-Type: application/json'   \
+  http://localhost:8888/druid/v2/sql/task \
+  -d @/root/ingestion.json

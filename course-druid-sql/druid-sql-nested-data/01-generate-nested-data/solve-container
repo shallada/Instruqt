@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Download data generator
+git clone https://github.com/implydata/druid-datagenerator.git
+
+# Run the data generator
+python3 /root/druid-datagenerator/DruidDataDriver.py \
+  -n 100 \
+  -f /root/nested_data_config.json \
+  -s \
+  | sed 's/__time/timestamp/g' \
+  > /root/nested_data.json

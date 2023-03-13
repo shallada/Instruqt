@@ -98,7 +98,7 @@ The records show the user who changed Wikipedia and the number of lines they, ad
 <h2 style="color:cyan">Step 5</h2><hr style="color:cyan;background-color:cyan;height:2px">
 
 Compare those records to the rolled-up row from the table
-(here's the query we wil perform: <i>SELECT * FROM wikipedia WHERE user LIKE '%Diannaa%' AND __time BETWEEN TIMESTAMP '2015-09-12 20:00:00' AND TIMESTAMP '2015-09-13 20:00:00'</i>).
+(here's the query we will perform: <i>SELECT * FROM wikipedia WHERE user LIKE '%Diannaa%' AND __time BETWEEN TIMESTAMP '2015-09-12 20:00:00' AND TIMESTAMP '2015-09-13 20:00:00'</i>).
 
 ```
 curl -X 'POST' \

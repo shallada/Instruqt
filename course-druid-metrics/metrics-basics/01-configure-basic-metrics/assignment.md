@@ -114,7 +114,7 @@ done
 <h2 style="color:cyan">Step 6</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Druid emits the metrics into the processes' log files.
-The following commands shows us an example of metrics in the context of the log file.
+The following commands show us an example of metrics in the context of the log file.
 
 ```
 grep -C 2 'org.apache.druid.java.util.emitter.core.LoggingEmitter - [{]' apache-druid-24.0.0/log/broker.log \

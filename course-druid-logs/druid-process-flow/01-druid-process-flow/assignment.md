@@ -22,7 +22,7 @@ tabs:
   type: website
   url: https://container-8443-${_SANDBOX_ID}.env.play.instruqt.com/unified-console.html
 difficulty: basic
-timelimit: 600
+timelimit: 1200
 ---
 
 In this lab we want to use the logs to get a feel for the interplay of Druid processes.

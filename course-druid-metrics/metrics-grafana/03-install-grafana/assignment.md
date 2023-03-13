@@ -43,6 +43,10 @@ wget -q -O /usr/share/keyrings/grafana.key https://apt.grafana.com/gpg.key
 echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com stable main" | tee -a /etc/apt/sources.list.d/grafana.list
 apt-get update
 apt-get install grafana
+sed -i 's/;allow_embedding = false/allow_embedding = true/g' \
+  /etc/grafana/grafana.ini
+sed -i 's/\[auth.anonymous\]/\[auth.anonymous\]\nenabled = true\norg_name = Main Org.\norg_role = Viewer/g' \
+  /etc/grafana/grafana.ini
 ```
 
 <h2 style="color:cyan">Step 2</h2><hr style="color:cyan;background-color:cyan;height:5px">
@@ -109,18 +113,6 @@ service grafana-server start > /dev/null
 
 <h2 style="color:cyan">Step 5</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
-Login to the Grafana Console with the username _admin_ and password _admin_ (you can skip changing the credentials).
-
-<a href="#img-5">
-  <img alt="Login Grafana" src="../assets/LoginGrafana.png" />
-</a>
-<a href="#" class="lightbox" id="img-5">
-  <img alt="Login Grafana" src="../assets/LoginGrafana.png" />
-</a>
-
-
-<h2 style="color:cyan">Step 6</h2><hr style="color:cyan;background-color:cyan;height:5px">
-
 View the Druid Metrics dashboard.
 
 
@@ -130,15 +122,15 @@ In your own deployment, you would want to configure a dashboard specifically tai
 Read more about creating Grafana dashboards <a href="https://grafana.com/docs/grafana/latest/dashboards/build-dashboards/" target="_blank">here</a>.</i></p>
 <hr style="background-color:cyan">
 
-<a href="#img-6">
+<a href="#img-5">
   <img alt="View Dashboard" src="../assets/ViewDashboard.png" />
 </a>
-<a href="#" class="lightbox" id="img-6">
+<a href="#" class="lightbox" id="img-5">
   <img alt="View Dashboard" src="../assets/ViewDashboard.png" />
 </a>
 
 
-<h2 style="color:cyan">Step 7</h2><hr style="color:cyan;background-color:cyan;height:5px">
+<h2 style="color:cyan">Step 6</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Let's create some Druid activity by ingesting and querying data.
 Back in the _Shell_ tab, execute the following commands to perform an ingestion.
@@ -162,7 +154,7 @@ echo "Ingestion completing"
 sleep 5
 ```
 
-<h2 style="color:cyan">Step 8</h2><hr style="color:cyan;background-color:cyan;height:5px">
+<h2 style="color:cyan">Step 7</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Finally, execute the following (which will run forever) to create query activity.
 
@@ -176,14 +168,14 @@ do
 done
 ```
 
-<h2 style="color:cyan">Step 9</h2><hr style="color:cyan;background-color:cyan;height:5px">
+<h2 style="color:cyan">Step 8</h2><hr style="color:cyan;background-color:cyan;height:5px">
 
 Switch back to the Gafana Console and investigate the effects of the Druid activity.
 
-<a href="#img-9">
+<a href="#img-8">
   <img alt="Grafana Dashboard" src="../assets/GrafanaDash.png" />
 </a>
-<a href="#" class="lightbox" id="img-9">
+<a href="#" class="lightbox" id="img-8">
   <img alt="Grafana Dashboard" src="../assets/GrafanaDash.png" />
 </a>
 

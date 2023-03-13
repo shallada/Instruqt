@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+# Ingest the wikipedia data
+curl -X POST \
+  -H'Content-Type: application/json'   \
+  -d @/root/ingestion.json \
+  http://localhost:8888/druid/v2/sql/task
+
+# Wait for the ingestion to complete
+while [ $(curl -X GET http://localhost:8888/druid/v2/datasources 2> /dev/null | grep wikipedia | wc -w) -eq 0 ]
+  do
+  sleep 3
+  done
